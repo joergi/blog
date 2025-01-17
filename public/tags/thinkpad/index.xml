@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thinkpad on My digital brain</title>
+    <link>http://localhost:1313/blog_new/tags/thinkpad/</link>
+    <description>Recent content in Thinkpad on My digital brain</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog_new/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install patch for Thinkpad Trackpoint Keyboard II</title>
+      <link>http://localhost:1313/blog_new/posts/2022-10-14-install-patch-for-thinkpad-trackpoint-keyboard-ii/</link>
+      <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog_new/posts/2022-10-14-install-patch-for-thinkpad-trackpoint-keyboard-ii/</guid>
+      <description>&lt;h2 id=&#34;new-thinkpad-trackpoint-keyboard-ii&#34;&gt;New Thinkpad Trackpoint Keyboard II&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;img/trackpoint-keyboard.jpg&#34; alt=&#34;Alt text&#34; title=&#34;trackpoint of thinkpad keypad&#34;&gt;&lt;!-- raw HTML omitted --&gt;&#xA;(i maybe should have cleaned it, before the picture&amp;hellip;)&lt;/p&gt;&#xA;&lt;p&gt;I got my first Thinkpad Trackpoint keyboard as a farwell gift from a company I worked for (thanks &amp;lt;3 ).&lt;br&gt;&#xA;I don&amp;rsquo;t use any mouse, I just use the red &amp;ldquo;joystick&amp;rdquo; (called trackpoint) to navigate. For users which aren&amp;rsquo;t used to it, it&amp;rsquo;s a horror if they have to use my keyboard. But if you are used to it, you don&amp;rsquo;t wanna work without it anymore.&lt;br&gt;&#xA;As you can see, the old one is not in a good shape anymore. And as working-from-home is the new normal, the company I work for, offers us the equipment we need, so I ordered a new one.&lt;br&gt;&#xA;This is a newer version, which is running without a cable but wirelesse with an USB dongle. So far so good.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

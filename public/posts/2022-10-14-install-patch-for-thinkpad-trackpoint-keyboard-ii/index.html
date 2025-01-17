@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Install patch for Thinkpad Trackpoint Keyboard II - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="When using the new Thinkpad Trackpoint Keyboard II there is a bug with the middle mouse button">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Install patch for Thinkpad Trackpoint Keyboard II</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<h2 id="new-thinkpad-trackpoint-keyboard-ii">New Thinkpad Trackpoint Keyboard II</h2>
+<p><img src="img/trackpoint-keyboard.jpg" alt="Alt text" title="trackpoint of thinkpad keypad"> <br>
+(i maybe should have cleaned it, before the picture&hellip;)</p>
+<p>I got my first Thinkpad Trackpoint keyboard as a farwell gift from a company I worked for (thanks &lt;3 ).<br>
+I don&rsquo;t use any mouse, I just use the red &ldquo;joystick&rdquo; (called trackpoint) to navigate. For users which aren&rsquo;t used to it, it&rsquo;s a horror if they have to use my keyboard. But if you are used to it, you don&rsquo;t wanna work without it anymore.<br>
+As you can see, the old one is not in a good shape anymore. And as working-from-home is the new normal, the company I work for, offers us the equipment we need, so I ordered a new one.<br>
+This is a newer version, which is running without a cable but wirelesse with an USB dongle. So far so good.</p>
+<h2 id="the-middle-button">The middle button</h2>
+<p>When I tried it out, everything seems to work as expected - but the middle button was showing strange behavior.<br>
+Normally you can scroll in a browser with the middle button pressed and moving the trackpoint up and down (or left and right).<br>
+The scrolling dikernel-d work, but it always opened the content while pressing the button in a new tab. So, while scrolling on Twitter, it means a lot of new tabs were opened.<br>
+After searching a little bit, it seems my keyboard is not broken, but there is a known error in the driver.</p>
+<h2 id="patching-the-kernel">Patching the kernel</h2>
+<p>After searching more, I found a <a href="https://gitlab.freedesktop.org/libinput/libinput/-/issues/547#note_1325369">patch on Gitlab.freedesktop.org</a>.<br>
+Downloading the patch and run <code>./make.sh</code> was leading to an error that <code>Missing ../crypto/bio/bss_file.c</code> was needed.<br>
+So, searching some more, it seems that I did not had the signing keys for the kernel. So I made the signing keys, <a href="https://superuser.com/a/1322832">as described here</a>.
+After that I had to copy the signing key:e old one is not in a good shape anymore. And as working-from-home is the new normal, the company I work for, offers us the equipment we need, so I ordered a new one.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp signing_key.pem /usr/src/linux-headers-5.15.0-50-generic/certs
+</span></span></code></pre></div><p>I&rsquo;m pretty sure, that I will need to do this step again, whenever I&rsquo;m on a new linux header and I need to sign something else&hellip;<br>
+Ae old one is not in a good shape anymore. And as working-from-home is the new normal, the company I work for, offers us the equipment we need, so I ordered a new one.fter this was done, I could continue with the patch, as described in the link above:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo rmmod hid-lenovo; sudo insmod /lib/modules/<span style="color:#66d9ef">$(</span>uname -r<span style="color:#66d9ef">)</span>/extra/hid-lenovo.ko
+</span></span></code></pre></div><p>Somehow this was still failing: <code>ERROR: could not insert module Operation not permitted</code>
+As I broke my laptop screen a few days ago, and we just put my harddisc into a newer laptop, the secure boot was still on. After turning in the BIOS the secure boot off, the command above was working.
+Then a restart, and the keyboard is more or less working as expected.<br>
+(Somehow it still does open sometimes the links in new tabs, but only sometimes, not every time)</p>
+<p>The patch should be in the Linux 5.19.x kernel.</p>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>

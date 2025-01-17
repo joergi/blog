@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Being able to develop on an unknown phone on a Linux computer - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Everything you have to set up to deploy an Android app to your phone via ADB">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Being able to develop on an unknown phone on a Linux computer</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<p>When i tried to deploy a <!-- raw HTML omitted -->Hello World<!-- raw HTML omitted --> app from my Linux notebook to my THL 5000 notebook i got this result:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>So, my phone has API level 1, nice - NOT!</p>
+<p>Googling my ass off, I could nowhere find the device id for this phone&hellip; So <!-- raw HTML omitted -->Tobi<!-- raw HTML omitted --> told me: Brute-Force is the way to go and what should I say: it worked!</p>
+<p>So: <!-- raw HTML omitted -->google<!-- raw HTML omitted --> for the &ldquo;51-android.rules&rdquo; or just save <!-- raw HTML omitted -->this one<!-- raw HTML omitted -->.</p>
+<p>After that copy it in the right place</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo cp /home/username/download/51-android.rules /etc/udev/rules.d/
+</span></span></code></pre></div><p>and make it working with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chmod a+r /etc/udev/rules.d/51-android.rules
+</span></span></code></pre></div><p>When plugging now my THL 5000 to my notebook, everything works fine!</p>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>

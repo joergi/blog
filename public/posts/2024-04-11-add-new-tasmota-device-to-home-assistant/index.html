@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add new Tasmota device to Home Assistant with MQTT - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Adding a new Tasmota device to Home Assistant via MQTT and the console of the device">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Add new Tasmota device to Home Assistant with MQTT</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<h2 id="pre-requirements">Pre-Requirements</h2>
+<p>To add a new Tasmota device to the Home Assistant (HA), I assume that:</p>
+<ul>
+<li>HA is installed</li>
+<li>An MQTT Broker is running and an user in HA is already registered/in use</li>
+<li>Already one other Tasmota device is connected to the HA (so you know it&rsquo;s working)</li>
+<li>The new Tasmota device is already connected to the local HA WiFi</li>
+<li>Already has upgraded to the newest firmware</li>
+</ul>
+<h2 id="todos">Todos:</h2>
+<h3 id="give-device-a-better-name">Give device a better name</h3>
+<p>Click <code>Configuration</code> -&gt; <code>Configure Other</code> -&gt; and enter at <code>Device Name</code> a name which makes sense</p>
+<h3 id="add-device-to-mqtt">Add device to MQTT</h3>
+<p>Click <code>Configuration</code> -&gt; <code>Configure MQTT</code> -&gt; and enter:</p>
+<ul>
+<li><code>Host</code> of the MQTT-Broker</li>
+<li><code>Port</code></li>
+<li><code>User</code> (DVES_USER) (this is the mqtt user you have in your HA)</li>
+<li><code>Password</code> (this is the mqtt user you have in your HA)</li>
+</ul>
+<p>-&gt; Click <code>Save</code></p>
+<h3 id="make-the-device-auto-discoverable">Make the device auto-discoverable</h3>
+<p>Click <code>Console</code><br>
+Type: <code>Setoption19 0</code> and press Enter</p>
+<h3 id="set-updating-of-the-device-to-20-instead-of-2-min">Set updating of the device to 20 instead of 2 min.</h3>
+<p>Click <code>Console</code><br>
+Type: <code>TelePeriod 20</code> and press Enter</p>
+<p>I learned all this from <a href="https://www.youtube.com/watch?v=-MovlMV4Ts8">this YouTube Video</a>. so all credits go there!</p>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>

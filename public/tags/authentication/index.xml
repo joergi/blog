@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication on My digital brain</title>
+    <link>http://localhost:1313/blog_new/tags/authentication/</link>
+    <description>Recent content in Authentication on My digital brain</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog_new/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting a verified user on Github</title>
+      <link>http://localhost:1313/blog_new/posts/2020-03-27-getting-a-verified-user-on-github/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog_new/posts/2020-03-27-getting-a-verified-user-on-github/</guid>
+      <description>&lt;p&gt;sdfasdfdsa sfdsf&#xA;xxxxxx&#xA;When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you push it from your command line, it normally looks like this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/github2.png&#34; alt=&#34;Alt text&#34; title=&#34;github 2&#34;&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;br&gt;&#xA;P.S. if you followed the tutorial, and something went wrong, it will look like this:&lt;br&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posts - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+	<link rel="alternate" type="application/rss+xml" href="/blog_new/posts/index.xml" title="My digital brain">
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Posts</h1>
+	</header><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2020-04-10-how-to-mount-an-encrypted-volume-from-a-live-iso/" rel="bookmark">
+			How to mount an encrypted volume from a live ISO
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>If you destroyed somehow your Linux system, which has an encrypted volume, and you want to log into this, but booting is not working, boot from a live ISO, and type:</p>
+<!-- raw HTML omitted -->
+<p>you will see sda1 oder sdb1 as your encrypted system
+<!-- raw HTML omitted --></p>
+<p>this decrypt it and mount it (for example sda1</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>after entering the passphrase you can see that this is now decrypted<!-- raw HTML omitted --></p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2020-03-27-getting-a-verified-user-on-github/" rel="bookmark">
+			Getting a verified user on Github
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>sdfasdfdsa sfdsf
+xxxxxx
+When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>If you push it from your command line, it normally looks like this:</p>
+<p><img src="images/github2.png" alt="Alt text" title="github 2">
+<!-- raw HTML omitted --><br>
+P.S. if you followed the tutorial, and something went wrong, it will look like this:<br>
+<!-- raw HTML omitted --></p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2019-09-09-using-mongorepository-with-more-than-one-sorting-with-spring/" rel="bookmark">
+			Using MongoRepository with more than one sorting with Spring Boot
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Sometimes you need a List of the Database to be sorted by more than one column.</p>
+<p>If you connect to your database with the org.springframework.data.mongodb.repository.MongoRepository you can only give one org.springframework.data.domain.Sort to a search method.</p>
+<p>This is how the Repository class looks like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Repository</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">TestRepository</span> <span style="color:#66d9ef">extends</span> MongoRepository<span style="color:#f92672">&lt;</span>Test, Long<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>Score<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">findAllByTestName</span>(String testName, Sort sort );
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>test has some column &ldquo;abc&rdquo; and some column &ldquo;def&rdquo; and some &ldquo;ghi&rdquo; &hellip;.
+so to add the order do in th calling class something like:</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2019-09-06-deutsche-bahn-docker-and-wifi-in-a-ice-and-vpn-problems/" rel="bookmark">
+			Deutsche Bahn,Docker and Wifi in an ICE and VPN problems
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>The Deutsche Bahn is providing free wifi for some years now.
+It works for most of the people pretty well, but if you are a developer you could have some issues. I was suffering a lot with this, this is why I&rsquo;m posting it, to help some of you</p>
+<p>As you can see, the WiFi is running on the IP 172.18.xxx</p>
+<!-- raw HTML omitted -->
+<p>If you are running docker it can happen, that you have in your ifconfig a bridge already on this IP:</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2017-10-17-using-docker-as-non-root/" rel="bookmark">
+			Using Docker as non-root
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>[UPDATE 2020-04-21] as mentioned in this <a href="https://askubuntu.com/a/477554/80388">post</a> it&rsquo;s not needed anymore:</p>
+<pre tabindex="0"><code>Good news: the new docker (version 19.03 (currently experimental)) will be able to run rootless negating the problems that can occur using a root user. No more messing with elevated permissions, root and anything that might open up your machine when you did not want to.
+</code></pre><p>Normally you need to run docker as root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker run hello-world
+</span></span></code></pre></div><p>If this is going on your nerves, you can add your normal user to the docker-usergroup. <br>
+But before you do this, read the warning in this <a href="https://askubuntu.com/a/477554/80388">post</a> (where i also got the code from)</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2017-04-09-berlin-where-to-go/" rel="bookmark">
+			Berlin – where to go
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Berlin has so many cool bars and restaurants to offer&hellip;
+I&rsquo;m many times asked: what should we do? And no, I don&rsquo;t want to write always the same stuff again, so I was thinking of making this list!</p>
+<p>Vegan food
+First of all: <!-- raw HTML omitted --><a href="https://www.berlin-vegan.de">www.berlin-vegan.de</a><!-- raw HTML omitted --> has nearly all vegan stuff covered..
+Download the <!-- raw HTML omitted -->Android app<!-- raw HTML omitted --> or the <!-- raw HTML omitted -->iPhone app<!-- raw HTML omitted --> and you are fine.</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2017-02-20-mysql-workbench-cant-connect-via-ssh-tunnel/" rel="bookmark">
+			mySQL workbench can&#39;t connect via ssh tunnel
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>If you can&rsquo;t connect with your mysql-workbench to a database via ssh have a look at your logfile:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tail -f -n <span style="color:#ae81ff">100</span> ~/.mysql/workbench/log/wb.log
+</span></span></code></pre></div><p>and you will see this error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>14:12:58 <span style="color:#f92672">[</span>ERR<span style="color:#f92672">][</span>sshtunnel.py:notify_exception_error:233<span style="color:#f92672">]</span>: Traceback <span style="color:#f92672">(</span>most recent call last<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>File <span style="color:#e6db74">&#34;/usr/share/mysql-workbench/sshtunnel.py&#34;</span>, line 265, in _connect_ssh
+</span></span><span style="display:flex;"><span>look_for_keys<span style="color:#f92672">=</span>has_key, allow_agent<span style="color:#f92672">=</span>has_key<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>File <span style="color:#e6db74">&#34;/usr/lib/python2.7/dist-packages/paramiko/client.py&#34;</span>, line 306, in connect
+</span></span><span style="display:flex;"><span>t.start_client<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>File <span style="color:#e6db74">&#34;/usr/lib/python2.7/dist-packages/paramiko/transport.py&#34;</span>, line 465, in start_client
+</span></span><span style="display:flex;"><span>raise e
+</span></span><span style="display:flex;"><span>ValueError: CTR mode needs counter parameter, not IV
+</span></span></code></pre></div><p>change your transport.py:</p>
+<pre tabindex="0"><code>sudo nano /usr/lib/python2.7/dist-packages/paramiko/transport.py
+</code></pre><p>press CTRL+W for searching for the term</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2017-01-31-install-node-from-binaries/" rel="bookmark">
+			install node.js from binaries
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Source: <a href="http://www.thegeekstuff.com/2015/10/install-nodejs-npm-linux/">http://www.thegeekstuff.com/2015/10/install-nodejs-npm-linux/</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://nodejs.org/dist/v7.4.0/node-v7.4.0-linux-x64.tar.gz
+</span></span><span style="display:flex;"><span>cd /usr/local
+</span></span><span style="display:flex;"><span>tar --strip-components <span style="color:#ae81ff">1</span> -xzf /path/to/node-v7.4.0-linux-x64.tar.gz
+</span></span></code></pre></div><p>node should be in the newest version:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node -v
+</span></span></code></pre></div>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2017-01-19-sync-folders-in-vagrant-but-exclude-some-folders-from-syncing/" rel="bookmark">
+			Sync folders in Vagrant but exclude some folders from syncing
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Maybe you know this:  <br>
+you have a huge Java project, maybe the project itself is a sum of many (not even so small) Java projects.  <br>
+For sharing the complete setting with other developers you normally use a <a href="https://www.vagrantup.com">Vagrant box</a> to make it easy. <br>
+At work we needed 2 big projects in one Vagrant box, which included over 10 small maven projects.<br>
+Normally I would share it like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project1&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project1&#34;</span>
+</span></span><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project2&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project2&#34;</span>
+</span></span></code></pre></div><p>You can imagine, the normal start-time of our server with permanently syncing all folders, including all the target folders took much too long.  <br>
+On a local machine, without a Vagrant box, it normally needs around 2 minutes to start   <br>
+But with syncing all target folders, it needs between 7-10 minutes to start the server</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2016-01-14-using-xioami-gamepad-with-linux/" rel="bookmark">
+			Using XIOAMI gamepad with Linux
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->I have the <!-- raw HTML omitted -->XIOAMI gamepad<!-- raw HTML omitted -->, a cheap gamepad which looks like the classical XBOX gamepad
+When I used it first with my Fire TV Stick, it worked like a charm. I wanted to try it with my Linux and with Steam.</p>
+<p>When i used it in a game it was totally uncalibrated. Pressing the joystick to the top position had no effect at all on my game character.</p>
+	</div>
+</article>
+</main>
+
+<div class="pagination">
+	<a class="pagination__item pagination__item--prev btn" href="/blog_new/posts/">«</a>
+	<span class="pagination__item pagination__item--current">2/3</span>
+	<a class="pagination__item pagination__item--next btn" href="/blog_new/posts/page/3/">»</a>
+</div>
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>

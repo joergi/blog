@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Building a raspberry pi streaming cam - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="All the steps, which are needed for using your raspberry pi for streaming">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Building a raspberry pi streaming cam</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<h1 id="the-setup">the setup</h1>
+<p>This is how my setup looks like:<!-- raw HTML omitted -->
+<!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<p>as webcam I use a Waveshare 10300 RPi Camera (E)<br>
+(bought it <!-- raw HTML omitted -->here<!-- raw HTML omitted -->, unpaid advertisment)</p>
+<h1 id="install-raspberry-pi-image">Install raspberry pi image</h1>
+<p>Download the images from the <!-- raw HTML omitted -->raspberry pi website<!-- raw HTML omitted --><br>
+copy it to your sd card.<br>
+on the webpage they recomment to install the rpi-manager via <code>sudo apt install rpi-imager</code>, but for me it wasn&rsquo;t working because of dependency problems.<br>
+So I installed it the classic way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>unzip -p YOUR_RASPBIAN_IMAGE.zip | sudo dd of<span style="color:#f92672">=</span>/dev/YOURDEVICE bs<span style="color:#f92672">=</span>4M conv<span style="color:#f92672">=</span>fsync
+</span></span></code></pre></div><p>check with <code>lsblk -p</code> which is your SD card, so you are not deleting your harddrive.<br>
+Maybe plug it in and out to be sure.<br>
+For more information about this, go to the offical <!-- raw HTML omitted -->(Linux) installation page<!-- raw HTML omitted -->.</p>
+<h1 id="activate-your-already-pluged-in-camera">Activate your (already pluged in) Camera</h1>
+<p>Go to settings -&gt; interfaces -&gt; cam -&gt; and switch it on
+Make now a restart, and it should be activated</p>
+<h1 id="install-and-set-up-motion">Install and set-up MOTION</h1>
+<p>I used for streaming the service called <code>motion</code>.<br>
+Install it via</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get install motion -y
+</span></span></code></pre></div><p>As I never used motion before, I followed this real great <!-- raw HTML omitted -->raspberry pi cam tutorial<!-- raw HTML omitted --> (German). The only thing I changed was the <code>framerate</code> to 100 instead of 10.</p>
+<p>edit the motion.conf file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano /etc/motion/motion.conf
+</span></span></code></pre></div><p>turn the daemon on:<br>
+<code>daemon on</code>
+allow others to watch the stream in the network:<br>
+<code>stream_localhost off</code>
+set the target for your stream, I used the same as the blog above recommend me:<br>
+<code>target_dir /home/pi/Monitor</code></p>
+<p>I set the <code>width 1280</code> and <code>height 720</code> and <code>framerate 100</code></p>
+<p>I uploaded my complete <code>motion.conf</code> <!-- raw HTML omitted -->to my Github repo<!-- raw HTML omitted --></p>
+<p>Then, set the demon to yes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano /etc/default/motion
+</span></span></code></pre></div><p>set: <code>start_motion_daemon=yes</code></p>
+<p>now set the rights of the folder correct:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir /home/pi/Monitor
+</span></span><span style="display:flex;"><span>sudo chgrp motion /home/pi/Monitor
+</span></span><span style="display:flex;"><span>chmod g+rwx /home/pi/Monitor
+</span></span></code></pre></div><p>you can start it now with <code>sudo motion</code></p>
+<h1 id="use-your-local-ip-to-stream-to-your-browser">Use your local IP to stream to your browser:</h1>
+<p>find out over <code>ifconfig</code> what your local IP is.<br>
+I can reach in my wifi then the stream under: http://192.186.1.175:8081<br>
+Remember: the port 8081 was defined in the point above</p>
+<p><img src="images/webcam-in-action.png" alt="Alt text" title="screenshot of the raspberrypi streaming to the my browser"></p>
+<h1 id="start-motion-everytime-you-start-your-raspberry-pi">start motion everytime you start your raspberry pi</h1>
+<p>to have it always running I used a cronjob:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ crontab -e
+</span></span></code></pre></div><p>and in the cronjob I save:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>@reboot sudo motion
+</span></span></code></pre></div><p>that made it working for me!</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog_new/tags/raspberrypi/" rel="tag">raspberrypi</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog_new/tags/streaming/" rel="tag">streaming</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog_new/tags/cam/" rel="tag">cam</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog_new/tags/howto/" rel="tag">howto</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>

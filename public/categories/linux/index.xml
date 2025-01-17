@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on My digital brain</title>
+    <link>http://localhost:1313/blog_new/categories/linux/</link>
+    <description>Recent content in Linux on My digital brain</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog_new/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to play The Curse of Monkey Island on Linux</title>
+      <link>http://localhost:1313/blog_new/posts/2020-04-14-how-to-play-the-curse-of-monkey-island-on-linux/</link>
+      <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog_new/posts/2020-04-14-how-to-play-the-curse-of-monkey-island-on-linux/</guid>
+      <description>&lt;p&gt;As I was always a LucasArts fan in the 90ties, I wanted to use my &amp;ldquo;free time&amp;rdquo; (thanks to the Corona lockdown) for playing this old classics.&lt;/p&gt;&#xA;&lt;p&gt;I bought Monkey Island 1 + 2 on Steam - with the Proton helper, it starts all easy, out of the box.&lt;/p&gt;&#xA;&lt;p&gt;Monkey Island 3 and 4 I was buying at Gog (it was cheaper) - no help here to get it running for Linux. (it will still run from Steam out of the box, afaik)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting a verified user on Github</title>
+      <link>http://localhost:1313/blog_new/posts/2020-03-27-getting-a-verified-user-on-github/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog_new/posts/2020-03-27-getting-a-verified-user-on-github/</guid>
+      <description>&lt;p&gt;sdfasdfdsa sfdsf&#xA;xxxxxx&#xA;When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you push it from your command line, it normally looks like this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/github2.png&#34; alt=&#34;Alt text&#34; title=&#34;github 2&#34;&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;br&gt;&#xA;P.S. if you followed the tutorial, and something went wrong, it will look like this:&lt;br&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Which Linux Version is running</title>
+      <link>http://localhost:1313/blog_new/posts/2015-08-24-which-linux-version-is-running/</link>
+      <pubDate>Mon, 24 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog_new/posts/2015-08-24-which-linux-version-is-running/</guid>
+      <description>&lt;p&gt;Sometimes you need to know, which Linux distro you are running, and especially, which version:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lsb_release -a&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The answer will look like:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No LSB modules are available&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Distributor ID: Ubuntu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Description: Ubuntu 14.04.3 LTS&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Release: 14.04&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Codename: trusty&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>No HDD space left for ubuntu update, make some space at /boot </title>
+      <link>http://localhost:1313/blog_new/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</link>
+      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog_new/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../images/no_hdd_space_left_full.png&#34; alt=&#34;your hd is full, make space in /boot&#34; title=&#34;your hd is full, make space in /boot&#34;&gt; &lt;br&gt;&#xA;your hd is full, make space in /boot&#xA;aaaa&#xA;make a&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd /boot ls -la&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;so you see the &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;/boot&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; folder&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/no_hdd_space_left_full_lsla.png&#34; alt=&#34;screenshot of the boot folder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;now delete the stuff you don&amp;rsquo;t need anymore:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo aptitude remove linux-image-3.13.0-49-generic&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get remove ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://joergi77.files.wordpress.com/2015/05/after_deleting_linux_image.png&#34; alt=&#34;ls -la after deleting the linux kernel image&#34;&gt;  &lt;br&gt;&#xA;(ls -la after deleting the linux kernel image)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

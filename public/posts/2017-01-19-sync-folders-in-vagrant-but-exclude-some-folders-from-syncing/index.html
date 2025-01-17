@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sync folders in Vagrant but exclude some folders from syncing - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Here is an example how to exclude folder in your Vagrant box from syncing. this saves you a lot of time and nerves">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Sync folders in Vagrant but exclude some folders from syncing</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<p>Maybe you know this:  <br>
+you have a huge Java project, maybe the project itself is a sum of many (not even so small) Java projects.  <br>
+For sharing the complete setting with other developers you normally use a <a href="https://www.vagrantup.com">Vagrant box</a> to make it easy. <br>
+At work we needed 2 big projects in one Vagrant box, which included over 10 small maven projects.<br>
+Normally I would share it like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project1&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project1&#34;</span>
+</span></span><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project2&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project2&#34;</span>
+</span></span></code></pre></div><p>You can imagine, the normal start-time of our server with permanently syncing all folders, including all the target folders took much too long.  <br>
+On a local machine, without a Vagrant box, it normally needs around 2 minutes to start   <br>
+But with syncing all target folders, it needs between 7-10 minutes to start the server</p>
+<p>Of course, this is not acceptable at all.</p>
+<p>So i was looking for some better way for syncing it, and I came to a good solution rsync</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project1&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project1&#34;</span>, type: <span style="color:#e6db74">&#34;rsync&#34;</span>, :rsync__exclude <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;my-project1/, my-project1/mini_project2/target,my-project1/mini_project2/target,my-project1/mini_project3/target,my-project1/mini_project4/target&#39;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project2&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project2&#34;</span>, type: <span style="color:#e6db74">&#34;rsync&#34;</span>, :rsync__exclude <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;my-project2/, my-project2/mini_project2/target,my-project2/mini_project2/target,my-project2/mini_project3/target,my-project2/mini_project4/target&#39;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>You do this with every folder you need in your Vagrant box and where you don&rsquo;t want everything synced.</p>
+<p>At the moment it only syncs the folder from you host to your guest system on <code>vagrant up</code> and <code>vagrant reload</code> <br>
+Of course you want to have any changes to be synced to your developer box.</p>
+<p>So the solution is:  <br>
+Open two terminal shells:</p>
+<p>First terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vagrant rsync-auto
+</span></span></code></pre></div><p>Second terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vagrant up
+</span></span></code></pre></div><p>When you change now something in the host system, it&rsquo;s automatically synced on your guest system</p>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>

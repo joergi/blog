@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mySQL workbench can&#39;t connect via ssh tunnel - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="how to solve ValueError: CTR mode needs counter parameter, not IV if your mySQL workbench can&#39;t connect to a database via ssh sshtunnel">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">mySQL workbench can&#39;t connect via ssh tunnel</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<p>If you can&rsquo;t connect with your mysql-workbench to a database via ssh have a look at your logfile:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tail -f -n <span style="color:#ae81ff">100</span> ~/.mysql/workbench/log/wb.log
+</span></span></code></pre></div><p>and you will see this error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>14:12:58 <span style="color:#f92672">[</span>ERR<span style="color:#f92672">][</span>sshtunnel.py:notify_exception_error:233<span style="color:#f92672">]</span>: Traceback <span style="color:#f92672">(</span>most recent call last<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>File <span style="color:#e6db74">&#34;/usr/share/mysql-workbench/sshtunnel.py&#34;</span>, line 265, in _connect_ssh
+</span></span><span style="display:flex;"><span>look_for_keys<span style="color:#f92672">=</span>has_key, allow_agent<span style="color:#f92672">=</span>has_key<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>File <span style="color:#e6db74">&#34;/usr/lib/python2.7/dist-packages/paramiko/client.py&#34;</span>, line 306, in connect
+</span></span><span style="display:flex;"><span>t.start_client<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>File <span style="color:#e6db74">&#34;/usr/lib/python2.7/dist-packages/paramiko/transport.py&#34;</span>, line 465, in start_client
+</span></span><span style="display:flex;"><span>raise e
+</span></span><span style="display:flex;"><span>ValueError: CTR mode needs counter parameter, not IV
+</span></span></code></pre></div><p>change your transport.py:</p>
+<pre tabindex="0"><code>sudo nano /usr/lib/python2.7/dist-packages/paramiko/transport.py
+</code></pre><p>press CTRL+W for searching for the term</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;class&#39;</span>]<span style="color:#f92672">.</span>new(key, self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;mode&#39;</span>]
+</span></span></code></pre></div><p>and replace this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;class&#39;</span>]<span style="color:#f92672">.</span>new(key, self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;mode&#39;</span>], iv, counter)
+</span></span></code></pre></div><p>with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;class&#39;</span>]<span style="color:#f92672">.</span>new(key, self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;mode&#39;</span>], <span style="color:#e6db74">&#39;&#39;</span>, counter)
+</span></span></code></pre></div><p>as mentioned in the <a href="https://github.com/paramiko/paramiko/pull/714/commits/4752287a7379da61245087ee7e35635a4e42bb3f">Github pull request</a></p>
+<p>All credits are going to user <a href="http://stackoverflow.com/users/119861/hansaplast">hansaplast</a> for <a href="http://stackoverflow.com/a/42029615/863403">his answer</a> on stackoverflow!</p>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Deutsche Bahn,Docker and Wifi in an ICE and VPN problems - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="As a developer with installed Docker you could have a problem connecting to the WiFi in an ICE, the so called WiFi on ICE, because they use the same IP Range.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Deutsche Bahn,Docker and Wifi in an ICE and VPN problems</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<p>The Deutsche Bahn is providing free wifi for some years now.
+It works for most of the people pretty well, but if you are a developer you could have some issues. I was suffering a lot with this, this is why I&rsquo;m posting it, to help some of you</p>
+<p>As you can see, the WiFi is running on the IP 172.18.xxx</p>
+<!-- raw HTML omitted -->
+<p>If you are running docker it can happen, that you have in your ifconfig a bridge already on this IP:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>you can delete this bridge by using the following commands:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>This should work, that you can connect then to the WiFi on Ice</p>
+<p>UPDATE: 12.09.2023</p>
+<h3 id="loginpage-is-not-opening">Loginpage is not opening</h3>
+<p>Normally the login page should update automatically, but soemtimes (on Linux) it isn&rsquo;t.  <!-- raw HTML omitted -->
+Go to <!-- raw HTML omitted --><a href="https://login.wifionice.de">https://login.wifionice.de</a><!-- raw HTML omitted --> for opening it in your browser</p>
+<p>UPDATE:
+you can also delete all docker networks easily with:</p>
+<!-- raw HTML omitted -->
+<p>I had the problem, that I could not reach some websitse in our company network,when I&rsquo;m using a VPN.
+The ping to our internal subdomain was working, but I could not reach it in my browser:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>the ifconfig for the vpn tunnel and the wifi were showing the following:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>My colleague, who is traveling every day by the ICE of Deutsche Bahn told me to set down the MTU, then everything was working:</p>
+<!-- raw HTML omitted -->
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>

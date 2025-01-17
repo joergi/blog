@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog_new/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog_new/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Howto - My digital brain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/blog_new/css/style.css">
+	
+	<link rel="alternate" type="application/rss+xml" href="/blog_new/categories/howto/index.xml" title="My digital brain">
+
+	<link rel="shortcut icon" href="/blog_new/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/blog_new/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Howto</h1>
+	</header><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/" rel="bookmark">
+			GISCUS - You can now add comments to my blog
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>When I was researching some stuff for a blog post about Github Actions, I <a href="https://github.com/nicolasiensen/nicolasiensen.github.io/blob/master/_config.yml">stumbled over the blog </a> from Github user <a href="https://github.com/nicolasiensen">@nicolasiensen</a>.<br>
+When I read the post, I saw that people were able to add comments with being logged into Github.<br>
+Something like this I have seen a long time ago, but this was so complicated, I just ignored it.</p>
+<p>But now as I saw in his blog , it&rsquo;s super ways, thanks to <a href="https://giscus.app">Giscus</a><br>
+The setup was super easy, the repo must be public, you need to add the all to your repo and enable discussions.<br>
+And the best is:</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2023-01-26-docker-cheat-sheet/" rel="bookmark">
+			Docker cheat sheet
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<ul>
+<li>Stop all containers - <code>docker stop $(docker ps -a -q)</code></li>
+<li>Debug into running container - <code>docker exec -it container_name /bin/bash</code></li>
+<li>Debug into docker image - <code>docker run --rm -it image_name /bin/bash</code></li>
+<li>Remove all docker dontainers - <code>docker rm -f $(docker ps -a -q)</code></li>
+<li>remove all images you need to download everything again) - <code>docker rmi -f $(docker images -q)</code></li>
+<li>delete all docker network bridges - <code>docker network prune</code></li>
+</ul>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2021-07-23-building-a-raspberry-pi-streaming-cam/" rel="bookmark">
+			Building a raspberry pi streaming cam
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<h1 id="the-setup">the setup</h1>
+<p>This is how my setup looks like:<!-- raw HTML omitted -->
+<!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<p>as webcam I use a Waveshare 10300 RPi Camera (E)<br>
+(bought it <!-- raw HTML omitted -->here<!-- raw HTML omitted -->, unpaid advertisment)</p>
+<h1 id="install-raspberry-pi-image">Install raspberry pi image</h1>
+<p>Download the images from the <!-- raw HTML omitted -->raspberry pi website<!-- raw HTML omitted --><br>
+copy it to your sd card.<br>
+on the webpage they recomment to install the rpi-manager via <code>sudo apt install rpi-imager</code>, but for me it wasn&rsquo;t working because of dependency problems.<br>
+So I installed it the classic way:</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog_new/posts/2020-10-04-pushing-container-to-dockerhub/" rel="bookmark">
+			Pushing container to Docker hub
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>First build an docker container and run it afterwards so you see it with <code>docker ps -a</code>
+As an example, I use the container for the <a href="https://github.com/joergi/MagPiDownloader">MagpiDownloader</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -f Dockerfile . -t mag-pi-downloader
+</span></span><span style="display:flex;"><span>docker run -v <span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>/issues:/app/issues/ mag-pi-downloader -f <span style="color:#ae81ff">131</span>
+</span></span></code></pre></div><p>After that is done, have a look, for all the docker container:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker ps -a
+</span></span><span style="display:flex;"><span>CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS                          PORTS     NAMES
+</span></span><span style="display:flex;"><span>ea901f38e328   mag-pi-downloader   <span style="color:#e6db74">&#34;/bin/sh /app/entryp…&#34;</span>   About a minute ago   Exited <span style="color:#f92672">(</span>0<span style="color:#f92672">)</span> About a minute ago             exciting_feistel
+</span></span></code></pre></div><p>As you can see the newest has the container id <code>ea901f38e328</code></p>
+	</div>
+</article>
+</main>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/blog_new/js/menu.js"></script>
+</body>
+</html>
