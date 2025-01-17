@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Registry on My digital brain</title>
-    <link>http://localhost:1313/blog_new/categories/registry/</link>
-    <description>Recent content in Registry on My digital brain</description>
+    <title>Registry on My digital brain - </title>
+    <link>http://localhost:1313/blog/categories/registry/</link>
+    <description>Recent content in Registry on My digital brain - </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog_new/categories/registry/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/categories/registry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pushing container to Docker hub</title>
-      <link>http://localhost:1313/blog_new/posts/2020-10-04-pushing-container-to-dockerhub/</link>
+      <link>http://localhost:1313/blog/posts/2020-10-04-pushing-container-to-dockerhub/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/posts/2020-10-04-pushing-container-to-dockerhub/</guid>
+      <guid>http://localhost:1313/blog/posts/2020-10-04-pushing-container-to-dockerhub/</guid>
       <description>&lt;p&gt;First build an docker container and run it afterwards so you see it with &lt;code&gt;docker ps -a&lt;/code&gt;&#xA;As an example, I use the container for the &lt;a href=&#34;https://github.com/joergi/MagPiDownloader&#34;&gt;MagpiDownloader&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker build -f Dockerfile . -t mag-pi-downloader&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -v &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;pwd&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;/issues:/app/issues/ mag-pi-downloader -f &lt;span style=&#34;color:#ae81ff&#34;&gt;131&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After that is done, have a look, for all the docker container:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ docker ps -a&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS                          PORTS     NAMES&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ea901f38e328   mag-pi-downloader   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/bin/sh /app/entryp…&amp;#34;&lt;/span&gt;   About a minute ago   Exited &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; About a minute ago             exciting_feistel&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see the newest has the container id &lt;code&gt;ea901f38e328&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>

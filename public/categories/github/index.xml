@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Github on My digital brain</title>
-    <link>http://localhost:1313/blog_new/categories/github/</link>
-    <description>Recent content in Github on My digital brain</description>
+    <title>Github on My digital brain - </title>
+    <link>http://localhost:1313/blog/categories/github/</link>
+    <description>Recent content in Github on My digital brain - </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog_new/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/categories/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GISCUS - You can now add comments to my blog</title>
-      <link>http://localhost:1313/blog_new/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/</link>
+      <link>http://localhost:1313/blog/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/</guid>
+      <guid>http://localhost:1313/blog/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/</guid>
       <description>&lt;p&gt;When I was researching some stuff for a blog post about Github Actions, I &lt;a href=&#34;https://github.com/nicolasiensen/nicolasiensen.github.io/blob/master/_config.yml&#34;&gt;stumbled over the blog &lt;/a&gt; from Github user &lt;a href=&#34;https://github.com/nicolasiensen&#34;&gt;@nicolasiensen&lt;/a&gt;.&lt;br&gt;&#xA;When I read the post, I saw that people were able to add comments with being logged into Github.&lt;br&gt;&#xA;Something like this I have seen a long time ago, but this was so complicated, I just ignored it.&lt;/p&gt;&#xA;&lt;p&gt;But now as I saw in his blog , it&amp;rsquo;s super ways, thanks to &lt;a href=&#34;https://giscus.app&#34;&gt;Giscus&lt;/a&gt;&lt;br&gt;&#xA;The setup was super easy, the repo must be public, you need to add the all to your repo and enable discussions.&lt;br&gt;&#xA;And the best is:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting a verified user on Github</title>
-      <link>http://localhost:1313/blog_new/posts/2020-03-27-getting-a-verified-user-on-github/</link>
+      <link>http://localhost:1313/blog/posts/2020-03-27-getting-a-verified-user-on-github/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/posts/2020-03-27-getting-a-verified-user-on-github/</guid>
+      <guid>http://localhost:1313/blog/posts/2020-03-27-getting-a-verified-user-on-github/</guid>
       <description>&lt;p&gt;sdfasdfdsa sfdsf&#xA;xxxxxx&#xA;When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you push it from your command line, it normally looks like this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/github2.png&#34; alt=&#34;Alt text&#34; title=&#34;github 2&#34;&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;br&gt;&#xA;P.S. if you followed the tutorial, and something went wrong, it will look like this:&lt;br&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
     </item>
   </channel>

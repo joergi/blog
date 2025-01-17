@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Boot on My digital brain</title>
-    <link>http://localhost:1313/blog_new/tags/boot/</link>
-    <description>Recent content in Boot on My digital brain</description>
+    <title>Boot on My digital brain - </title>
+    <link>http://localhost:1313/blog/tags/boot/</link>
+    <description>Recent content in Boot on My digital brain - </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 May 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog_new/tags/boot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/boot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>No HDD space left for ubuntu update, make some space at /boot </title>
-      <link>http://localhost:1313/blog_new/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</link>
+      <link>http://localhost:1313/blog/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</guid>
+      <guid>http://localhost:1313/blog/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../images/no_hdd_space_left_full.png&#34; alt=&#34;your hd is full, make space in /boot&#34; title=&#34;your hd is full, make space in /boot&#34;&gt; &lt;br&gt;&#xA;your hd is full, make space in /boot&#xA;aaaa&#xA;make a&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd /boot ls -la&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;so you see the &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;/boot&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; folder&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/no_hdd_space_left_full_lsla.png&#34; alt=&#34;screenshot of the boot folder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;now delete the stuff you don&amp;rsquo;t need anymore:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo aptitude remove linux-image-3.13.0-49-generic&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get remove ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://joergi77.files.wordpress.com/2015/05/after_deleting_linux_image.png&#34; alt=&#34;ls -la after deleting the linux kernel image&#34;&gt;  &lt;br&gt;&#xA;(ls -la after deleting the linux kernel image)&lt;/p&gt;</description>
     </item>
   </channel>

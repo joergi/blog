@@ -1,151 +1,151 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My digital brain</title>
-    <link>http://localhost:1313/blog_new/tags/</link>
-    <description>Recent content in Tags on My digital brain</description>
+    <title>Tags on My digital brain - </title>
+    <link>http://localhost:1313/blog/tags/</link>
+    <description>Recent content in Tags on My digital brain - </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog_new/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>http://localhost:1313/blog_new/tags/blog/</link>
+      <link>http://localhost:1313/blog/tags/blog/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/blog/</guid>
+      <guid>http://localhost:1313/blog/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Giscus</title>
-      <link>http://localhost:1313/blog_new/tags/giscus/</link>
+      <link>http://localhost:1313/blog/tags/giscus/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/giscus/</guid>
+      <guid>http://localhost:1313/blog/tags/giscus/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:1313/blog_new/tags/github/</link>
+      <link>http://localhost:1313/blog/tags/github/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/github/</guid>
+      <guid>http://localhost:1313/blog/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Howto</title>
-      <link>http://localhost:1313/blog_new/tags/howto/</link>
+      <link>http://localhost:1313/blog/tags/howto/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/howto/</guid>
+      <guid>http://localhost:1313/blog/tags/howto/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/blog_new/tags/docker/</link>
+      <link>http://localhost:1313/blog/tags/docker/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/docker/</guid>
+      <guid>http://localhost:1313/blog/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Cam</title>
-      <link>http://localhost:1313/blog_new/tags/cam/</link>
+      <link>http://localhost:1313/blog/tags/cam/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/cam/</guid>
+      <guid>http://localhost:1313/blog/tags/cam/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberrypi</title>
-      <link>http://localhost:1313/blog_new/tags/raspberrypi/</link>
+      <link>http://localhost:1313/blog/tags/raspberrypi/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/raspberrypi/</guid>
+      <guid>http://localhost:1313/blog/tags/raspberrypi/</guid>
       <description></description>
     </item>
     <item>
       <title>Streaming</title>
-      <link>http://localhost:1313/blog_new/tags/streaming/</link>
+      <link>http://localhost:1313/blog/tags/streaming/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/streaming/</guid>
+      <guid>http://localhost:1313/blog/tags/streaming/</guid>
       <description></description>
     </item>
     <item>
       <title>Registry</title>
-      <link>http://localhost:1313/blog_new/tags/registry/</link>
+      <link>http://localhost:1313/blog/tags/registry/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/registry/</guid>
+      <guid>http://localhost:1313/blog/tags/registry/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/blog_new/tags/java/</link>
+      <link>http://localhost:1313/blog/tags/java/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/java/</guid>
+      <guid>http://localhost:1313/blog/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Lombok</title>
-      <link>http://localhost:1313/blog_new/tags/lombok/</link>
+      <link>http://localhost:1313/blog/tags/lombok/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/lombok/</guid>
+      <guid>http://localhost:1313/blog/tags/lombok/</guid>
       <description></description>
     </item>
     <item>
       <title>90ties</title>
-      <link>http://localhost:1313/blog_new/tags/90ties/</link>
+      <link>http://localhost:1313/blog/tags/90ties/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/90ties/</guid>
+      <guid>http://localhost:1313/blog/tags/90ties/</guid>
       <description></description>
     </item>
     <item>
       <title>Monkey Island</title>
-      <link>http://localhost:1313/blog_new/tags/monkey-island/</link>
+      <link>http://localhost:1313/blog/tags/monkey-island/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/monkey-island/</guid>
+      <guid>http://localhost:1313/blog/tags/monkey-island/</guid>
       <description></description>
     </item>
     <item>
       <title>Retro</title>
-      <link>http://localhost:1313/blog_new/tags/retro/</link>
+      <link>http://localhost:1313/blog/tags/retro/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/retro/</guid>
+      <guid>http://localhost:1313/blog/tags/retro/</guid>
       <description></description>
     </item>
     <item>
       <title>Authentication</title>
-      <link>http://localhost:1313/blog_new/tags/authentication/</link>
+      <link>http://localhost:1313/blog/tags/authentication/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/authentication/</guid>
+      <guid>http://localhost:1313/blog/tags/authentication/</guid>
       <description></description>
     </item>
     <item>
       <title>Verified User</title>
-      <link>http://localhost:1313/blog_new/tags/verified-user/</link>
+      <link>http://localhost:1313/blog/tags/verified-user/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/verified-user/</guid>
+      <guid>http://localhost:1313/blog/tags/verified-user/</guid>
       <description></description>
     </item>
     <item>
       <title>Sorting</title>
-      <link>http://localhost:1313/blog_new/tags/sorting/</link>
+      <link>http://localhost:1313/blog/tags/sorting/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/sorting/</guid>
+      <guid>http://localhost:1313/blog/tags/sorting/</guid>
       <description></description>
     </item>
     <item>
       <title>Distro</title>
-      <link>http://localhost:1313/blog_new/tags/distro/</link>
+      <link>http://localhost:1313/blog/tags/distro/</link>
       <pubDate>Mon, 24 Aug 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/distro/</guid>
+      <guid>http://localhost:1313/blog/tags/distro/</guid>
       <description></description>
     </item>
     <item>
       <title>Boot</title>
-      <link>http://localhost:1313/blog_new/tags/boot/</link>
+      <link>http://localhost:1313/blog/tags/boot/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/boot/</guid>
+      <guid>http://localhost:1313/blog/tags/boot/</guid>
       <description></description>
     </item>
     <item>
       <title>Diskspace</title>
-      <link>http://localhost:1313/blog_new/tags/diskspace/</link>
+      <link>http://localhost:1313/blog/tags/diskspace/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog_new/tags/diskspace/</guid>
+      <guid>http://localhost:1313/blog/tags/diskspace/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,223 +2,223 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog_new/posts/2024-04-11-add-new-tasmota-device-to-home-assistant/</loc>
+    <loc>http://localhost:1313/blog/posts/2024-04-11-add-new-tasmota-device-to-home-assistant/</loc>
     <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/</loc>
+    <loc>http://localhost:1313/blog/posts/</loc>
     <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2023-09-01-privacy-friendly-online-alternatives/</loc>
+    <loc>http://localhost:1313/blog/posts/2023-09-01-privacy-friendly-online-alternatives/</loc>
     <lastmod>2023-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/blog/</loc>
+    <loc>http://localhost:1313/blog/tags/blog/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/blog/</loc>
+    <loc>http://localhost:1313/blog/categories/blog/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/</loc>
+    <loc>http://localhost:1313/blog/categories/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/giscus/</loc>
+    <loc>http://localhost:1313/blog/tags/giscus/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/giscus/</loc>
+    <loc>http://localhost:1313/blog/categories/giscus/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/</loc>
+    <loc>http://localhost:1313/blog/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/github/</loc>
+    <loc>http://localhost:1313/blog/tags/github/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/github/</loc>
+    <loc>http://localhost:1313/blog/categories/github/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/howto/</loc>
+    <loc>http://localhost:1313/blog/tags/howto/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/howto/</loc>
+    <loc>http://localhost:1313/blog/categories/howto/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/</loc>
+    <loc>http://localhost:1313/blog/tags/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/cheatsheet/</loc>
+    <loc>http://localhost:1313/blog/categories/cheatsheet/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/docker/</loc>
+    <loc>http://localhost:1313/blog/tags/docker/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/docker/</loc>
+    <loc>http://localhost:1313/blog/categories/docker/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2023-01-26-docker-cheat-sheet/</loc>
+    <loc>http://localhost:1313/blog/posts/2023-01-26-docker-cheat-sheet/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2022-10-14-install-patch-for-thinkpad-trackpoint-keyboard-ii/</loc>
+    <loc>http://localhost:1313/blog/posts/2022-10-14-install-patch-for-thinkpad-trackpoint-keyboard-ii/</loc>
     <lastmod>2022-10-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2021-07-23-building-a-raspberry-pi-streaming-cam/</loc>
+    <loc>http://localhost:1313/blog/posts/2021-07-23-building-a-raspberry-pi-streaming-cam/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/cam/</loc>
+    <loc>http://localhost:1313/blog/tags/cam/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/raspberrypi/</loc>
+    <loc>http://localhost:1313/blog/tags/raspberrypi/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/raspberrypi/</loc>
+    <loc>http://localhost:1313/blog/categories/raspberrypi/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/streaming/</loc>
+    <loc>http://localhost:1313/blog/tags/streaming/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2020-10-04-pushing-container-to-dockerhub/</loc>
+    <loc>http://localhost:1313/blog/posts/2020-10-04-pushing-container-to-dockerhub/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/registry/</loc>
+    <loc>http://localhost:1313/blog/tags/registry/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/registry/</loc>
+    <loc>http://localhost:1313/blog/categories/registry/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2020-06-07-exclude-one-element-from-lombok-modelwide-setter-and-getter/</loc>
+    <loc>http://localhost:1313/blog/posts/2020-06-07-exclude-one-element-from-lombok-modelwide-setter-and-getter/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/java/</loc>
+    <loc>http://localhost:1313/blog/tags/java/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/java/</loc>
+    <loc>http://localhost:1313/blog/categories/java/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/lombok/</loc>
+    <loc>http://localhost:1313/blog/tags/lombok/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/lombok/</loc>
+    <loc>http://localhost:1313/blog/categories/lombok/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2020-04-29-my-firefox-extensions/</loc>
+    <loc>http://localhost:1313/blog/posts/2020-04-29-my-firefox-extensions/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/90ties/</loc>
+    <loc>http://localhost:1313/blog/tags/90ties/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/gaming/</loc>
+    <loc>http://localhost:1313/blog/categories/gaming/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2020-04-14-how-to-play-the-curse-of-monkey-island-on-linux/</loc>
+    <loc>http://localhost:1313/blog/posts/2020-04-14-how-to-play-the-curse-of-monkey-island-on-linux/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/how-to/</loc>
+    <loc>http://localhost:1313/blog/categories/how-to/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/linux/</loc>
+    <loc>http://localhost:1313/blog/categories/linux/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/monkey-island/</loc>
+    <loc>http://localhost:1313/blog/tags/monkey-island/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/retro/</loc>
+    <loc>http://localhost:1313/blog/tags/retro/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/retrogaming/</loc>
+    <loc>http://localhost:1313/blog/categories/retrogaming/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2020-04-10-how-to-mount-an-encrypted-volume-from-a-live-iso/</loc>
+    <loc>http://localhost:1313/blog/posts/2020-04-10-how-to-mount-an-encrypted-volume-from-a-live-iso/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/authentication/</loc>
+    <loc>http://localhost:1313/blog/tags/authentication/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/developer/</loc>
+    <loc>http://localhost:1313/blog/categories/developer/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2020-03-27-getting-a-verified-user-on-github/</loc>
+    <loc>http://localhost:1313/blog/posts/2020-03-27-getting-a-verified-user-on-github/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/verified-user/</loc>
+    <loc>http://localhost:1313/blog/tags/verified-user/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/database/</loc>
+    <loc>http://localhost:1313/blog/categories/database/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/mongo/</loc>
+    <loc>http://localhost:1313/blog/categories/mongo/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/sorting/</loc>
+    <loc>http://localhost:1313/blog/tags/sorting/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/spring-boot/</loc>
+    <loc>http://localhost:1313/blog/categories/spring-boot/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2019-09-09-using-mongorepository-with-more-than-one-sorting-with-spring/</loc>
+    <loc>http://localhost:1313/blog/posts/2019-09-09-using-mongorepository-with-more-than-one-sorting-with-spring/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2019-09-06-deutsche-bahn-docker-and-wifi-in-a-ice-and-vpn-problems/</loc>
+    <loc>http://localhost:1313/blog/posts/2019-09-06-deutsche-bahn-docker-and-wifi-in-a-ice-and-vpn-problems/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2017-10-17-using-docker-as-non-root/</loc>
+    <loc>http://localhost:1313/blog/posts/2017-10-17-using-docker-as-non-root/</loc>
     <lastmod>2017-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2017-04-09-berlin-where-to-go/</loc>
+    <loc>http://localhost:1313/blog/posts/2017-04-09-berlin-where-to-go/</loc>
     <lastmod>2017-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2017-02-20-mysql-workbench-cant-connect-via-ssh-tunnel/</loc>
+    <loc>http://localhost:1313/blog/posts/2017-02-20-mysql-workbench-cant-connect-via-ssh-tunnel/</loc>
     <lastmod>2017-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2017-01-31-install-node-from-binaries/</loc>
+    <loc>http://localhost:1313/blog/posts/2017-01-31-install-node-from-binaries/</loc>
     <lastmod>2017-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2017-01-19-sync-folders-in-vagrant-but-exclude-some-folders-from-syncing/</loc>
+    <loc>http://localhost:1313/blog/posts/2017-01-19-sync-folders-in-vagrant-but-exclude-some-folders-from-syncing/</loc>
     <lastmod>2017-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2016-01-14-using-xioami-gamepad-with-linux/</loc>
+    <loc>http://localhost:1313/blog/posts/2016-01-14-using-xioami-gamepad-with-linux/</loc>
     <lastmod>2016-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2015-11-28-how-to-push-files-from-your-pc-to-amazon-fire-tv-aftv/</loc>
+    <loc>http://localhost:1313/blog/posts/2015-11-28-how-to-push-files-from-your-pc-to-amazon-fire-tv-aftv/</loc>
     <lastmod>2015-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2015-11-14-being-able-to-develop-on-an-unknow-phone-on-a-linux-computer/</loc>
+    <loc>http://localhost:1313/blog/posts/2015-11-14-being-able-to-develop-on-an-unknow-phone-on-a-linux-computer/</loc>
     <lastmod>2015-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2015-09-09-barcelona-tips/</loc>
+    <loc>http://localhost:1313/blog/posts/2015-09-09-barcelona-tips/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/basics/</loc>
+    <loc>http://localhost:1313/blog/categories/basics/</loc>
     <lastmod>2015-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/distro/</loc>
+    <loc>http://localhost:1313/blog/tags/distro/</loc>
     <lastmod>2015-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2015-08-24-which-linux-version-is-running/</loc>
+    <loc>http://localhost:1313/blog/posts/2015-08-24-which-linux-version-is-running/</loc>
     <lastmod>2015-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/boot/</loc>
+    <loc>http://localhost:1313/blog/tags/boot/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/tags/diskspace/</loc>
+    <loc>http://localhost:1313/blog/tags/diskspace/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</loc>
+    <loc>http://localhost:1313/blog/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/problems/</loc>
+    <loc>http://localhost:1313/blog/categories/problems/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/categories/ubuntu/</loc>
+    <loc>http://localhost:1313/blog/categories/ubuntu/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2015-03-02-finding-the-biggest-folders/</loc>
+    <loc>http://localhost:1313/blog/posts/2015-03-02-finding-the-biggest-folders/</loc>
     <lastmod>2015-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2014-05-09-npm-throws-error-usr_bin_env_node-no-such-file-or-directory/</loc>
+    <loc>http://localhost:1313/blog/posts/2014-05-09-npm-throws-error-usr_bin_env_node-no-such-file-or-directory/</loc>
     <lastmod>2014-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog_new/posts/2014-03-30-use-2-skype-accounts-on-linux/</loc>
+    <loc>http://localhost:1313/blog/posts/2014-03-30-use-2-skype-accounts-on-linux/</loc>
     <lastmod>2014-03-30T00:00:00+00:00</lastmod>
   </url>
 </urlset>
