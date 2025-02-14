@@ -41,3 +41,9 @@ links = [
     { mastodon = "https://chaos.social/@joergi" },
     { bluesky = "https://bsky.app/profile/joergi.bsky.social" }
 ]
+
+[outputs]
+home = ['html', 'rss']
+section = ['html', 'rss']
+taxonomy = ['html']
+term = ['html']
