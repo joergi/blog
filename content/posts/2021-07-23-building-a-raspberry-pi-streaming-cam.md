@@ -3,6 +3,7 @@ title: "Building a raspberry pi streaming cam"
 description: "All the steps, which are needed for using your raspberry pi for streaming"
 categories: [raspberrypi, howto]
 tags: [raspberrypi, streaming, cam, howto]
+thumbnail: "/img/thumb_raspi-webcam-setup.jpg"
 date: 2021-07-23
 ---
 # the setup
