@@ -11,7 +11,7 @@
   <meta itemprop="description" content="All the steps, which are needed for using your raspberry pi for streaming">
   <meta itemprop="datePublished" content="2021-07-23T00:00:00+00:00">
   <meta itemprop="dateModified" content="2021-07-23T00:00:00+00:00">
-  <meta itemprop="wordCount" content="367">
+  <meta itemprop="wordCount" content="368">
   <meta itemprop="keywords" content="Raspberrypi,Streaming,Cam,Howto">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -56,16 +56,16 @@
 <img src="/img/raspi-webcam-setup.jpg" alt="Alt text" title="complete technical setup">
 <!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
 <p>as webcam I use a Waveshare 10300 RPi Camera (E)<br>
-(bought it <!-- raw HTML omitted -->here<!-- raw HTML omitted -->, unpaid advertisment)</p>
+(bought it <a href="https://www.welectron.com/Waveshare-10300-RPi-Camera-E">here</a>, unpaid advertisement)</p>
 <h1 id="install-raspberry-pi-image">Install raspberry pi image</h1>
-<p>Download the images from the <!-- raw HTML omitted -->raspberry pi website<!-- raw HTML omitted --><br>
+<p>Download the images from the <a href="https://www.raspberrypi.org/software/">raspberry pi website</a><br>
 copy it to your sd card.<br>
-on the webpage they recomment to install the rpi-manager via <code>sudo apt install rpi-imager</code>, but for me it wasn&rsquo;t working because of dependency problems.<br>
+on the webpage they recommend to install the rpi-manager via <code>sudo apt install rpi-imager</code>, but for me it wasn&rsquo;t working because of dependency problems.<br>
 So I installed it the classic way:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>unzip -p YOUR_RASPBIAN_IMAGE.zip | sudo dd of<span style="color:#f92672">=</span>/dev/YOURDEVICE bs<span style="color:#f92672">=</span>4M conv<span style="color:#f92672">=</span>fsync
 </span></span></code></pre></div><p>check with <code>lsblk -p</code> which is your SD card, so you are not deleting your harddrive.<br>
 Maybe plug it in and out to be sure.<br>
-For more information about this, go to the offical <!-- raw HTML omitted -->(Linux) installation page<!-- raw HTML omitted -->.</p>
+For more information about this, go to the offical <a href="https://www.raspberrypi.org/documentation/installation/installing-images/linux.md">Linux</a> installation page.</p>
 <h1 id="activate-your-already-pluged-in-camera">Activate your (already pluged in) Camera</h1>
 <p>Go to settings -&gt; interfaces -&gt; cam -&gt; and switch it on
 Make now a restart, and it should be activated</p>
@@ -73,7 +73,8 @@ Make now a restart, and it should be activated</p>
 <p>I used for streaming the service called <code>motion</code>.<br>
 Install it via</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get install motion -y
-</span></span></code></pre></div><p>As I never used motion before, I followed this real great <!-- raw HTML omitted -->raspberry pi cam tutorial<!-- raw HTML omitted --> (German). The only thing I changed was the <code>framerate</code> to 100 instead of 10.</p>
+</span></span></code></pre></div><p>As I never used motion before, I followed this real great <a href="https://tutorials-raspberrypi.de/raspberry-pi-ueberwachungskamera-livestream-einrichten/">raspberry pi cam tutorial</a> (German). T
+he only thing I changed was the <code>framerate</code> to 100 instead of 10.</p>
 <p>edit the motion.conf file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano /etc/motion/motion.conf
 </span></span></code></pre></div><p>turn the daemon on:<br>
@@ -83,7 +84,7 @@ allow others to watch the stream in the network:<br>
 set the target for your stream, I used the same as the blog above recommend me:<br>
 <code>target_dir /home/pi/Monitor</code></p>
 <p>I set the <code>width 1280</code> and <code>height 720</code> and <code>framerate 100</code></p>
-<p>I uploaded my complete <code>motion.conf</code> <!-- raw HTML omitted -->to my Github repo<!-- raw HTML omitted --></p>
+<p>I uploaded my complete <code>motion.conf</code> <a href="https://github.com/joergi/tryouts/blob/main/raspberry-pi/streaming-cam/motion.conf">to my Github repo</a></p>
 <p>Then, set the demon to yes:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano /etc/default/motion
 </span></span></code></pre></div><p>set: <code>start_motion_daemon=yes</code></p>
@@ -94,9 +95,9 @@ set the target for your stream, I used the same as the blog above recommend me:<
 </span></span></code></pre></div><p>you can start it now with <code>sudo motion</code></p>
 <h1 id="use-your-local-ip-to-stream-to-your-browser">Use your local IP to stream to your browser:</h1>
 <p>find out over <code>ifconfig</code> what your local IP is.<br>
-I can reach in my wifi then the stream under: http://192.186.1.175:8081<br>
+I can reach in my wifi then the stream under: <a href="http://192.186.1.175:8081">http://192.186.1.175:8081</a><br>
 Remember: the port 8081 was defined in the point above</p>
-<p><img src="images/webcam-in-action.png" alt="Alt text" title="screenshot of the raspberrypi streaming to the my browser"></p>
+<p><img src="/img/webcam-in-action.png" alt="Alt text" title="screenshot of the raspberrypi streaming to the my browser"></p>
 <h1 id="start-motion-everytime-you-start-your-raspberry-pi">start motion everytime you start your raspberry pi</h1>
 <p>to have it always running I used a cronjob:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ crontab -e

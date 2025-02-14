@@ -12,19 +12,19 @@ This is how my setup looks like:
 <img src="https://raw.githubusercontent.com/joergi/blog/main/images/" alt="" width="300"> <br>
 
 as webcam I use a Waveshare 10300 RPi Camera (E)  
-(bought it <a href="https://www.welectron.com/Waveshare-10300-RPi-Camera-E">here</a>, unpaid advertisment)
+(bought it [here](https://www.welectron.com/Waveshare-10300-RPi-Camera-E), unpaid advertisement)
 
 # Install raspberry pi image
-Download the images from the <a href="https://www.raspberrypi.org/software/">raspberry pi website</a>  
+Download the images from the [raspberry pi website](https://www.raspberrypi.org/software/)  
 copy it to your sd card.  
-on the webpage they recomment to install the rpi-manager via `sudo apt install rpi-imager`, but for me it wasn't working because of dependency problems.  
+on the webpage they recommend to install the rpi-manager via `sudo apt install rpi-imager`, but for me it wasn't working because of dependency problems.  
 So I installed it the classic way:  
 ```shell
 unzip -p YOUR_RASPBIAN_IMAGE.zip | sudo dd of=/dev/YOURDEVICE bs=4M conv=fsync
 ```
 check with `lsblk -p` which is your SD card, so you are not deleting your harddrive.  
 Maybe plug it in and out to be sure.   
-For more information about this, go to the offical <a href="https://www.raspberrypi.org/documentation/installation/installing-images/linux.md">(Linux) installation page</a>.
+For more information about this, go to the offical [Linux](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md) installation page.
 # Activate your (already pluged in) Camera 
 Go to settings -> interfaces -> cam -> and switch it on
 Make now a restart, and it should be activated
@@ -35,7 +35,8 @@ Install it via
 ```shell
 sudo apt-get install motion -y
 ```
-As I never used motion before, I followed this real great <a href="https://tutorials-raspberrypi.de/raspberry-pi-ueberwachungskamera-livestream-einrichten/">raspberry pi cam tutorial</a> (German). The only thing I changed was the `framerate` to 100 instead of 10.  
+As I never used motion before, I followed this real great [raspberry pi cam tutorial](https://tutorials-raspberrypi.de/raspberry-pi-ueberwachungskamera-livestream-einrichten/) (German). T
+he only thing I changed was the `framerate` to 100 instead of 10.  
 
 edit the motion.conf file:
 ```shell
@@ -50,7 +51,7 @@ set the target for your stream, I used the same as the blog above recommend me:
 
 I set the `width 1280` and `height 720` and `framerate 100`
 
-I uploaded my complete `motion.conf` <a href="https://github.com/joergi/tryouts/blob/main/raspberry-pi/streaming-cam/motion.conf">to my Github repo</a> 
+I uploaded my complete `motion.conf` [to my Github repo](https://github.com/joergi/tryouts/blob/main/raspberry-pi/streaming-cam/motion.conf) 
 
 Then, set the demon to yes:
 ```shell
@@ -68,10 +69,10 @@ you can start it now with `sudo motion`
 
 # Use your local IP to stream to your browser:
 find out over `ifconfig` what your local IP is.  
-I can reach in my wifi then the stream under: http://192.186.1.175:8081   
+I can reach in my wifi then the stream under: [http://192.186.1.175:8081](http://192.186.1.175:8081)   
 Remember: the port 8081 was defined in the point above
 
-![Alt text](images/webcam-in-action.png "screenshot of the raspberrypi streaming to the my browser")
+![Alt text](/img/webcam-in-action.png "screenshot of the raspberrypi streaming to the my browser")
 
 # start motion everytime you start your raspberry pi
 to have it always running I used a cronjob:

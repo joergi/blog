@@ -80,5 +80,5 @@ latest: digest: sha256:3cd8adc5eb542a673b56cc56c2cee8898542f6f5e2a0bdca88950d65f
 ```
 
 and this is how it looks in [my docker hub](https://hub.docker.com/repository/docker/joergi/mag-pi-downloader/tags?page=1&ordering=last_updated)
-![image](https://github.com/joergi/blog/assets/1439809/1fd77b3b-0542-4519-99e4-57a3c0b97933)
+![Alt text](/img/docker-hub.png "docker hub")
 
