@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313/blog/"
 languageCode = "en-us"
-title = 'My digital brain - '
+title = "My digital brain"
 theme = "mainroad"
 themesDir = "themes"
 
@@ -32,3 +32,12 @@ url = "https://google.com/search"
 [Params.widgets.search.input]
 name = "sitesearch"
 pre = ""
+
+[Site.Params.Author]
+name = "Joergi"
+image = "https://avatars.githubusercontent.com/u/1439809?v=4"
+links = [
+    { github = "https://github.com/joergi" },
+    { mastodon = "https://chaos.social/@joergi" },
+    { bluesky = "https://bsky.app/profile/joergi.bsky.social" }
+]

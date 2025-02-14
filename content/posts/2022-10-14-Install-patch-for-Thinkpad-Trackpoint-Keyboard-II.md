@@ -7,7 +7,7 @@ date: 2022-10-14
 ---
 
 ## New Thinkpad Trackpoint Keyboard II
-![Alt text](img/trackpoint-keyboard.jpg "trackpoint of thinkpad keypad")    
+![Alt text](/img/trackpoint-keyboard.jpg "trackpoint of thinkpad keypad")    
 (i maybe should have cleaned it, before the picture...)
 
 
