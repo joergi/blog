@@ -1,8 +1,10 @@
-+++
-title = "npm throws error /usr/bin/env: node: No such file or directory"
-description =  "solving the problems for npm throws error /usr/bin/env: node: No such file or directory"
-date = 2014-05-09
-+++ 
+---
+title: "npm throws error /usr/bin/env: node: No such file or directory"
+description: "Solving the problems for npm throws error /usr/bin/env: node: No such file or directory"
+categories: [linux, ubuntu, node]
+tags: [node]
+date: 2014-05-09
+--- 
 
 If the nodejs server was installed via the package manager, it is not in:    
 `/usr/bin/env/node`,     

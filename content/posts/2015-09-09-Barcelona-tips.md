@@ -11,75 +11,39 @@ So here we go:
 <!-- more -->
 
 **Concerts**
-* Always have a look at <a href="http://barcelonahardcore.mforos.com/457647-conciertos/" target="_blank">THIS FORUM</a>, it's in catalan, but you can get the informations out of the postings and <a href="http://translate.google.de" target="_blank">Google Translate</a> will help you too! Best online information for squat shows (but let me tell you: they start really really late... )</li>
-	<li><a href="http://salarocksound.com" target="_blank">Sala Rocksound</a>
-One of my favourite Punkbars with concerts, i saw US Bombs and Death by Stereo there... also good for just havin' some drinks...
-Carrer Almogàvers, 116, 08018 Barcelona
-(Metro: L1 Marina or L4 Bogatell)
-(near Sala Razzmatazz)
-* <a href="https://www.facebook.com/estraperloclubdelritme" target="_blank">Estraperlo Club del Ritme
-</a>Club in Badalona (so little bit outside of BCN) where you can watch many cool Bands (I saw Dickies, Dwarves and many more there)
-Isidre Nonell 9, Badalona
-(Metro: L2 Badalona Pompeu Fabra, and walking, there is also some Bus stops, have a look at Google Maps for more information)
-P.S. Badalona has a perfect beach - so go there during the day, swim drink some beer and get than to the concert
-* <a href="http://www.salarazzmatazz.com" target="_blank">Sala Razzmatazz
-</a>Big concert location
-C/ Pamplona 88, 1er piso, 08018, Barcelona
-(Metro: L1 Marina or L4 Bogatell)
-(near Sala Rocksound - so go there for some drinks after a show!)
+- Always have a look at [THIS FORUM](https://barcelonahardcore.mforos.com/457647-conciertos/), it's in catalan, but you can get the informations out of the postings and use your favorite translate website, it will help you too! Best online information for squat shows (but let me tell you: they start really really late... )
+- [Estraperlo Club del Ritme](https://estraperlo.club/), Club in Badalona (so it's little bit outside of BCN) where you can watch many cool Bands (I saw Dickies, Dwarves and many more there), Isidre Nonell 9, Badalona, (Metro: L2 Badalona Pompeu Fabra, and walking, there is also some Bus stops, have a look online for more information)
+P.S. Badalona has a perfect beach - so go there during the day, swim drink some beer and get than to the concert 
+- [Sala Razzmatazz](https://www.salarazzmatazz.com), Big concert location, Pamplona 88, 1er piso, 08018, Barcelona, (Metro: L1 Marina or L4 Bogatell)
 
 
 **Bars**
-<ul>
-	<li><strong>Barrio Gotico
-
-</strong>
-<ul>
-	<li><a href="http://www.mariatchi.com/" target="_blank">Mariatchi Bar (Bar of Manu Chao)
-</a>This bar is owned by the musician <a href="http://www.manuchao.net/" target="_blank">Manu Chao</a>, it's always packed but has a nice (hippie) atmosphere.
-You can buy bottle of self made vino, olives and honey. And: a nice CD sampler with all the Manu Chao related bands. Music is a mixture of "world-music" and sometimes punk.
-On youtube you can find also <a href="https://www.youtube.com/results?search_query=manu+chao+bar+mariatchi" target="_blank">videos where Manu Chao played in his bar</a>, but i never saw this.
-C/Codols 14 - 08002 - Barcelona
-(Metro: L4 Jaume I, L4 Barceloneta, L3 Liceu)</li>
-	<li><a href="https://www.facebook.com/BollocksBcn" target="_blank">The Bollocks</a>
+- [Mariatchi Bar](https://www.instagram.com/bar_mariatchi/) - Bar of Manu Chao 
+This bar is owned by the musician [Manu Chao](https://www.manuchao.net/), it's always packed but has a nice (hippie) atmosphere.
+You can buy bottle of self-made vino, olives and honey. 
+And: a nice CD sampler with all the Manu Chao related bands. Music is a mixture of "world-music" and sometimes punk.
+On youtube you can find also [videos where Manu Chao played in his bar](https://www.youtube.com/results?search_query=manu+chao+bar+mariatchi), but i never saw this.
+C/Codols 14 - 08002 - Barcelona, (Metro: L4 Jaume I, L4 Barceloneta, L3 Liceu)
+- [The Bollocks](https://www.bollocksbar.com/)
 Nice Punk/Metal Bar
 Ample 46, Barrio Gotico, Barcelona
 (Metro: L4 Barceloneta)
 
 
+** Vegan
+Vegan is not really common in Barcelona, but of course [Happy Cow knows lists many vegan stuff](https://www.happycow.net/europe/spain/barcelona/) but I will only list places, where I have been.
+- [La Cerveseria](https://www.lacerveseria.com/)
+A normal restaurant in the lovely Gracia area, where they serve tapas but also a nice vegan soy `bocadillo` (sandwich) and beer
+Plaça Revolució de Setembre 3,08012 Barcelona,
+(Metro: L3 Fontana or L4 Joanic  + walking)
 
+** Tapas
 
-... more to come...
-metal bar mit kopfhörer gothico, metal bar gracia .....</li>
-</ul>
-</li>
-</ul>
-<strong>
-Food</strong>
-<ul>
-	<li><strong>Vegan
-</strong>Vegan is not really common in Barcelona, but of course <a href="http://www.happycow.net/europe/spain/barcelona/" target="_blank">Happy Cow knows lists many vegan stuff </a>but I will only list places, where I have been.
-<ul>
-	<li><a href="https://www.facebook.com/pages/Gopal-Barcelona/143601932463099" target="_blank">Gopal Burger</a>
-Based at the Placa George Orwell (the locals call it Placa Tripi because many junkies have been there years ago)  is a nice small burger restaurant. It also offers some tapas like Patata Bravas...
-It's a burger restaurant, so the Burger reminds me to Berlin Burgers like <a href="http://www.yellow-sunshine.de/" target="_blank">Yellow Sunshine</a> or <a href="http://www.vego-foodworld.de/" target="_blank">Vego
-</a>Carrer Còdols 1, 08002 Barcelona
-(Metro: L4 Jaume I, L4 Barceloneta, L3 Liceu)</li>
-	<li><a href="http://www.lacerveseria.com/" target="_blank">La Cerveseria</a>
-A normal restaurant in the lovely Gracia area, where they serve tapas but also a nice vegan soy <span id="result_box" class="short_text" lang="es"><span class="hps alt-edited">bocadillo (sandwich) a</span></span>nd beer
-<div class="cards-text-truncate-and-wrap">Plaça Revolució de Setembre 3,08012 Barcelona
-(Metro: L3 Fontana or L4 Joanic  + walking)</div></li>
-</ul>
-</li>
-	<li>Tapas
-You can find tapas around every corner. If you see many trash on the floor of the tapas bar, go in! It's a sign, that it's a really good visited tapas bar!
-<ul>
-	<li><a href="https://www.facebook.com/Cervecería-Catalana-539478542770052" target="_blank">Cervecería Catalana</a>
+You can find tapas around every corner. If you see many trash on the floor of the tapas bar, go in! It's a sign, that it's a perfect visited tapas bar!
+- [Cervecería Catalana](https://www.tripadvisor.com/Restaurant_Review-g187497-d782944-Reviews-Cerveceria_Catalana-Barcelona_Catalonia.html)
 High quality Tapas, little bit expensive, more for dinner than for lunch
 Carrer de Mallorca, 236 08008 Barcelona
-(Metro: L3 + L5 Diagonal)</li>
-	<li></li>
-</ul>
-</li>
-</ul>
-... more to come
+Metro: L3 + L5 Diagonal)
+
+Update Feb 2025
+This lists were a lot bigger when I first posted it, but most of the restaurants/clubs are closed nowadays :-( 

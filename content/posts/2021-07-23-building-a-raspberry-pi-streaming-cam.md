@@ -9,7 +9,7 @@ date: 2021-07-23
 # the setup
 This is how my setup looks like:
 ![Alt text](/img/raspi-webcam-setup.jpg "complete technical setup")
-<img src="https://raw.githubusercontent.com/joergi/blog/main/images/" alt="" width="300"> <br>
+
 
 as webcam I use a Waveshare 10300 RPi Camera (E)  
 (bought it [here](https://www.welectron.com/Waveshare-10300-RPi-Camera-E), unpaid advertisement)

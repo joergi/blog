@@ -55,14 +55,15 @@
 		
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		<p>sdfasdfdsa sfdsf
-xxxxxx
-When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+		<p>When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.
+<img src="/img/github1-2.png" alt="Alt text" title="Github showing verified user"></p>
 <p>If you push it from your command line, it normally looks like this:</p>
-<p><img src="images/github2.png" alt="Alt text" title="github 2">
-<!-- raw HTML omitted --><br>
-P.S. if you followed the tutorial, and something went wrong, it will look like this:<br>
-<!-- raw HTML omitted --></p>
+<p><img src="/img/github2.png" alt="Alt text" title="github 2"></p>
+<p>P.S. if you followed the tutorial, and something went wrong, it will look like this:<br>
+<img src="/img/github3_fail.png" alt="Alt text" title="github showing unverified commit"></p>
+<p>But let&rsquo;s start from the beginning! <br>
+First of all:
+Github gives you a great Readme for this, that&rsquo;s why I link it here were needed.</p>
 	</div>
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/blog/posts/2020-03-27-getting-a-verified-user-on-github/">Read more…</a>
@@ -79,11 +80,11 @@ P.S. if you followed the tutorial, and something went wrong, it will look like t
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		<p>Sometimes you need a List of the Database to be sorted by more than one column.</p>
-<p>If you connect to your database with the org.springframework.data.mongodb.repository.MongoRepository you can only give one org.springframework.data.domain.Sort to a search method.</p>
+<p>If you connect to your database with the <code>org.springframework.data.mongodb.repository.MongoRepository</code> you can only give <code>org.springframework.data.domain.Sort</code> to a search method.</p>
 <p>This is how the Repository class looks like:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Repository</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">TestRepository</span> <span style="color:#66d9ef">extends</span> MongoRepository<span style="color:#f92672">&lt;</span>Test, Long<span style="color:#f92672">&gt;</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>Score<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">findAllByTestName</span>(String testName, Sort sort );
+</span></span><span style="display:flex;"><span>  List<span style="color:#f92672">&lt;</span>Score<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">findAllByTestName</span>(String testName, Sort sort);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>test has some column &ldquo;abc&rdquo; and some column &ldquo;def&rdquo; and some &ldquo;ghi&rdquo; &hellip;.
 so to add the order do in th calling class something like:</p>

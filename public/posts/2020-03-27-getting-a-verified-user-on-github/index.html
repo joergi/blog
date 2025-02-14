@@ -11,8 +11,8 @@
   <meta itemprop="description" content="This is a step by step example what you have to do, to get a verified user on Github">
   <meta itemprop="datePublished" content="2020-03-27T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-03-27T00:00:00+00:00">
-  <meta itemprop="wordCount" content="85">
-  <meta itemprop="keywords" content="Verified User,Authentication,Github">
+  <meta itemprop="wordCount" content="174">
+  <meta itemprop="keywords" content="Github,Verified User,Authentication">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -51,17 +51,26 @@
 			
 		</header>
 		<div class="content post__content clearfix">
-			<p>sdfasdfdsa sfdsf
-xxxxxx
-When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+			<p>When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.
+<img src="/img/github1-2.png" alt="Alt text" title="Github showing verified user"></p>
 <p>If you push it from your command line, it normally looks like this:</p>
-<p><img src="images/github2.png" alt="Alt text" title="github 2">
-<!-- raw HTML omitted --><br>
-P.S. if you followed the tutorial, and something went wrong, it will look like this:<br>
-<!-- raw HTML omitted --></p>
+<p><img src="/img/github2.png" alt="Alt text" title="github 2"></p>
+<p>P.S. if you followed the tutorial, and something went wrong, it will look like this:<br>
+<img src="/img/github3_fail.png" alt="Alt text" title="github showing unverified commit"></p>
 <p>But let&rsquo;s start from the beginning! <br>
-First of all: Github gives you a great Readme for this, that&rsquo;s why I link it here were needed.</p>
-<!-- raw HTML omitted -->
+First of all:
+Github gives you a great Readme for this, that&rsquo;s why I link it here were needed.</p>
+<ol>
+<li>Add a <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key">new Github GPG</a> key <a href="https://github.com/settings/gpg/new">here</a>
+I used my <code>1234567890+your_github_username@users.noreply.github.com</code> as my email is protected on Github
+You can always change the email of your <a href="https://help.github.com/en/github/authenticating-to-github/associating-an-email-with-your-gpg-key">key here</a></li>
+<li>You should tell your git to use it, so you have to sign it as <a href="https://help.github.com/en/github/authenticating-to-github/telling-git-about-your-signing-key">described here</a></li>
+<li>Sign every commit as mentioned <a href="https://help.github.com/en/github/authenticating-to-github/signing-commits">here</a></li>
+<li>When you make now a commit, you will see that the commit is signed.</li>
+</ol>
+<p>At the end, it <del>should</del> looks like this:
+<img src="/img/github_verified-1.png" alt="Alt text" title="github showing a verified commit">
+I tried this tutorial on my other computer, and it all worked, if you have questions, let me know.</p>
 
 		</div>
 		<footer class="post__footer">
@@ -77,9 +86,6 @@ First of all: Github gives you a great Readme for this, that&rsquo;s why I link 
 		</li>
 		<li class="tags__item">
 			<a class="tags__link btn" href="/blog/tags/authentication/" rel="tag">authentication</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/blog/tags/github/" rel="tag">github</a>
 		</li>
 	</ul>
 </div>

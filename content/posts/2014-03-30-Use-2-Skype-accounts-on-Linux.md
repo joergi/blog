@@ -1,8 +1,8 @@
-+++
-title="Use 2 Skype accounts on Linux"
-description = "Here is a trick to use 2 skype accounts at the same time "
-date = 2014-03-30
-+++
+---
+title: "Use 2 Skype accounts on Linux"
+description: "Here is a trick to use 2 skype accounts at the same time"
+date: 2014-03-30
+---
 
 
 If you have more than one Skype account (to seperate private and business) and you want to use them simultaneous, you have to:

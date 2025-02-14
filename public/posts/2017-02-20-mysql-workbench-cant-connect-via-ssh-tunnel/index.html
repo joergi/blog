@@ -62,15 +62,15 @@
 </span></span><span style="display:flex;"><span>raise e
 </span></span><span style="display:flex;"><span>ValueError: CTR mode needs counter parameter, not IV
 </span></span></code></pre></div><p>change your transport.py:</p>
-<pre tabindex="0"><code>sudo nano /usr/lib/python2.7/dist-packages/paramiko/transport.py
-</code></pre><p>press CTRL+W for searching for the term</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /usr/lib/python2.7/dist-packages/paramiko/transport.py
+</span></span></code></pre></div><p>press CTRL+W for searching for the term</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;class&#39;</span>]<span style="color:#f92672">.</span>new(key, self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;mode&#39;</span>]
 </span></span></code></pre></div><p>and replace this</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;class&#39;</span>]<span style="color:#f92672">.</span>new(key, self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;mode&#39;</span>], iv, counter)
 </span></span></code></pre></div><p>with</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;class&#39;</span>]<span style="color:#f92672">.</span>new(key, self<span style="color:#f92672">.</span>_cipher_info[name][<span style="color:#e6db74">&#39;mode&#39;</span>], <span style="color:#e6db74">&#39;&#39;</span>, counter)
 </span></span></code></pre></div><p>as mentioned in the <a href="https://github.com/paramiko/paramiko/pull/714/commits/4752287a7379da61245087ee7e35635a4e42bb3f">Github pull request</a></p>
-<p>All credits are going to user <a href="http://stackoverflow.com/users/119861/hansaplast">hansaplast</a> for <a href="http://stackoverflow.com/a/42029615/863403">his answer</a> on stackoverflow!</p>
+<p>All credits are going to user <a href="http://stackoverflow.com/users/119861/hansaplast">hansaplast</a> for <a href="http://stackoverflow.com/a/42029615/863403">his answer</a> on stackoverflow!</p>
 
 		</div>
 	</article>

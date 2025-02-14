@@ -103,11 +103,11 @@ Normally the id is set by the DB, so it makes no sense to set it.</p>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		<p>Sometimes you need a List of the Database to be sorted by more than one column.</p>
-<p>If you connect to your database with the org.springframework.data.mongodb.repository.MongoRepository you can only give one org.springframework.data.domain.Sort to a search method.</p>
+<p>If you connect to your database with the <code>org.springframework.data.mongodb.repository.MongoRepository</code> you can only give <code>org.springframework.data.domain.Sort</code> to a search method.</p>
 <p>This is how the Repository class looks like:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Repository</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">TestRepository</span> <span style="color:#66d9ef">extends</span> MongoRepository<span style="color:#f92672">&lt;</span>Test, Long<span style="color:#f92672">&gt;</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>Score<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">findAllByTestName</span>(String testName, Sort sort );
+</span></span><span style="display:flex;"><span>  List<span style="color:#f92672">&lt;</span>Score<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">findAllByTestName</span>(String testName, Sort sort);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>test has some column &ldquo;abc&rdquo; and some column &ldquo;def&rdquo; and some &ldquo;ghi&rdquo; &hellip;.
 so to add the order do in th calling class something like:</p>

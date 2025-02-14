@@ -5,11 +5,10 @@ date: 2015-11-28
 ---
 
 The easiest way to do it:
-```
-settings –> system –> Developer Option
-ADB-Debuggin ON
-Apps from unknown sources ON
-```
-After that, download the actual [adb~~Fire~~Link](http://www.jocala.com/)
+1. settings –> system –> Developer Option
+2. ADB-Debuggin ON
+3. Apps from unknown sources ON
+
+After that, download the actual [adb Link](http://www.jocala.com/)
 
 You can now push with one klick: Kodi, FireLauncher and the addons you need for Kodi

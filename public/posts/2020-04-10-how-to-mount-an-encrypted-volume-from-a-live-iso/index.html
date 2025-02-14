@@ -11,7 +11,7 @@
   <meta itemprop="description" content="if you desstroyed the boot section on your Linux computer and you want to access your data, you will need to encrypt the volume from a live ISO">
   <meta itemprop="datePublished" content="2020-04-10T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-04-10T00:00:00+00:00">
-  <meta itemprop="wordCount" content="129">
+  <meta itemprop="wordCount" content="158">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -51,21 +51,23 @@
 		</header>
 		<div class="content post__content clearfix">
 			<p>If you destroyed somehow your Linux system, which has an encrypted volume, and you want to log into this, but booting is not working, boot from a live ISO, and type:</p>
-<!-- raw HTML omitted -->
-<p>you will see sda1 oder sdb1 as your encrypted system
-<!-- raw HTML omitted --></p>
-<p>this decrypt it and mount it (for example sda1</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>after entering the passphrase you can see that this is now decrypted<!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>lsblk -f
+</span></span></code></pre></div><p>you will see <code>sda1</code> oder <code>sdb1</code> as your encrypted system
+<img src="/img/encrypted.png" alt="Alt text" title="encrypted"></p>
+<p>this decrypt it and mount it (for example sda1)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo cryptsetup luksOpen /dev/sda1 crypted_sda1
+</span></span><span style="display:flex;"><span>Enter passphrase <span style="color:#66d9ef">for</span> /dev/sda1:
+</span></span></code></pre></div><p>after entering the passphrase you can see that this is now decrypted
+<img src="/img/decrypted.png" alt="Alt text" title="decrypted"></p>
 <p>you are now able to mount the decrypted volume:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>You can then log into your encrytped volume by manjaro-chroot (example for Manjaro system)</p>
-<!-- raw HTML omitted -->
-<p>(i read that non Manjaro users use <code>mhwd-chroot</code> but I haven&rsquo;t tried it)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo mount /dev/mapper/crypted_sda1 /mnt
+</span></span></code></pre></div><p><img src="/img/mounted.png" alt="Alt text" title="mounted">
+As you see here, the volume is now mounted to <code>/mnt</code></p>
+<p>You can then log into your encrypted volume by manjaro-chroot (example for Manjaro system)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo manjaro-chroot /mnt
+</span></span></code></pre></div><p>(i read that non Manjaro users use <code>mhwd-chroot</code> but I haven&rsquo;t tried it)</p>
 <p>As you can see, you are now in your own filesystem.
-<!-- raw HTML omitted -->
+<img src="/img/chroot.png" alt="Alt text" title="chroot">
 You are now able to install new packages or delete old ones with <code>apt install xxx</code> or <code>pacman -S xxx</code></p>
 
 		</div>

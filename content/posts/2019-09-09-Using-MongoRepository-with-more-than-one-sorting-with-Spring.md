@@ -8,13 +8,13 @@ date: 2019-09-09
 
 Sometimes you need a List of the Database to be sorted by more than one column.
 
-If you connect to your database with the org.springframework.data.mongodb.repository.MongoRepository you can only give one org.springframework.data.domain.Sort to a search method.
+If you connect to your database with the `org.springframework.data.mongodb.repository.MongoRepository` you can only give `org.springframework.data.domain.Sort` to a search method.
 
 This is how the Repository class looks like:
 ```java
 @Repository
 public interface TestRepository extends MongoRepository<Test, Long> {
-  public List<Score> findAllByTestName(String testName, Sort sort );
+  List<Score> findAllByTestName(String testName, Sort sort);
 }
 ```
 test has some column "abc" and some column "def" and some "ghi" ....

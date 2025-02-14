@@ -11,7 +11,7 @@
   <meta itemprop="description" content="What you have to do on Linux to get the Xiaomi gamepad running - happy gaming">
   <meta itemprop="datePublished" content="2016-01-14T00:00:00+00:00">
   <meta itemprop="dateModified" content="2016-01-14T00:00:00+00:00">
-  <meta itemprop="wordCount" content="98">
+  <meta itemprop="wordCount" content="153">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -50,15 +50,25 @@
 			
 		</header>
 		<div class="content post__content clearfix">
-			<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->I have the <!-- raw HTML omitted -->XIOAMI gamepad<!-- raw HTML omitted -->, a cheap gamepad which looks like the classical XBOX gamepad
+			<p><img src="https://web.archive.org/web/20221014114121if_/https://xiaomi-mi.com/uploads/CatalogueImage/2_13621_1429630637.jpg" alt="Alt text" title="XIAOMI Gamepad 2"></p>
+<p>I have the XIAOMI gamepad, a cheap gamepad which looks like the classical XBOX gamepad.
 When I used it first with my Fire TV Stick, it worked like a charm. I wanted to try it with my Linux and with Steam.</p>
-<p>When i used it in a game it was totally uncalibrated. Pressing the joystick to the top position had no effect at all on my game character.</p>
-<p><!-- raw HTML omitted -->So, i had to calibrate with a small programm, which I install on the shell with:</p>
+<p>When i used it in a game it was totally uncalibrated. Pressing the joystick to the top position had no effect at all on my game character.
+<img src="/img/xiaomi-jscalib.png" alt="Alt text" title="screenshot form jstest-gtk">
+So, i had to calibrate with a small programm, which I install on the shell with:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo aptitude install jstest-gtk
 </span></span></code></pre></div><p>start it with:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jstest-gtk
-</span></span></code></pre></div><p>you should see the following pictures&hellip;</p>
-<!-- raw HTML omitted -->
+</span></span></code></pre></div><p>You should see the following pictures&hellip;</p>
+<ol>
+<li>Press the <code>calibration</code> button</li>
+<li>Press the <code>start calibration</code> button</li>
+<li>Rotate the joystick (all joysticks on your gamepad in a circle</li>
+<li>Move the joystick to <code>up</code> - <code>middle</code> - <code>down</code> - <code>middle</code> - <code>left</code> - <code>middle</code> - <code>right</code> - <code>middle</code></li>
+<li>Press the OK button</li>
+<li>Save the profile</li>
+</ol>
+<p>After restarting Steam, it worked perfectly in the game.</p>
 
 		</div>
 	</article>

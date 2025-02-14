@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node on My digital brain</title>
+    <link>http://localhost:1313/blog/categories/node/</link>
+    <description>Recent content in Node on My digital brain</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 May 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>npm throws error /usr/bin/env: node: No such file or directory</title>
+      <link>http://localhost:1313/blog/posts/2014-05-09-npm-throws-error-usr_bin_env_node-no-such-file-or-directory/</link>
+      <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2014-05-09-npm-throws-error-usr_bin_env_node-no-such-file-or-directory/</guid>
+      <description>&lt;p&gt;If the nodejs server was installed via the package manager, it is not in: &lt;br&gt;&#xA;&lt;code&gt;/usr/bin/env/node&lt;/code&gt;,  &lt;br&gt;&#xA;it is in:   &lt;br&gt;&#xA;&lt;code&gt;/usr/bin/env/nodejs&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;To solve this problem, you should set a symlink&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ln -s /usr/bin/nodejs /usr/bin/node&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;credits for this hint: &lt;a href=&#34;https://github.com/joyent/node/issues/3911#issuecomment-8956154&#34;&gt;digitalmediums at github&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

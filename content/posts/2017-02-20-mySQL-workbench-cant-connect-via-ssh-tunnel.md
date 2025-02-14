@@ -20,7 +20,7 @@ raise e
 ValueError: CTR mode needs counter parameter, not IV
 ```
 change your transport.py:
-```
+```bash
 sudo nano /usr/lib/python2.7/dist-packages/paramiko/transport.py
 ```
 press CTRL+W for searching for the term
@@ -37,5 +37,4 @@ return self._cipher_info[name]['class'].new(key, self._cipher_info[name]['mode']
 ```
 as mentioned in the [Github pull request](https://github.com/paramiko/paramiko/pull/714/commits/4752287a7379da61245087ee7e35635a4e42bb3f)
 
-
-All credits are going to user [hansaplast](http://stackoverflow.com/users/119861/hansaplast) for [his answer](http://stackoverflow.com/a/42029615/863403) on stackoverflow!
+All credits are going to user [hansaplast](http://stackoverflow.com/users/119861/hansaplast) for [his answer](http://stackoverflow.com/a/42029615/863403) on stackoverflow!

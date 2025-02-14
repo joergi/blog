@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<head>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>How to play The Curse of Monkey Island on Linux - My digital brain</title>
@@ -11,7 +11,7 @@
   <meta itemprop="description" content="This is a step by step example, how to get the third Monkey Island game - The Curse of Monkey Island - running on your Linux system - thank you Ron Gilbert for all this jewels from my childhood">
   <meta itemprop="datePublished" content="2020-04-14T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-04-14T00:00:00+00:00">
-  <meta itemprop="wordCount" content="113">
+  <meta itemprop="wordCount" content="166">
   <meta itemprop="keywords" content="Monkey Island,Retro,90ties">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -22,7 +22,6 @@
 	<link rel="stylesheet" href="/blog/css/custom.css">
 
 	<link rel="shortcut icon" href="/blog/favicon.ico">
-		
 		
 </head>
 <body class="body">
@@ -54,9 +53,15 @@
 			<p>As I was always a LucasArts fan in the 90ties, I wanted to use my &ldquo;free time&rdquo; (thanks to the Corona lockdown) for playing this old classics.</p>
 <p>I bought Monkey Island 1 + 2 on Steam - with the Proton helper, it starts all easy, out of the box.</p>
 <p>Monkey Island 3 and 4 I was buying at Gog (it was cheaper) - no help here to get it running for Linux. (it will still run from Steam out of the box, afaik)</p>
-<p>For The Curse of Monkey, also known as Monkey Island 3, their are some tricks needed:</p>
-<p>I found the page <a href=".playIt">https://www.dotslashplay.it/en/games/monkey-island-3</a> where it was really easy to get it running.</p>
-<!-- raw HTML omitted -->
+<p>For The Curse of Monkey, also known as Monkey Island 3, there are some tricks needed:</p>
+<p>I found the page <a href="https://www.dotslashplay.it/en/games/monkey-island-3">.playIt</a> where it was really easy to get it running.</p>
+<ol>
+<li>download the 2 scripts <code>play-monkey-island-3.sh</code> and <code>libplayit2.sh</code></li>
+<li>copy the 2 download files from GOG and put it next to your 2 scripts</li>
+<li>On arch install <code>icoutils imagemagick innoextract</code>, see the link above for more infos</li>
+<li><code>play-monkey-island-3.sh</code> - and the software should be installed.</li>
+<li>you can now run Monkey Island 3 with your <a href="https://www.scummvm.org">ScummVM</a></li>
+</ol>
 
 		</div>
 		<footer class="post__footer">
