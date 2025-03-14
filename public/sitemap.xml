@@ -2,46 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/posts/2024-04-11-add-new-tasmota-device-to-home-assistant/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/blog/posts/2025-03-14-java-aktuell-automatic-dependency-updates-with-dependabot/</loc>
+    <lastmod>2025-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/</loc>
+    <lastmod>2025-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/posts/2024-04-11-add-new-tasmota-device-to-home-assistant/</loc>
     <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/2023-09-01-privacy-friendly-online-alternatives/</loc>
     <lastmod>2023-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/blog/</loc>
+    <loc>http://localhost:1313/blog/categories/blog/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/blog/</loc>
+    <loc>http://localhost:1313/blog/tags/blog/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/categories/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/giscus/</loc>
+    <loc>http://localhost:1313/blog/categories/giscus/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/giscus/</loc>
+    <loc>http://localhost:1313/blog/tags/giscus/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/github/</loc>
-    <lastmod>2023-03-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/categories/github/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/howto/</loc>
+    <loc>http://localhost:1313/blog/tags/github/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/categories/howto/</loc>
+    <lastmod>2023-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/howto/</loc>
     <lastmod>2023-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/</loc>
@@ -50,10 +53,10 @@
     <loc>http://localhost:1313/blog/categories/cheatsheet/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/docker/</loc>
+    <loc>http://localhost:1313/blog/categories/docker/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/docker/</loc>
+    <loc>http://localhost:1313/blog/tags/docker/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/2023-01-26-docker-cheat-sheet/</loc>
@@ -68,10 +71,10 @@
     <loc>http://localhost:1313/blog/tags/cam/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/raspberrypi/</loc>
+    <loc>http://localhost:1313/blog/categories/raspberrypi/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/raspberrypi/</loc>
+    <loc>http://localhost:1313/blog/tags/raspberrypi/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/streaming/</loc>
@@ -80,25 +83,25 @@
     <loc>http://localhost:1313/blog/posts/2020-10-04-pushing-container-to-dockerhub/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/registry/</loc>
+    <loc>http://localhost:1313/blog/categories/registry/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/registry/</loc>
+    <loc>http://localhost:1313/blog/tags/registry/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/2020-06-07-exclude-one-element-from-lombok-modelwide-setter-and-getter/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/java/</loc>
-    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/categories/java/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/lombok/</loc>
+    <loc>http://localhost:1313/blog/tags/java/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/categories/lombok/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/lombok/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/2020-04-29-my-firefox-extensions/</loc>
@@ -215,10 +218,10 @@
     <loc>http://localhost:1313/blog/posts/2015-03-02-finding-the-biggest-folders/</loc>
     <lastmod>2015-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/node/</loc>
+    <loc>http://localhost:1313/blog/categories/node/</loc>
     <lastmod>2014-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/node/</loc>
+    <loc>http://localhost:1313/blog/tags/node/</loc>
     <lastmod>2014-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/2014-05-09-npm-throws-error-usr_bin_env_node-no-such-file-or-directory/</loc>
