@@ -25,6 +25,3 @@ kill server
 ```bash
 pkill hugo
 ```
-
-
-
