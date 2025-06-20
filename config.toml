@@ -19,23 +19,6 @@ categories_counter = false # Enable counter for each category in "Categories" wi
 tags_counter = false # Enable counter for each tag in "Tags" widget
 
 
-[Params.thumbnail]
-visibility = ["list"] # Control thumbnail visibility
-
-[Params.widgets.social]
-cached = false # activate cache if true
-# Enable parts of social widget
-facebook = "username"
-twitter = "username"
-instagram = "username"
-
-[Params.widgets.search]
-cached = false # activate cache if true
-url = "https://google.com/search"
-
-[Params.widgets.search.input]
-name = "sitesearch"
-pre = ""
 
 [Author]
 name = "Joergi"
@@ -45,9 +28,3 @@ links = [
     { mastodon = "https://chaos.social/@joergi" },
     { bluesky = "https://bsky.app/profile/joergi.bsky.social" }
 ]
-
-[outputs]
-home = ['html', 'rss']
-section = ['html', 'rss']
-taxonomy = ['html']
-term = ['html']
