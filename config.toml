@@ -20,7 +20,7 @@ tags_counter = false # Enable counter for each tag in "Tags" widget
 
 
 
-[Author]
+[Site.Params.Author]
 name = "Joergi"
 image = "https://avatars.githubusercontent.com/u/1439809?v=4"
 links = [
