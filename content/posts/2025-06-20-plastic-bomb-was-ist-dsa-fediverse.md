@@ -1,7 +1,7 @@
 ---
 title: "Plastic Bomb - Was ist das Fediverse?"
 description: "Information about my article in the Plastic Bomb #131 2/2025"
-date: 2025-06-21
+date: 2025-06-20
 ---
 
 ## Plastic Bomb - Was ist das Fediverse? #131 2/2025"
