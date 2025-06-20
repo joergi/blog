@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "My digital brain"
 theme = "mainroad"
 themesDir = "themes"
+publishDir = "public"
 
 [Params]
 schema = true # Enable Schema
@@ -36,7 +37,7 @@ url = "https://google.com/search"
 name = "sitesearch"
 pre = ""
 
-[Site.Params.Author]
+[Author]
 name = "Joergi"
 image = "https://avatars.githubusercontent.com/u/1439809?v=4"
 links = [
