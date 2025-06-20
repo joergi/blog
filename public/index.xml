@@ -6,15 +6,8 @@
     <description>Recent content on My digital brain</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Plastic Bomb - Was ist das Fediverse?</title>
-      <link>http://localhost:1313/blog/posts/2025-06-20-plastic-bomb-was-ist-dsa-fediverse/</link>
-      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/2025-06-20-plastic-bomb-was-ist-dsa-fediverse/</guid>
-      <description>&lt;h2 id=&#34;plastic-bomb---was-ist-das-fediverse-131-22025&#34;&gt;Plastic Bomb - Was ist das Fediverse? #131 2/2025&amp;quot;&lt;/h2&gt;&#xA;&lt;p&gt;The Plastic bomb is a German punk magazine, which is published every three months, with a circulation of 8000 copies. &lt;br&gt;&#xA;Those who know me for a long time, know I&amp;rsquo;m coming not only from a nerd world - but also from the music world. Punk especially!  &lt;br&gt;&#xA;And, if you followed me along Social Media, you know I&amp;rsquo;m a big fan of the Fediverse and I&amp;rsquo;m trying to promote it, as much as possible.  &lt;br&gt;&#xA;As the Punk music is always into DIY (do it yourself) and anti-corporate, I thought it would be a good idea to write an article about the Fediverse for the Plastic Bomb magazine.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Java aktuell - Automatic dependency updates with GitHub Actions and Dependabot</title>
       <link>http://localhost:1313/blog/posts/2025-03-14-java-aktuell-automatic-dependency-updates-with-dependabot/</link>

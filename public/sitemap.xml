@@ -3,13 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/posts/2025-06-20-plastic-bomb-was-ist-dsa-fediverse/</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/2025-03-14-java-aktuell-automatic-dependency-updates-with-dependabot/</loc>
     <lastmod>2025-03-14T00:00:00+00:00</lastmod>
