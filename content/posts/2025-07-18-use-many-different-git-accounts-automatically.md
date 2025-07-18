@@ -9,7 +9,7 @@ At the moment I have different git accounts.
 I have one for Github (work & private), Gitlab and two accounts for Codeberg (private and a even more private one).  
 To get this running I had to prepare my folders a little bit. before I only had everything in two folders, private and work, but it all used the same GitHub account.
 
-```asciidoc
+```shell
 /home/joergi/dev/projects/
 ├─ privat/
 │  ├─ codeberg/
@@ -45,7 +45,7 @@ You have to create for each project you want to use a ssh key.
 I follow here the instructions from the [GitHub documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).  
 And I add the ssh to [Codeberg](https://docs.codeberg.org/security/ssh-key/), [Gitlab](https://docs.gitlab.com/user/ssh/) and [Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 And of course I rename the ssh files, so I can recognize them later:
-```asciidoc
+```shell
 -rw-------  1 joergi joergi  432 Apr 25 16:02 id_codeberg_more_private
 -rw-r--r--  1 joergi joergi  118 Apr 25 16:02 id_codeberg_more_private.pub
 -rw-------  1 joergi joergi  419 Jul  4 10:49 id_codeberg_private
@@ -58,7 +58,7 @@ And of course I rename the ssh files, so I can recognize them later:
 
 ## Preparing .gitconfig and custom .gitconfig files
 Nowadays my `.gitconfig` looks like this:
-```asciidoc
+```shell
 [includeIf "gitdir:~/dev/projects/private/github/"]
 path = /home/joergi/.gitconfig-github
 
@@ -78,7 +78,7 @@ As you can already see, we have to define a gitconfig file for each git account.
 At the moment I still use the same GitHub config for work and private, I will change that later.  
 
 The custom gitconfig files are at the same place as the main `.gitconfig` file: 
-```asciidoc
+```shell
 /home/joergi/
 ├─ .gitconfig
 ├─ .gitconfig-github
@@ -87,7 +87,7 @@ The custom gitconfig files are at the same place as the main `.gitconfig` file:
 ├─ .gitconfig-codeberg-super-private
 ```
 This is for example the `/home/joergi/.gitconfig-codeberg-private`
-```asciidoc
+```shell
 [user]
     email = my-private-codeberg-username@mydomain.de
     name = private-username
@@ -97,7 +97,7 @@ This is for example the `/home/joergi/.gitconfig-codeberg-private`
     defaultBranch = main
 ```
 the other codeberg config file looks like this:
-```asciidoc
+```shell
 [user]
     email = my-super-private-codeberg-username@mydomain.de
     name = more-private-username
@@ -108,7 +108,7 @@ the other codeberg config file looks like this:
 ``` 
 
 and `/home/joergi/.gitconfig-github` still looks the same as when I had only one `.gitconfig` file:
-```asciidoc
+```shell
 [user]
 	email = 1234567879+username@users.noreply.github.com
 	name = joergi
@@ -120,7 +120,7 @@ and `/home/joergi/.gitconfig-github` still looks the same as when I had only one
 ```
 
 Something I really found out at the end of the configuration journey, that you need to configure everything in the `.ssh/config`
-```asciidoc
+```shell
 Host github.com
     HostName github.com
     User git
@@ -149,6 +149,12 @@ Host codeberg.org
 ## ToDo: signed commits for all git accounts
 As you can see, only the Github account has so far signed commits. This is something I also have to do for my other Git accounts.
 
+## Solved problems
+If you are on a corporate computer, it can happen that some outgoing ssh connections are blocked. I had to ask our admins to unblock the specific codeberg.org server.   
+This costed my hours, because github and gitlab were perfectly working and I assumed that I set up something incorrectly in my environment, as codeberg was the only one server where I had 2 different git accounts.  
+But at the end it was AGAIN the corporate firewall/security setting.  
+This was really frustrating. So if you have problems, first check if it's the corporate setting!
+
 ## Still an unsolved problem
 when I create a new repository and I want to commit something, I get the following error message:
 ```shell
@@ -168,7 +174,7 @@ fatal: unable to auto-detect email address (got 'joergi@COMPUTERNAME.(none)')
 ```
 
 So it seems that the git doesn't know the username yet. Before setting the specific repository `.git/config`, it looks like this:
-```asciidoc
+```shell
 [core]
 	repositoryformatversion = 0
 	filemode = true
@@ -182,7 +188,7 @@ So it seems that the git doesn't know the username yet. Before setting the speci
 	merge = refs/heads/main
 ```
 So I set the `user.email` and `user.name` but without the `--global flag`
-```asciidoc
+```shell
 $ git config user.email "my-private-codeberg-username@mydomain.de"
 
 $ git config user.name "private-username"
@@ -190,7 +196,7 @@ $ git config user.name "private-username"
 ```
 
 the `~/dev/projects/joergi/codeberg/private/test/.git/config` looks now like this:
-```asciidoc
+```shell
 [core]
     repositoryformatversion = 0
     filemode = true
