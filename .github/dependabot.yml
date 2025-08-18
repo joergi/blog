@@ -3,7 +3,8 @@ updates:
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
-    interval: "daily"
+      interval: "cron"
+      cronjob: "0 9 * * 1-5"
     open-pull-requests-limit: 100
     labels:
       - "dependencies"
@@ -11,8 +12,8 @@ updates:
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: daily
-      time: '04:00'
+      interval: "cron"
+      cronjob: "0 9 * * 1-5"
     open-pull-requests-limit: 100
     labels:
       - "dependencies"
