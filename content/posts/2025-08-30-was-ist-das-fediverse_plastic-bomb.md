@@ -96,7 +96,7 @@ Weiter Infos:
 [Punx.social](https://punx.social)  
 [Punk.photos](https://punk.photos)   
 [Punktube.net](https://punktube.net)  
-[https://punkstodon.de](https://punkstodon.de)  
+[Punkstodon.de](https://punkstodon.de)  
 [Fedi Punk Guide](https://fedi.punk.guide)  
   
 Falls ihr Fragen habt, schreibt uns gerne (im Fediverse 🙂 ) an:  
