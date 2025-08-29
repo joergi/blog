@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.143.1"><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.149.0"><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My digital brain</title>
@@ -9,8 +9,8 @@
 	<meta name="description" content="">
 		
   <meta itemprop="name" content="My digital brain">
-  <meta itemprop="datePublished" content="2024-04-11T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-04-11T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2025-07-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-07-18T00:00:00+00:00">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -47,6 +47,71 @@
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/blog/posts/2017-01-31-install-node-from-binaries/" rel="bookmark">
+			install node.js from binaries
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Source: <a href="http://www.thegeekstuff.com/2015/10/install-nodejs-npm-linux/">http://www.thegeekstuff.com/2015/10/install-nodejs-npm-linux/</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://nodejs.org/dist/v7.4.0/node-v7.4.0-linux-x64.tar.gz
+</span></span><span style="display:flex;"><span>cd /usr/local
+</span></span><span style="display:flex;"><span>tar --strip-components <span style="color:#ae81ff">1</span> -xzf /path/to/node-v7.4.0-linux-x64.tar.gz
+</span></span></code></pre></div><p>node should be in the newest version:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node -v
+</span></span></code></pre></div>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog/posts/2017-01-19-sync-folders-in-vagrant-but-exclude-some-folders-from-syncing/" rel="bookmark">
+			Sync folders in Vagrant but exclude some folders from syncing
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Maybe you know this:  <br>
+you have a huge Java project, maybe the project itself is a sum of many (not even so small) Java projects.  <br>
+For sharing the complete setting with other developers you normally use a <a href="https://www.vagrantup.com">Vagrant box</a> to make it easy. <br>
+At work we needed 2 big projects in one Vagrant box, which included over 10 small maven projects.<br>
+Normally I would share it like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project1&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project1&#34;</span>
+</span></span><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project2&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project2&#34;</span>
+</span></span></code></pre></div><p>You can imagine, the normal start-time of our server with permanently syncing all folders, including all the target folders took much too long.  <br>
+On a local machine, without a Vagrant box, it normally needs around 2 minutes to start   <br>
+But with syncing all target folders, it needs between 7-10 minutes to start the server</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/posts/2017-01-19-sync-folders-in-vagrant-but-exclude-some-folders-from-syncing/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog/posts/2016-01-14-using-xioami-gamepad-with-linux/" rel="bookmark">
+			Using XIOAMI gamepad with Linux
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p><img src="https://web.archive.org/web/20221014114121if_/https://xiaomi-mi.com/uploads/CatalogueImage/2_13621_1429630637.jpg" alt="Alt text" title="XIAOMI Gamepad 2"></p>
+<p>I have the XIAOMI gamepad, a cheap gamepad which looks like the classical XBOX gamepad.
+When I used it first with my Fire TV Stick, it worked like a charm. I wanted to try it with my Linux and with Steam.</p>
+<p>When i used it in a game it was totally uncalibrated. Pressing the joystick to the top position had no effect at all on my game character.
+<img src="/img/xiaomi-jscalib.png" alt="Alt text" title="screenshot form jstest-gtk">
+So, i had to calibrate with a small programm, which I install on the shell with:</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/posts/2016-01-14-using-xioami-gamepad-with-linux/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/blog/posts/2015-11-28-how-to-push-files-from-your-pc-to-amazon-fire-tv-aftv/" rel="bookmark">
 			How to push files from your PC to Amazon Fire TV
 			</a>
@@ -61,8 +126,7 @@
 <li>Apps from unknown sources ON</li>
 </ol>
 <p>After that, download the actual <a href="http://www.jocala.com/">adb Link</a></p>
-<p>You can now push with one klick: Kodi, FireLauncher and the addons you need for Kodi
-�����</p>
+<p>You can now push with one klick: Kodi, FireLauncher and the addons you need for Kodi</p>
 	</div>
 </article><article class="list__item post">
 	
@@ -188,28 +252,13 @@ it is in:   <br>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ln -s /usr/bin/nodejs /usr/bin/node
 </span></span></code></pre></div><p>credits for this hint: <a href="https://github.com/joyent/node/issues/3911#issuecomment-8956154">digitalmediums at github</a></p>
 	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2014-03-30-use-2-skype-accounts-on-linux/" rel="bookmark">
-			Use 2 Skype accounts on Linux
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>If you have more than one Skype account (to seperate private and business) and you want to use them simultaneous, you have to:</p>
-<p>press ALT + F2</p>
-<pre tabindex="0"><code>enter: skype --secondary
-</code></pre><p>Credits: <a href="http://community.skype.com/t5/user/viewprofilepage/user-id/2869773">gvscroder</a> at <a href="http://community.skype.com/t5/Linux/How-to-open-two-Skype-accounts-on-Linux/td-p/398151">skype forum</a></p>
-	</div>
 </article>
 </main>
 
 <div class="pagination">
 	<a class="pagination__item pagination__item--prev btn" href="/blog/page/2/">«</a>
-	<span class="pagination__item pagination__item--current">3/3</span>
+	<span class="pagination__item pagination__item--current">3/4</span>
+	<a class="pagination__item pagination__item--next btn" href="/blog/page/4/">»</a>
 </div>
 
 			</div>

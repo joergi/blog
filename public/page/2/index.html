@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.143.1"><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.149.0"><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My digital brain</title>
@@ -9,8 +9,8 @@
 	<meta name="description" content="">
 		
   <meta itemprop="name" content="My digital brain">
-  <meta itemprop="datePublished" content="2024-04-11T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-04-11T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2025-07-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-07-18T00:00:00+00:00">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -44,6 +44,98 @@
 			
 <main class="main list" role="main">
 	<article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog/posts/2020-06-07-exclude-one-element-from-lombok-modelwide-setter-and-getter/" rel="bookmark">
+			Exclude one element from Lombok model-wide setter and getter
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Lets say you have a User model with <a href="https://projectlombok.org/">Lombok</a> modelwide <a href="https://projectlombok.org/api/lombok/Getter.html">@Getter</a> and <a href="https://projectlombok.org/api/lombok/Setter.html">@Setter</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Getter</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Setter</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Id</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String id;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String username;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String email;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String password;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>setId(String id)</code> makes no sense. <br>
+Normally the id is set by the DB, so it makes no sense to set it.</p>
+<p>So you can use <code>  @Setter(AccessLevel.NONE)</code>   (or   <code>@Getter(AccessLevel.NONE)</code>) to exclude it from the Lombok setters (or getters)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Getter</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Setter</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Id</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Setter</span>(AccessLevel.<span style="color:#a6e22e">NONE</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String id;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String username;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String email;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String password;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>(I found this answer on <a href="https://stackoverflow.com/a/7994134/863403">Stackoverflow</a> by user <a href="https://stackoverflow.com/users/2621917/michael-piefel">Michael Piefel</a> for this problem, thanks!</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/posts/2020-06-07-exclude-one-element-from-lombok-modelwide-setter-and-getter/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog/posts/2020-04-29-my-firefox-extensions/" rel="bookmark">
+			My Firefox Extensions
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<ul>
+<li>
+<p><a href="https://github.com/mozilla/contain-facebook">Facebook Container</a> from <a href="https://www.mozilla.org/">Mozilla</a> <br>
+&ldquo;Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies.&rdquo; (from the Github description)</p>
+</li>
+<li>
+<p><a href="https://darkreader.org/">Dark-Reader</a> from Alexander Shutau <em>(also available for other browsers)</em> <br>
+so join the dark side for a nicer reading</p>
+</li>
+<li>
+<p><a href="https://www.eff.org/https-everywhere">HTTPS everywhere</a> by <a href="https://www.eff.org">EFF</a> and <a href="https://www.torproject.org/">Tor Project</a> <em>(also available for other browsers)</em> <br>
+&ldquo;Many sites on the web offer some limited support for encryption over HTTPS, but make it difficult to use. For instance, they may default to unencrypted HTTP, or fill encrypted pages with links that go back to the unencrypted site. The HTTPS Everywhere extension fixes these problems by using clever technology to rewrite requests to these sites to HTTPS&rdquo; <em>(description from the website)</em></p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/posts/2020-04-29-my-firefox-extensions/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog/posts/2020-04-14-how-to-play-the-curse-of-monkey-island-on-linux/" rel="bookmark">
+			How to play The Curse of Monkey Island on Linux
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>As I was always a LucasArts fan in the 90ties, I wanted to use my &ldquo;free time&rdquo; (thanks to the Corona lockdown) for playing this old classics.</p>
+<p>I bought Monkey Island 1 + 2 on Steam - with the Proton helper, it starts all easy, out of the box.</p>
+<p>Monkey Island 3 and 4 I was buying at Gog (it was cheaper) - no help here to get it running for Linux. (it will still run from Steam out of the box, afaik)</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/posts/2020-04-14-how-to-play-the-curse-of-monkey-island-on-linux/">Read more…</a>
+	</div>
+</article><article class="list__item post">
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
@@ -191,6 +283,10 @@ Download the <a href="https://play.google.com/store/apps/details?id=org.berlin_v
 <li><a href="https://www.supamolly.de">Supamolly</a>, Jessner Str. 41, 10247 Berlin, also a formerly squatted house, a nice bar and some cool concerts in the cellar!</li>
 <li><a href="https://www.schicksaal.org/">Tommy Weissbecker Haus</a>, Wilhelmstraße 9, 10969 Berlin, another (ex) squatted house&hellip; good shows, they start always really late</li>
 </ul>
+<p>&hellip; list is not complete yet</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/posts/2017-04-09-berlin-where-to-go/">Read more…</a>
 	</div>
 </article><article class="list__item post">
 	
@@ -221,77 +317,12 @@ Download the <a href="https://play.google.com/store/apps/details?id=org.berlin_v
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/blog/posts/2017-02-20-mysql-workbench-cant-connect-via-ssh-tunnel/">Read more…</a>
 	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2017-01-31-install-node-from-binaries/" rel="bookmark">
-			install node.js from binaries
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>Source: <a href="http://www.thegeekstuff.com/2015/10/install-nodejs-npm-linux/">http://www.thegeekstuff.com/2015/10/install-nodejs-npm-linux/</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://nodejs.org/dist/v7.4.0/node-v7.4.0-linux-x64.tar.gz
-</span></span><span style="display:flex;"><span>cd /usr/local
-</span></span><span style="display:flex;"><span>tar --strip-components <span style="color:#ae81ff">1</span> -xzf /path/to/node-v7.4.0-linux-x64.tar.gz
-</span></span></code></pre></div><p>node should be in the newest version:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node -v
-</span></span></code></pre></div>
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2017-01-19-sync-folders-in-vagrant-but-exclude-some-folders-from-syncing/" rel="bookmark">
-			Sync folders in Vagrant but exclude some folders from syncing
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>Maybe you know this:  <br>
-you have a huge Java project, maybe the project itself is a sum of many (not even so small) Java projects.  <br>
-For sharing the complete setting with other developers you normally use a <a href="https://www.vagrantup.com">Vagrant box</a> to make it easy. <br>
-At work we needed 2 big projects in one Vagrant box, which included over 10 small maven projects.<br>
-Normally I would share it like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project1&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project1&#34;</span>
-</span></span><span style="display:flex;"><span>config.vm.synced_folder <span style="color:#e6db74">&#34;my-project2&#34;</span>, <span style="color:#e6db74">&#34;/home/vagrant/my-project2&#34;</span>
-</span></span></code></pre></div><p>You can imagine, the normal start-time of our server with permanently syncing all folders, including all the target folders took much too long.  <br>
-On a local machine, without a Vagrant box, it normally needs around 2 minutes to start   <br>
-But with syncing all target folders, it needs between 7-10 minutes to start the server</p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/posts/2017-01-19-sync-folders-in-vagrant-but-exclude-some-folders-from-syncing/">Read more…</a>
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2016-01-14-using-xioami-gamepad-with-linux/" rel="bookmark">
-			Using XIOAMI gamepad with Linux
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p><img src="https://web.archive.org/web/20221014114121if_/https://xiaomi-mi.com/uploads/CatalogueImage/2_13621_1429630637.jpg" alt="Alt text" title="XIAOMI Gamepad 2"></p>
-<p>I have the XIAOMI gamepad, a cheap gamepad which looks like the classical XBOX gamepad.
-When I used it first with my Fire TV Stick, it worked like a charm. I wanted to try it with my Linux and with Steam.</p>
-<p>When i used it in a game it was totally uncalibrated. Pressing the joystick to the top position had no effect at all on my game character.
-<img src="/img/xiaomi-jscalib.png" alt="Alt text" title="screenshot form jstest-gtk">
-So, i had to calibrate with a small programm, which I install on the shell with:</p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/posts/2016-01-14-using-xioami-gamepad-with-linux/">Read more…</a>
-	</div>
 </article>
 </main>
 
 <div class="pagination">
 	<a class="pagination__item pagination__item--prev btn" href="/blog/">«</a>
-	<span class="pagination__item pagination__item--current">2/3</span>
+	<span class="pagination__item pagination__item--current">2/4</span>
 	<a class="pagination__item pagination__item--next btn" href="/blog/page/3/">»</a>
 </div>
 
