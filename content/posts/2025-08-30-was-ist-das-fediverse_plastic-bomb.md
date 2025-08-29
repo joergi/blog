@@ -7,7 +7,7 @@ date: 2025-08-29
 This article is only available in German, sorry.  
 Dieser Artikel erschien in einer gekürzten Version in der [Plastic Bomb](https://plastic-bomb.eu) #131 02/2025.  
 Dies ist die komplette Version.  
-{{< figure src="/img/plasbo_small.jpg" caption="Foto der Plastic Bomb Ausgabe 131" width="400"  >}}
+{{< figure src="/img/plasbo_small.jpg" caption="Foto der Plastic Bomb Ausgabe 131" width="600"  >}}
 
 ## Einleitung
 Na wo treibt ihr euch noch auf Social Media rum? Facebook, Instagram, Threads, Twitter/X TikTok oder Youtube? Oder seid ihr MySpace treu geblieben? Oder benutzt ihr gar kein Social Media? Ihr glücklichen!
@@ -21,7 +21,7 @@ Viele von euch werden sich schon oft überlegt haben, dass es eigentlich nicht g
 Ich will euch hier versuchen die Alternativen nahe zu bringen, es besteht aber keine Garantie auf Vollständigkeit, dies wäre in dem Rahmen auch nicht möglich. Es soll euch aber einen kleinen Überblick geben.
 
 ## Das Fediverse:
-{{< figure src="https://media.kuketz.de/blog/empfehlungsecke/Fediverse.png" caption="Vernetzung im Fediverse" width="400"  >}}
+{{< figure src="https://media.kuketz.de/blog/empfehlungsecke/Fediverse.png" link="https://media.kuketz.de/blog/empfehlungsecke/Fediverse.png" target="_blank" caption="Vernetzung im Fediverse" width="600"  >}}
 
 Zur Zeit sind die Leute entweder bei Bluesky (siehe weiter unten) oder aber im Fediverse zu finden, oder bei beiden. Seit kurzem betreibe ich die Pixelfed Instanz [Punk.photos](https://punk.photos), zum selben Zeitpunkt ging unabhängig davon [Punkstodon.de](https://punkstodon.de), eine Mastodon Instanz, online. Diese wird von Jan, Birk und Chrischn betrieben. Wir kannten uns bis dato nicht, sind aber seitdem in Austausch um unsere Projekte gegenseitig zu bewerben. Es war wie früher, wo man sich mit anderen Fanziner\*innen vernetzte, nur das es dieses mal halt nur online passiert und es um das Fediverse geht. Birk macht außerdem noch die PeerTube Instanz [Punktube.net](https://punktube.net).  
 Die Tatsache, dass Leute aus der Szene die Social Media Instanzen betreiben, zeigt deutlich, dass das Fediverse das Gegenteil von dem ist, was ihr bisher von Social Media gewohnt seid: Das Netzwerk gehört nicht irgendwelchen Milliardären oder börsennotierte Unternehmen, sondern JEDE\*R kann eine eigene Instanz aufsetzen, sofern das technische Know-How & ein eigener Server oder aber das nötige Kleingeld (ab 4€ pro Monat), um sich eine Instanz zu mieten, vorhanden ist. Insofern ist es hier möglich, wieder DIY etwas selber zu machen und unabhängig von anderen zu sein.  
@@ -44,7 +44,7 @@ Es hat aber auch einen Nachteil, der mir gerade am Anfang, als ich Mastodon neu 
 Threads, der Kurznachrichtendienst von Meta (Zuckerberg/Facebook/Insta) sendet theoretisch auch ins Fediverse, viele Instanzen blockieren diese aber, da sie nicht möchten, dass ihre Userdaten/Posts in das Meta-Universum gehen. Wenn ihr also darauf scharf seid, weil dort ja eventuell eure Lieblingsband ist, müsst ihr euch einen Server suchen, der diese Instanz nicht geblockt hat.  
 Lustige Side-Note: Trumps eigenes Soziales Netzwerk Truth Social basiert theoretisch auch auf Mastodon und Soapbox, zwei Fediverse Softwareanwendungen. Und obwohl Trump ja angeblich ein großer Freund der Freedom of Speech ist und gegen Zensur (ihm gegenüber) schimpft, löschte er bei Truth Social den Zugang zum Fediverse, d.h. sein eigenes Netzwerk kann nicht mit anderen Mastodon oder Pixelfed Instanzen kommunizieren. Soviel zum Thema Freedom of Speech. Nur ja keine Wahrheiten ins eigene Netzwerk lassen.  
   
-### [Mastodon](https://joinmastodon.org) - Alternative zu Twitter / Threads ca 8M User
+### [Mastodon](https://joinmastodon.org) Alternative zu Twitter / Threads ca 8M User
 Mastodon ist das größte Soziale Netwerk im Fediverse. Im Grunde funktioniert Mastodon wie Twitter oder Threads, ist also ein Microbloging Dienst. Ihr habt die Möglichkeit kurze Nachrichten, Bilder oder Videos in die Welt zu setzen, andere Leute können das liken, kommentieren oder resharen, also ist alles so wie ihr es kennt und geliebt habt, bevor Musk Twitter zum digitalen Misthaufen umwandelte. Mastodon ist auf jeden Fall schon aus der Beta-Phase heraus und funktioniert ziemlich fehlerfrei.
 Mastodon ist der weit verbreiteste Service und ist auch am meisten im Mainstream angekommen. ARD [ard.social](https://ard.social/), und ZDF [zdf.social](https://zdf.social) haben eigene Mastodon-Instanzen. Der Bund [social.bund.de](https://social.bund.de) bietet für die eigenen Institutionen wie Zoll, Deutschen Wetterdienst, dem BSI, verschieden Landtage usw eine eigene Plattform.
 So hat man eine weitere Möglichkeiten, als diesen nur bei Twitter zu folgen zu können, wie es in der Vergangenheit der Fall war.
@@ -57,17 +57,17 @@ Nachdem Zuckerberg sagte, das die Moderationsregeln sich für Trans-, Frauenfein
 Ihr könnt wie bei Insta Leuten folgen, Posts mit Bildern liken, kommentieren und sharen, gerade werden noch die Stories implementiert. Wenn der Artikel veröffentlich ist, sollte das (hoffentlich) schon funktionieren.
 Bei vielen Pixelfed Instanzen könnt ihr sogar eure komplette Instagramhistorie importieren, damit ihr die Fotos weiterhin online in eurem Profil habt.
 
-### [Friendica](https://friendi.ca) -  Alternative zu Facebook, ca 12k User
+### [Friendica](https://friendi.ca) - Alternative zu Facebook, ca 12k User
 Friendica hat neben den üblichen Funktionen wie bei Mastodon und Pixelfed die Besonderheit das es einen Kalender für Events bietet. Leider sind die wenigstens Bands aber dort, so dass der Vorteil noch nicht zum Zuge kommt. Das [Onlinefanzine Bierschinken](https://f.freinetz.ch/profile/bierschinken) findet ihr auf einer Friendica Instanz, wenn ihr euch mal schlau machen wollt.
 
-### [Peertube](https://joinpeertube.org/) - Alternative zu YouTube
+### [Peertube](https://joinpeertube.org) - Alternative zu YouTube
 Hier könnt ihr Videos anschauen, selber hochladen und kommentieren. Es ist also alles so wie bei Youtube, allerdings ohne Werbung und Algorithmus.
 
 ### [Loops](https://loops.video) - Alternative zu TikTok
 Ganz neu und noch eher alpha als beta, wird vom Pixelfed Programmierer entwickelt.
 Wie bei TikTok bekommt ihr kurze Video Clips in eure Timeline gespielt, oder könnt selber Videos erstellen.
 
-{{< figure src="/img/nevermind.png" caption="Nevermind the Billionaires, here is the Fediverse1" width="400"  >}}
+{{< figure src="/img/nevermind.png" link="https://punx.social" target="_blank" caption="Nevermind the Billionaires, here is the Fediverse1" width="600" alt="Nevermind the Billionaires, here is the Fediverse1" >}}
 
 ### Sonstiges
 Es gibt im Fediverse auch Musikstreaming ([Funkwhale](https://www.funkwhale.audio/), ähnlich Spotify und Co), ihr könnt über Bücher reden ([BookWyrm](https://bookwyrm.social/), ähnlich Goodreads), [Lemmy](https://join-lemmy.org/) (Reddit Ersatz) und noch über 100 weitere Fediverse Softwareanwendungen & Netzwerke die sich oft aber nicht so unterscheiden, manche unterscheiden sich aber schon sehr. Solange die Software aber das ActivityPub Protokoll verwendet, können diese Server auch untereinander reden. Eine Übersicht findet ihr auf [Fediverse Party](https://fediverse.party).
