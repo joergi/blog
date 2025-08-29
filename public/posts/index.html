@@ -8,8 +8,8 @@
 	<meta name="description" content="">
 		
   <meta itemprop="name" content="Posts">
-  <meta itemprop="datePublished" content="2025-07-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-07-18T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2025-08-29T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-08-29T00:00:00+00:00">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -45,6 +45,29 @@
 	<header class="main__header">
 		<h1 class="main__title">Posts</h1>
 	</header><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog/posts/2025-08-30-was-ist-das-fediverse_plastic-bomb/" rel="bookmark">
+			In German: Was ist das Fediverse? - Plastic Bomb Artikel aus #131 02/2025
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p><img src="/img/plasbo_small.jpg" alt="Alt text" title="Foto der Plastic Bomb Ausgabe 131"></p>
+<p>Na wo treibt ihr euch noch auf Social Media rum? Facebook, Instagram, Threads, Twitter/X TikTok oder Youtube? Oder seid ihr MySpace treu geblieben? Oder benutzt ihr gar kein Social Media? Ihr glücklichen!
+Für mich und auch sicherlich viele von euch, geht die Hand nach dem Aufwachen morgens erst einmal zum Handy, die entsprechenden Apps öffnen und nachschauen, was so außerhalb eures Bettes passiert ist. Na, fühlt ihr euch erwischt?
+Und wenn man ehrlich ist, macht es immer weniger Spaß, weil die Netzwerke von Leuten geführt werden, die entweder Trump nach der Nase tanzen oder für seine Politik mitverantwortlich sind. Zumindest in meiner Facebook Timeline spülen die Algorithmen immer mehr rechten Müll, obwohl die Freundesliste eigentlich clean von irgendwelchen AFD Trotteln ist. Besonders in den 2-3 Monaten vor Bundestagswahl wurde es immer mehr und unerträglicher.
+Facebook, Instagram und Threads gehören zu Meta (dazu gehört auch noch u.a. WhatsApp), also Mark Zuckerberg. Meta hatte schon vor Trumps zweiter Amtszeit angekündigt, seinen Faktencheck-Programms in den USA zu beenden und spendete ebenso wie auch Google, Amazon und viele andere Tech Firmen je 1 Millionen Euro an Trump für dessen Amtseinführung.
+Twitter bzw X gehört Elon Musk. Zu diesem Nazi muss man ja nichts mehr schreiben.
+Und TikTok gehört ByteDance, einer Firma in China, der man eine „gewissen Nähe“ zur chinesischen Regierung nachsagt.
+Viele von euch werden sich schon oft überlegt haben, dass es eigentlich nicht geil ist, weiter diese Social Networks zu benutzen, aber wie soll man sonst alle Kontakte behalten? Wie sollt ihr weiterhin mitbekommen, wo eure Lieblingsband spielen? Und wie bekommt ihr weiterhin eure tägliche Dosis an süßen Katzen- und Hundevideos?</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/posts/2025-08-30-was-ist-das-fediverse_plastic-bomb/">Read more…</a>
+	</div>
+</article><article class="list__item post">
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
@@ -270,30 +293,6 @@ So I installed it the classic way:</p>
 	</div>
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/blog/posts/2021-07-23-building-a-raspberry-pi-streaming-cam/">Read more…</a>
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2020-10-04-pushing-container-to-dockerhub/" rel="bookmark">
-			Pushing container to Docker hub
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>First build an docker container and run it afterwards so you see it with <code>docker ps -a</code>
-As an example, I use the container for the <a href="https://github.com/joergi/MagPiDownloader">MagpiDownloader</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -f Dockerfile . -t mag-pi-downloader
-</span></span><span style="display:flex;"><span>docker run -v <span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>/issues:/app/issues/ mag-pi-downloader -f <span style="color:#ae81ff">131</span>
-</span></span></code></pre></div><p>After that is done, have a look, for all the docker container:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker ps -a
-</span></span><span style="display:flex;"><span>CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS                          PORTS     NAMES
-</span></span><span style="display:flex;"><span>ea901f38e328   mag-pi-downloader   <span style="color:#e6db74">&#34;/bin/sh /app/entryp…&#34;</span>   About a minute ago   Exited <span style="color:#f92672">(</span>0<span style="color:#f92672">)</span> About a minute ago             exciting_feistel
-</span></span></code></pre></div><p>As you can see the newest has the container id <code>ea901f38e328</code></p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/posts/2020-10-04-pushing-container-to-dockerhub/">Read more…</a>
 	</div>
 </article>
 </main>
