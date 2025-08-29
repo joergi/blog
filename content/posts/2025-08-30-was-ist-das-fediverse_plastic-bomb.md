@@ -100,7 +100,7 @@ Weiter Infos:
 [Fedi Punk Guide](https://fedi.punk.guide)  
   
 Falls ihr Fragen habt, schreibt uns gerne (im Fediverse 🙂 ) an:  
-[joergi](http://chaos.social/@joergi) - (von Punk.photos)
-[Jan](https://jit.social/@jan) - (von Punkstodon.de)
+[joergi](http://chaos.social/@joergi) - (von Punk.photos)  
+[Jan](https://jit.social/@jan) - (von Punkstodon.de)  
 [Birk](https://punkstodon.de/@elminuto) - (von Punktube.net & Punkstodon.de)  
 [Chrischn](https://punkstodon.de/@rwaschbaer) - (von Punkstodon.de)  
