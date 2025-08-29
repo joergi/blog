@@ -21,7 +21,7 @@ Viele von euch werden sich schon oft überlegt haben, dass es eigentlich nicht g
 Ich will euch hier versuchen die Alternativen nahe zu bringen, es besteht aber keine Garantie auf Vollständigkeit, dies wäre in dem Rahmen auch nicht möglich. Es soll euch aber einen kleinen Überblick geben.
 
 ## Das Fediverse:
-{{< figure src="https://media.kuketz.de/blog/empfehlungsecke/Fediverse.png" link="https://media.kuketz.de/blog/empfehlungsecke/Fediverse.png" target="_blank" caption="Vernetzung im Fediverse" width="600"  >}}
+{{< figure src="https://media.kuketz.de/blog/empfehlungsecke/Fediverse.png" link="https://media.kuketz.de/blog/empfehlungsecke/Fediverse.png" target="_blank" caption="Vernetzung im Fediverse, Bild von Imke Senst und Mike Kuketz" width="600"  >}}
 
 Zur Zeit sind die Leute entweder bei Bluesky (siehe weiter unten) oder aber im Fediverse zu finden, oder bei beiden. Seit kurzem betreibe ich die Pixelfed Instanz [Punk.photos](https://punk.photos), zum selben Zeitpunkt ging unabhängig davon [Punkstodon.de](https://punkstodon.de), eine Mastodon Instanz, online. Diese wird von Jan, Birk und Chrischn betrieben. Wir kannten uns bis dato nicht, sind aber seitdem in Austausch um unsere Projekte gegenseitig zu bewerben. Es war wie früher, wo man sich mit anderen Fanziner\*innen vernetzte, nur das es dieses mal halt nur online passiert und es um das Fediverse geht. Birk macht außerdem noch die PeerTube Instanz [Punktube.net](https://punktube.net).  
 Die Tatsache, dass Leute aus der Szene die Social Media Instanzen betreiben, zeigt deutlich, dass das Fediverse das Gegenteil von dem ist, was ihr bisher von Social Media gewohnt seid: Das Netzwerk gehört nicht irgendwelchen Milliardären oder börsennotierte Unternehmen, sondern JEDE\*R kann eine eigene Instanz aufsetzen, sofern das technische Know-How & ein eigener Server oder aber das nötige Kleingeld (ab 4€ pro Monat), um sich eine Instanz zu mieten, vorhanden ist. Insofern ist es hier möglich, wieder DIY etwas selber zu machen und unabhängig von anderen zu sein.  
@@ -100,7 +100,7 @@ Weiter Infos:
 [Fedi Punk Guide](https://fedi.punk.guide)  
   
 Falls ihr Fragen habt, schreibt uns gerne (im Fediverse 🙂 ) an:  
-[joergi auf punk.photos](https://punk.photos/joergi)  
-[Jan auf Punkstodon.de](https://punkstodon.de/@jan)  
-[El Minuto auf Punkstodon.de](https://punkstodon.de/@elminuto)  
-[RWaschbaer auf Punkstodon.de](https://punkstodon.de/@rwaschbaer)  
+[joergi](http://chaos.social/@joergi)  
+[Jan](https://jit.social/@jan)  
+[Birk](https://punkstodon.de/@elminuto)  
+[Chrischn](https://punkstodon.de/@rwaschbaer)  
