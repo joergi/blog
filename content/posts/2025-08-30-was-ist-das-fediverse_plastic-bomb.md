@@ -67,7 +67,7 @@ Bei [Peertube](https://joinpeertube.org) könnt ihr Videos anschauen, selber hoc
 Ganz neu und noch eher alpha als beta, wird [Loops](https://loops.video) vom Pixelfed Programmierer entwickelt.
 Wie bei TikTok bekommt ihr kurze Video Clips in eure Timeline gespielt, oder könnt selber Videos erstellen.
 
-{{< figure src="/img/nevermind.png" link="https://punx.social" target="_blank" caption="Nevermind the Billionaires, here is the Fediverse1" width="600" alt="Nevermind the Billionaires, here is the Fediverse1" >}}
+{{< figure src="/img/nevermind.png" link="https://punx.social" target="_blank" caption="Nevermind the Billionaires, here is the Fediverse1" width="600" alt="Nevermind the Billionaires, here is the Fediverse!" >}}
 
 ### Sonstiges
 Es gibt im Fediverse auch Musikstreaming ([Funkwhale](https://www.funkwhale.audio/), ähnlich Spotify und Co), ihr könnt über Bücher reden ([BookWyrm](https://bookwyrm.social/), ähnlich Goodreads), [Lemmy](https://join-lemmy.org/) (Reddit Ersatz) und noch über 100 weitere Fediverse Softwareanwendungen & Netzwerke die sich oft aber nicht so unterscheiden, manche unterscheiden sich aber schon sehr. Solange die Software aber das ActivityPub Protokoll verwendet, können diese Server auch untereinander reden. Eine Übersicht findet ihr auf [Fediverse Party](https://fediverse.party).
