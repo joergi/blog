@@ -6,7 +6,7 @@ date: 2025-08-29
 
 This article is only available in German, sorry.  
 Dieser Artikel erschien in einer gekürzten Version in der [Plastic Bomb](https://plastic-bomb.eu) #131 02/2025.  
-Dies ist die komplette Version.  
+Dies ist die komplette Version. Die Userzahlen der Server sind alle vom Januar 2025. 
 {{< figure src="/img/plasbo_small.jpg" caption="Foto der Plastic Bomb Ausgabe 131" width="600"  >}}
 
 ## Einleitung
@@ -44,27 +44,27 @@ Es hat aber auch einen Nachteil, der mir gerade am Anfang, als ich Mastodon neu 
 Threads, der Kurznachrichtendienst von Meta (Zuckerberg/Facebook/Insta) sendet theoretisch auch ins Fediverse, viele Instanzen blockieren diese aber, da sie nicht möchten, dass ihre Userdaten/Posts in das Meta-Universum gehen. Wenn ihr also darauf scharf seid, weil dort ja eventuell eure Lieblingsband ist, müsst ihr euch einen Server suchen, der diese Instanz nicht geblockt hat.  
 Lustige Side-Note: Trumps eigenes Soziales Netzwerk Truth Social basiert theoretisch auch auf Mastodon und Soapbox, zwei Fediverse Softwareanwendungen. Und obwohl Trump ja angeblich ein großer Freund der Freedom of Speech ist und gegen Zensur (ihm gegenüber) schimpft, löschte er bei Truth Social den Zugang zum Fediverse, d.h. sein eigenes Netzwerk kann nicht mit anderen Mastodon oder Pixelfed Instanzen kommunizieren. Soviel zum Thema Freedom of Speech. Nur ja keine Wahrheiten ins eigene Netzwerk lassen.  
   
-### [Mastodon](https://joinmastodon.org) Alternative zu Twitter / Threads ca 8M User
-Mastodon ist das größte Soziale Netwerk im Fediverse. Im Grunde funktioniert Mastodon wie Twitter oder Threads, ist also ein Microbloging Dienst. Ihr habt die Möglichkeit kurze Nachrichten, Bilder oder Videos in die Welt zu setzen, andere Leute können das liken, kommentieren oder resharen, also ist alles so wie ihr es kennt und geliebt habt, bevor Musk Twitter zum digitalen Misthaufen umwandelte. Mastodon ist auf jeden Fall schon aus der Beta-Phase heraus und funktioniert ziemlich fehlerfrei.
+### Mastodon - Alternative zu Twitter / Threads ca 8M User
+[Mastodon](https://joinmastodon.org)  ist das größte Soziale Netwerk im Fediverse. Im Grunde funktioniert Mastodon wie Twitter oder Threads, ist also ein Microbloging Dienst. Ihr habt die Möglichkeit kurze Nachrichten, Bilder oder Videos in die Welt zu setzen, andere Leute können das liken, kommentieren oder resharen, also ist alles so wie ihr es kennt und geliebt habt, bevor Musk Twitter zum digitalen Misthaufen umwandelte. Mastodon ist auf jeden Fall schon aus der Beta-Phase heraus und funktioniert ziemlich fehlerfrei.
 Mastodon ist der weit verbreiteste Service und ist auch am meisten im Mainstream angekommen. ARD [ard.social](https://ard.social/), und ZDF [zdf.social](https://zdf.social) haben eigene Mastodon-Instanzen. Der Bund [social.bund.de](https://social.bund.de) bietet für die eigenen Institutionen wie Zoll, Deutschen Wetterdienst, dem BSI, verschieden Landtage usw eine eigene Plattform.
 So hat man eine weitere Möglichkeiten, als diesen nur bei Twitter zu folgen zu können, wie es in der Vergangenheit der Fall war.
 
-### [Misskey](https://misskey-hub.net) - Alternative zu Twitter / Threads ca 1,8M User
-Ähnlich wie bei Mastodon ist es ein Microblogging Dienst. Alles was hier bei Mastodon steht, passt auch hier. Allerdings ist die Oberfläche, im Gegensatz zu Mastodon über Widgets individueller anpassbar.
+### Misskey - Alternative zu Twitter / Threads ca 1,8M User
+Ähnlich wie bei Mastodon ist [Misskey](https://misskey-hub.net) ein Microblogging Dienst. Alles was hier bei Mastodon steht, passt auch hier. Allerdings ist die Oberfläche, im Gegensatz zu Mastodon über Widgets individueller anpassbar.
 
-### [Pixelfed](https://pixelfed.org) - Alternative zu Instagram,  ca 700k User
-Nachdem Zuckerberg sagte, das die Moderationsregeln sich für Trans-, Frauenfeindlichkeit & Homophobie auf Instagram ändern würden, begannen viele von Instagram zu Pixelfed zu wechseln, was dazu führte, dass Meta Links zu Pixelfed Instanzen sowohl auf Instagram als auch auf Facebook blockierte. Pixelfed ist ein Instagram Ersatz und sammelte bei einer Kickstarter Kampagne fast 90.000€ ein. Hiervon werden die weiteren Entwicklungen bezahlt, was auch nötig ist, weil vieles leider noch nicht fertig ist bzw. noch nicht ganz ausgereift ist.
+### Pixelfed - Alternative zu Instagram,  ca 700k User
+Nachdem Zuckerberg sagte, das die Moderationsregeln sich für Trans-, Frauenfeindlichkeit & Homophobie auf Instagram ändern würden, begannen viele von Instagram zu [Pixelfed](https://pixelfed.org) zu wechseln, was dazu führte, dass Meta Links zu Pixelfed Instanzen sowohl auf Instagram als auch auf Facebook blockierte. Pixelfed ist ein Instagram Ersatz und sammelte bei einer Kickstarter Kampagne fast 90.000€ ein. Hiervon werden die weiteren Entwicklungen bezahlt, was auch nötig ist, weil vieles leider noch nicht fertig ist bzw. noch nicht ganz ausgereift ist.
 Ihr könnt wie bei Insta Leuten folgen, Posts mit Bildern liken, kommentieren und sharen, gerade werden noch die Stories implementiert. Wenn der Artikel veröffentlich ist, sollte das (hoffentlich) schon funktionieren.
 Bei vielen Pixelfed Instanzen könnt ihr sogar eure komplette Instagramhistorie importieren, damit ihr die Fotos weiterhin online in eurem Profil habt.
 
-### [Friendica](https://friendi.ca) - Alternative zu Facebook, ca 12k User
-Friendica hat neben den üblichen Funktionen wie bei Mastodon und Pixelfed die Besonderheit das es einen Kalender für Events bietet. Leider sind die wenigstens Bands aber dort, so dass der Vorteil noch nicht zum Zuge kommt. Das [Onlinefanzine Bierschinken](https://f.freinetz.ch/profile/bierschinken) findet ihr auf einer Friendica Instanz, wenn ihr euch mal schlau machen wollt.
+### Friendica - Alternative zu Facebook, ca 12k User
+[Friendica](https://friendi.ca) hat neben den üblichen Funktionen wie bei Mastodon und Pixelfed die Besonderheit das es einen Kalender für Events bietet. Leider sind die wenigstens Bands aber dort, so dass der Vorteil noch nicht zum Zuge kommt. Das [Onlinefanzine Bierschinken](https://f.freinetz.ch/profile/bierschinken) findet ihr auf einer Friendica Instanz, wenn ihr euch mal schlau machen wollt.
 
-### [Peertube](https://joinpeertube.org) - Alternative zu YouTube
-Hier könnt ihr Videos anschauen, selber hochladen und kommentieren. Es ist also alles so wie bei Youtube, allerdings ohne Werbung und Algorithmus.
+### Peertube - Alternative zu YouTube
+Bei [Peertube](https://joinpeertube.org) könnt ihr Videos anschauen, selber hochladen und kommentieren. Es ist also alles so wie bei Youtube, allerdings ohne Werbung und Algorithmus.
 
-### [Loops](https://loops.video) - Alternative zu TikTok
-Ganz neu und noch eher alpha als beta, wird vom Pixelfed Programmierer entwickelt.
+### Loops - Alternative zu TikTok
+Ganz neu und noch eher alpha als beta, wird [Loops](https://loops.video) vom Pixelfed Programmierer entwickelt.
 Wie bei TikTok bekommt ihr kurze Video Clips in eure Timeline gespielt, oder könnt selber Videos erstellen.
 
 {{< figure src="/img/nevermind.png" link="https://punx.social" target="_blank" caption="Nevermind the Billionaires, here is the Fediverse1" width="600" alt="Nevermind the Billionaires, here is the Fediverse1" >}}
@@ -72,16 +72,16 @@ Wie bei TikTok bekommt ihr kurze Video Clips in eure Timeline gespielt, oder kö
 ### Sonstiges
 Es gibt im Fediverse auch Musikstreaming ([Funkwhale](https://www.funkwhale.audio/), ähnlich Spotify und Co), ihr könnt über Bücher reden ([BookWyrm](https://bookwyrm.social/), ähnlich Goodreads), [Lemmy](https://join-lemmy.org/) (Reddit Ersatz) und noch über 100 weitere Fediverse Softwareanwendungen & Netzwerke die sich oft aber nicht so unterscheiden, manche unterscheiden sich aber schon sehr. Solange die Software aber das ActivityPub Protokoll verwendet, können diese Server auch untereinander reden. Eine Übersicht findet ihr auf [Fediverse Party](https://fediverse.party).
 
-## [Bluesky](https://bsky.app) – Alternative zu Twitter / Thread, ca 27m User
-Bluesky, ein Kurznachrichtendienst, war ursprünglich ein eigenes Twitter Projekt, wurde dann aber von ex Twitter Chef Jack Dorsey (nicht mehr im Unternehmen) und Jay Graber gegründet, und ist ebenfalls dezentral wie das Fediverse.  
+## Bluesky – Alternative zu Twitter / Thread, ca 27m User
+[Bluesky](https://bsky.app), ein Kurznachrichtendienst, war ursprünglich ein eigenes Twitter Projekt, wurde dann aber von ex Twitter Chef Jack Dorsey (nicht mehr im Unternehmen) und Jay Graber gegründet, und ist ebenfalls dezentral wie das Fediverse.  
 Die meisten von euch werden es daher kennen, das die meisten eurer Twitter/Thread/Insta/Facebook Follower\*innen; die eine neue digitale Heimat suchten, sagten „du findest uns jetzt bei Bluesky“. Der Momentum zu einem neuen Social-Media Netzwerk zu wechseln, war definitiv zu Gunsten von Bluesky. Dies zeigt sich auch in den Userzahlen. Bluesky gehört mittlerweile einer gemeinnützigen [LLC](https://bsky.social) also schaut es erst einmal gut aus, das es unkommerziell bleibt. Viele Bands, Labels und Fanzines und sonstige szenerelevanten Leute haben den Sprung von Facebook /Insta zu Bluesky gemacht, wie z.B. [Team Scheisse](https://bsky.app/profile/teamscheisse.bsky.social), [ZSK](https://bsky.app/profile/zskberlin.bsky.social), [Kmpfsprt](https://bsky.app/profile/kmpfsprt.bsky.social), [Männi](https://bsky.app/profile/mnni.de), [Rookie Records](https://bsky.app/profile/rookierecords.bsky.social) und viele NGOs wie auch z.b. [Kein Bock auf Nazis](https://bsky.app/profile/keinbockaufnazis.bsky.social) usw.
 
 Von Haus aus gibt es keine Möglichkeit von Fediverse zu Bluesky oder zurück zu kommunizieren, da sich die Protokolle unterscheiden. Aber mit Hilfe von sogenannten [Bridges](https://fed.brid.gy/) könnt ihr automatisch die Posts von Bluesky auch noch mal im Fediverse posten und umgekehrt, es gibt sogar die Möglichkeit über die Grenzen des eigenen Netzwerkes zu kommunizieren. Likes, Shares und Kommentare funktionieren zumindest mit Mastodon zu Bluesky gut, bei Pixelfed ist das ganze noch nicht so funktional, ich hoffe das wird sich noch ändern. Allerdings seht ihr dann auf Bluesky nicht alle Antworten die im Fediverse gegeben wurde usw. Es steckt noch alles in der Entwicklung, aber solange die Protokolle von Haus aus keine gegenseitige Unterstützung bieten, wird es immer nur Workarounds geben, diese werden aber immer besser.
 
-## [Diaspora](https://diasporafoundation.org) - Ersatz für Facebook, ca 700k User (Stand 2023)
-Diaspora ist der Dinosaurier unter den verteilten quelloffenen Netzwerken. Es entstand schon 2011 hat aber nicht so viele User und kann nur mit 2 Fediverse Anwendungen kommunizieren: [Friendica](https://friendi.ca) und [Hubzilla](https://hubzilla.org/).
+## Diaspora - Ersatz für Facebook, ca 700k User (Stand 2023)
+[Diaspora](https://diasporafoundation.org) ist der Dinosaurier unter den verteilten quelloffenen Netzwerken. Es entstand schon 2011 hat aber nicht so viele User und kann nur mit 2 Fediverse Anwendungen kommunizieren: [Friendica](https://friendi.ca) und [Hubzilla](https://hubzilla.org/).
 
-## Fazit:
+## Fazit
 So sehr ich persönlich das Fediverse und auch Bluesky gut finde und nutze, um so schwieriger wird es für die breite Masse sein, den Wechsel zu vollziehen. Nicht nur, weil manche Software noch in der Entwicklung ist, sondern auch weil die professionellen Content-Creator alle auf den kommerziellen Plattformen sind und da auch bleiben werden, da sie dort viel Geld mit ihrem Content verdienen. Im Fediverse und Bluesky gibt es bis jetzt keine Möglichkeit der Monetariserung. Und das wird es auch zumindest nicht im Fediverse geben. Deswegen haben diese Content-Creator natürlich kein Interesse, die kommerziellen Netzwerke zu verlassen.  Und der Mainstream wird dort bleiben, wo es den „guten“ Content gibt.
 
 Ebenso haben viele Bands, Labels und Fanzines auch keine Lust oder die Resourcen, noch einen Social Media Kanal mehr zu bedienen und bleiben deswegen wo sie schon sind.
