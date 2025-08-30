@@ -3,15 +3,11 @@
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Being able to develop on an unknown phone on a Linux computer - My digital brain</title>
+	<title>Authors - My digital brain</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="Everything you have to set up to deploy an Android app to your phone via ADB">
+	<meta name="description" content="">
 		
-  <meta itemprop="name" content="Being able to develop on an unknown phone on a Linux computer">
-  <meta itemprop="description" content="Everything you have to set up to deploy an Android app to your phone via ADB">
-  <meta itemprop="datePublished" content="2015-11-14T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2015-11-14T00:00:00+00:00">
-  <meta itemprop="wordCount" content="106">
+  <meta itemprop="name" content="Authors">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,6 +15,7 @@
 
 	<link rel="stylesheet" href="/blog/css/style.css">
 	<link rel="stylesheet" href="/blog/css/custom.css">
+	<link rel="alternate" type="application/rss+xml" href="/blog/authors/index.xml" title="My digital brain">
 
 	<link rel="shortcut icon" href="/blog/favicon.ico">
 		
@@ -54,38 +51,16 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title">Being able to develop on an unknown phone on a Linux computer</h1>
-			
-		</header>
-		<div class="content post__content clearfix">
-			<p>When i tried to deploy a <code>Hello World</code> app from my Linux notebook to my <code>THL 5000</code> notebook i got this result:
-<img src="/img/android-dev.png" alt="Alt text" title="showing that the phone has only API level 1"></p>
-<p>So, my phone has API level 1, nice - NOT!</p>
-<p>Searching my ass off, I could nowhere find the device id for this phone&hellip; So <a href="https://chaos.social/@tbsprs">Tobi</a> told me: Brute-Force is the way to go and what should I say: it worked!</p>
-<p>So: search for the <code>51-android.rules</code> or just save <a href="https://raw.githubusercontent.com/snowdream/51-android/master/51-android.rules">this one</a></p>
-<p>After that copy it in the right place</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo cp /home/username/download/51-android.rules /etc/udev/rules.d/
-</span></span></code></pre></div><p>and make it working with</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chmod a+r /etc/udev/rules.d/51-android.rules
-</span></span></code></pre></div><p>When plugging now my THL 5000 to my notebook, everything works fine!</p>
-
-		</div>
-	</article>
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Authors</h1>
+	</header>
 </main>
-
-<div class="authorbox clearfix">
-	<p class="authorbox__warning">
-		<strong>WARNING:</strong> Authorbox is activated, but [Author] parameters are not specified.
-	</p>
-</div>
-
 
 
 			</div>
 			
+
 		</div>
 		<footer class="footer">
 	<div class="container footer__container flex">

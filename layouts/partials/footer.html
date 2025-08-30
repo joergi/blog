@@ -1,0 +1,13 @@
+<footer class="footer">
+	<div class="container footer__container flex">
+		{{ partial "footer_links.html" . }}
+		<div class="footer__copyright">
+			&copy; {{ now.Format "2006" }} {{ .Site.Params.copyright | default .Site.Title }}.
+			<span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span>
+
+		</div>
+		<div><a href="https://github.com/joergi">GitHub</a> | <a rel="me" href="https://chaos.social/@joergi">Mastodon</a> | <a href="https://bsky.app/profile/joergi.bsky.social">Bluesky</a> | <a href="https://stackoverflow.com/users/863403/joergi">StackOverflow</a></div>
+	</div>
+	<div><span style="color:#222222; font-size:0.8em">the nice github logo on top left is build by <a href="https://github.com/tholman/github-corners">@tholman</a> |
+		the nice RSS logo on top is build by <a href="https://code.joergi.io/rss-corners/">@joergi</a> | got some input from the github page from <a href="https://github.com/dzhavat/dzhavat.github.io">dzhavat</a></span></div>
+</footer>
