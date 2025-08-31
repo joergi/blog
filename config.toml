@@ -1,13 +1,12 @@
 baseURL = "http://localhost:1313/blog/"
 languageCode = "en-us"
 title = "My digital brain"
-theme = "mainroad"
+theme = "roadster" # fork from mainroad
 themesDir = "themes"
 publishDir = "public"
 
 [Params]
 schema = true # Enable Schema
-twitter_cards = false # Enable Twitter Cards if true
 readmore = true # Show "Read more" button in list if true
 authorbox = true # Show authorbox at bottom of pages if true
 toc = true # Enable Table of Contents
