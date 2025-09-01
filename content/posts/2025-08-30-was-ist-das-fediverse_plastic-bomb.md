@@ -29,7 +29,7 @@ Ihr werdet euch vielleicht schon gewundert haben: Was ist Pixelfed, was ist Mast
 Das Fediverse ist ein komplett dezentralisiertes Netzwerk, bestehend aus vielen unterschiedlichen Sozialen Netzwerken und verschiedenen Servern, sogenannten Instanzen.  
 Der Code zu diesen Projekten ist für alle online einsehbar und nach belieben änderbar.  
 Es gibt für jedes Thema Instanzen. Wenn ihr auf einer Katzenliebhaber\*innen Instanz seid, könnt ihr aber auch weiterhin alles von einer Hundeliebhaber*innen Instanz lesen und kommunizieren. Alles ist offen und untereinander verbunden. Ihr könnt von eurem Pixelfed Server mit anderen User\*innen auf einer Mastodon / Friendica usw. Server kommunzieren, da alle das gleiche Protokoll verwenden. Das ist ähnlich wie bei der Email, da ist es auch egal, ob ihr bei web.de, posteo, gmail oder gmx seid. So ist es auch hier.  
-Ihr könnt z.B. auf [fedidb.org](https://fedidb.org) suchen, welches Thema euch interessiert – wenn ihr nach Punk sucht, findet ihr bis jetzt aber nur die drei oben erwähnten Server von uns.  
+Ihr könnt z.B. auf [fedidb.com](https://fedidb.com) suchen, welches Thema euch interessiert – wenn ihr nach Punk sucht, findet ihr bis jetzt aber nur die drei oben erwähnten Server von uns.  
 Die Wahl nach der richtigen Instanz ist der Grund dafür, weshalb Leute oft sagen: „mir ist das Fediverse zu kompliziert“. Wenn man es sich leicht machen will, erstellt man sich einfach einen Account bei den größten „offiziellen“ Instanzen (mastodon.social, 335K User oder pixelfed.social, 447K User) und probiert es einfach einmal aus, da dort die meisten Posts abgesetzt werden.  
 Es gibt die Möglichkeit verschiedene Timelines zu sehen: die Lokale Timeline, da sieht man nur die Posts von der eigenen Instanz (also nur punkstodon.de posts z.B.). oder aber Globale Timelines, wo man alles sieht was über das Protokoll reingespült wird.  
   
@@ -43,10 +43,19 @@ Es hat aber auch einen Nachteil, der mir gerade am Anfang, als ich Mastodon neu 
   
 Threads, der Kurznachrichtendienst von Meta (Zuckerberg/Facebook/Insta) sendet theoretisch auch ins Fediverse, viele Instanzen blockieren dies aber, da sie nicht möchten, dass ihre Userdaten/Posts in das Meta Imperium gehen. Wenn ihr also darauf scharf seid, weil dort ja eventuell eure Lieblingsband ist, müsst ihr euch einen Server suchen, der diese Instanz nicht geblockt hat.  
 Lustige Side-Note: Trumps eigenes Soziales Netzwerk Truth Social basiert theoretisch auch auf Mastodon und Soapbox, zwei Fediverse Softwareanwendungen. Und obwohl Trump ja angeblich ein großer Freund der Freedom of Speech ist und gegen Zensur (ihm gegenüber) schimpft, löschte er bei Truth Social den Zugang zum Fediverse, d.h. sein eigenes Netzwerk kann nicht mit anderen Mastodon oder Pixelfed Instanzen kommunizieren. Soviel zum Thema Freedom of Speech. Nur ja keine Wahrheiten ins eigene Netzwerk lassen.  
+{{< rawhtml >}}
+ <p>Ein sehr gutes Erklärvideo, von <a href="https://elenarossini.com" target="_blank">Elena Rossini</a>, das nur 4 Minuten dauert, seht ihr hier:<br/>
+            <iframe title="Introducing the Fediverse: a New Era of Social Media" width="560" height="315"
+                    src="https://videos.elenarossini.com/videos/embed/64VuNCccZNrP4u9MfgbhkN?subtitle=de"
+                    frameborder="0" allowfullscreen=""
+                    sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+</p>
   
+{{< /rawhtml >}}
+ 
 ### Mastodon - Alternative zu Twitter / Threads ca 8M User
 [Mastodon](https://joinmastodon.org)  ist das größte Soziale Netwerk im Fediverse. Im Grunde funktioniert Mastodon wie Twitter oder Threads, ist also ein Microbloging Dienst. Ihr habt die Möglichkeit kurze Nachrichten, Bilder oder Videos in die Welt zu setzen, andere Leute können das liken, kommentieren oder resharen, also ist alles so wie ihr es kennt und geliebt habt, bevor Musk Twitter zum digitalen Misthaufen umwandelte. Mastodon ist auf jeden Fall schon aus der Beta-Phase heraus und funktioniert ziemlich fehlerfrei.
-Mastodon ist der weit verbreiteste Service und ist auch am meisten im Mainstream angekommen. ARD [ard.social](https://ard.social/), und ZDF [zdf.social](https://zdf.social) haben eigene Mastodon-Instanzen. Der Bund [social.bund.de](https://social.bund.de) bietet für die eigenen Institutionen wie Zoll, Deutschen Wetterdienst, dem BSI, verschieden Landtage usw. eine eigene Plattform.
+Mastodon ist der weit verbreiteste Service und ist auch am meisten im Mainstream angekommen. ARD ([ard.social](https://ard.social/)), und ZDF ([zdf.social](https://zdf.social)) haben eigene Mastodon-Instanzen. Der Bund [social.bund.de](https://social.bund.de) bietet für die eigenen Institutionen wie [Zoll](https://social.bund.de/@Zoll), [Deutschen Wetterdienst](https://social.bund.de/@DeutscherWetterdienst), dem [BSI](https://social.bund.de/@bsi), verschieden Landtage usw. eine eigene Plattform.
 So haben die Bürger\*innen eine weitere Möglichkeit diesen Behörden zu folgen. Zuvor war dies meist nur über Twitter möglich.
 
 ### Misskey - Alternative zu Twitter / Threads ca 1,8M User
