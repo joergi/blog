@@ -9,7 +9,7 @@ publishDir = "public"
 schema = true # Enable Schema
 twitter_cards = false # Enable Twitter Cards if true
 readmore = true # Show "Read more" button in list if true
-authorbox = true # Show authorbox at bottom of pages if true
+authorbox = false # Show authorbox at bottom of pages if true
 toc = true # Enable Table of Contents
 customCSS = ["css/custom.css"] # Include custom CSS files
 
