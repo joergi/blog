@@ -11,7 +11,7 @@ Dies ist die komplette Version. Die Userzahlen der Server sind alle vom Januar 2
 
 ## Einleitung
 Na, wo treibt ihr euch noch auf Social Media rum? Facebook, Instagram, Threads, Twitter/X, TikTok oder Youtube? Oder seid ihr MySpace treu geblieben? Oder benutzt ihr gar kein Social Media? Ihr Glücklichen!  
-Bei mir und auch sicherlich bei viele von euch geht die Hand nach dem Aufwachen morgens erst einmal zum Handy, die entsprechenden Apps öffnen und nachschauen, was so außerhalb eures Bettes passiert ist. Na, fühlt ihr euch erwischt?  
+Bei mir und auch sicherlich bei vielen von euch geht die Hand nach dem Aufwachen morgens erst einmal zum Handy, die entsprechenden Apps öffnen und nachschauen, was so außerhalb eures Bettes passiert ist. Na, fühlt ihr euch erwischt?  
 Und wenn man ehrlich ist, macht es immer weniger Spaß, weil die Netzwerke von Leuten geführt werden, die entweder Trump nach der Nase tanzen oder für seine Politik mitverantwortlich sind. Zumindest in meiner Facebook Timeline spülen die Algorithmen immer mehr rechten Müll, obwohl die Freundesliste eigentlich clean von irgendwelchen AfD Trotteln ist. Besonders in den 2-3 Monaten vor der Bundestagswahl wurde es immer mehr und immer unerträglicher.  
 Facebook, Instagram und Threads gehören zu Meta (dazu gehört auch noch u.a. WhatsApp), also Mark Zuckerberg. Meta hatte schon vor Trumps zweiter Amtszeit angekündigt, sein Faktencheck-Programm in den USA zu beenden und spendete ebenso wie auch Google, Amazon und viele andere Tech Firmen je 1 Million Euro an Trump für dessen Amtseinführung.  
 Twitter bzw X gehört Elon Musk. Zu diesem Nazi muss man ja nichts mehr schreiben.  
