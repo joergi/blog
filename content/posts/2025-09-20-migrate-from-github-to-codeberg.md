@@ -47,3 +47,5 @@ Normally, it's not recommended to change the git history, especially if others a
 ## ToDo:
 - change the script to use more than one URL
 - if a repo has more than one committer, make it possible to link them all to their Codeberg profiles
+- check if there is a possibility to migrate the GitHub actions to [Codeberg/Forgejo actions](https://docs.codeberg.org/ci/actions/)
+- 
