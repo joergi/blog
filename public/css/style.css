@@ -839,6 +839,12 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	border-bottom: 1px solid #ebebeb;
 }
 
+.authorbox__singleAuthor {
+	width: 100%;
+	float: left;
+	margin: 10px;
+}
+
 .authorbox__avatar {
 	float: left;
 	padding: 3px;
@@ -847,6 +853,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .authorbox__header {
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
