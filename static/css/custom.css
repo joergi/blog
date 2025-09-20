@@ -75,3 +75,7 @@ blockquote {
 .toc__menu a {
     color: #FF1493;
 }
+
+.list__title {
+    font-size: 1.8rem;
+}
