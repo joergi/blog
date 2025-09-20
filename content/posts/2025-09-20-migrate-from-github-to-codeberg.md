@@ -28,23 +28,23 @@ So I wanted to migrate some of my repos too and I had a look how this could be d
 
 ## Official migration tool from Codeberg
 If you go to Codeberg, there is an official migration tool:
-{{< figure src="img/codeberg_migration_button.png" caption="Button for doing the migration"  >}}
+{{< figure src="/img/codeberg_migration_button.png" caption="Button for doing the migration"  >}}
 You will need a GitHub PAT (Personal Access Token) from Codeberg for this.  
 If you run the migration, the repository will be on Codeberg, but the authors are not linked.  
-{{< figure src="img/codeberg_overview_not_linked.png" caption="The author is not linked"  >}}
+{{< figure src="/img/codeberg_overview_not_linked.png" caption="The author is not linked"  >}}
 Also, if you have submitted your code originally with a GPG signature, you will see: "No known key found for this signature in database".  
-{{< figure src="img/codeberg_not_linked_no_gpg.png" caption="No known key found for this signature in database"  >}}
+{{< figure src="/img/codeberg_not_linked_no_gpg.png" caption="No known key found for this signature in database"  >}}
 This will (in theory) work for most of the users as expected and maybe the commit is linked to the author correctly, but only if you have the same email address on GitHub and Codeberg.
 As I try to [save the privacy of my real email address on GitHub](https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github), I have a GitHub owned email address (e.g. `12345678+MYGITHUBUSERNAME@users.noreply.github.com`) , which I can't add to Codeberg, as I can never confirm the email address.
 As I really wanted to see MY commits from the past, linked to my new Codeberg user, I had to run the extra mile here.
-{{< figure src="img/codeberg_overview_linked.png" caption="the commits are linked to the Codeberg author"  >}}
 
 ## Using my own script
 So I used Microsoft Copilot to create a script to escape from it's own Microsoft / GitHub product:  
-The end script is available on [Codeberg](https://codeberg.org/joergi/migrate_github_repo_to_codeberg)
-This script does a git history rewrite to link the authors to their Codeberg profiles.
-Normally, it's not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository.
-
+The end script is available on [Codeberg](https://codeberg.org/joergi/migrate_github_repo_to_codeberg)  
+This script does a git history rewrite to link the authors to their Codeberg profiles.  
+Normally, it's not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository.    
+So now it looks like I wanted it to look like:  
+{{< figure src="/img/codeberg_overview_linked.png" caption="the commits are linked to the Codeberg author"  >}}
 
 ## ToDo:
 - change the script to use more than one URL
