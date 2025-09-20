@@ -83,3 +83,7 @@ blockquote {
 .logo__title {
     color: #FF1493;
 }
+
+a:hover {
+    color: #FF1493;
+}
