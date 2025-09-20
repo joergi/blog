@@ -11,7 +11,7 @@
   <meta itemprop="description" content="Using if you use the official Codeberg migration tool the authors are not linked. so this script does a git history rewrite to link the authors to their Codeberg profiles.">
   <meta itemprop="datePublished" content="2025-09-20T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-20T00:00:00+00:00">
-  <meta itemprop="wordCount" content="577">
+  <meta itemprop="wordCount" content="627">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -124,14 +124,31 @@ As I really wanted to see MY commits from the past, linked to my new Codeberg us
 <p>So I used Microsoft Copilot to create a script to escape from it&rsquo;s own Microsoft / GitHub product:<br>
 The end script is available on <a href="https://codeberg.org/joergi/migrate_github_repo_to_codeberg">Codeberg</a><br>
 This script does a git history rewrite to link the authors to their Codeberg profiles.<br>
-Normally, it&rsquo;s not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository. <br>
-So now it looks like I wanted it to look like:<br>
+Normally, it&rsquo;s not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository.<br>
+But as this is just my own repository, it&rsquo;s fine.</p>
+<p>if I start the migration with the script like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./migrate_to_codeberg.sh https://github.com/joergi/rss-corners
+</span></span></code></pre></div><p>or with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./migrate_to_codeberg.sh git@github.com:joergi/rss-corners.git
+</span></span></code></pre></div><p>Here you can see how the history was rewritten:
+<figure><img src="/img/codeberg_rewrite_history.png"
+    alt="the history is rewritten"><figcaption>
+      <p>the history is rewritten</p>
+    </figcaption>
+</figure>
+</p>
+<p>So now it looks like I wanted it to look like:<br>
 <figure><img src="/img/codeberg_overview_linked.png"
     alt="the commits are linked to the Codeberg author"><figcaption>
       <p>the commits are linked to the Codeberg author</p>
     </figcaption>
 </figure>
 </p>
+<p>The original script I have migrated:</p>
+<ul>
+<li>GitHub -&gt; <a href="https://github.com/joergi/rss-corners">https://github.com/joergi/rss-corners</a></li>
+<li>Codeberg -&gt; <a href="https://codeberg.org/joergi/rss-corners">https://codeberg.org/joergi/rss-corners</a></li>
+</ul>
 <h2 id="todo">ToDo:</h2>
 <ul>
 <li>change the script to use more than one URL</li>

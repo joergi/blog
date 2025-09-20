@@ -42,9 +42,28 @@ As I really wanted to see MY commits from the past, linked to my new Codeberg us
 So I used Microsoft Copilot to create a script to escape from it's own Microsoft / GitHub product:  
 The end script is available on [Codeberg](https://codeberg.org/joergi/migrate_github_repo_to_codeberg)  
 This script does a git history rewrite to link the authors to their Codeberg profiles.  
-Normally, it's not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository.    
+Normally, it's not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository.  
+But as this is just my own repository, it's fine.
+
+if I start the migration with the script like:
+```bash
+./migrate_to_codeberg.sh https://github.com/joergi/rss-corners
+```
+or with: 
+```bash
+./migrate_to_codeberg.sh git@github.com:joergi/rss-corners.git
+```
+
+Here you can see how the history was rewritten:
+{{< figure src="/img/codeberg_rewrite_history.png" caption="the history is rewritten"  >}}
+
+
 So now it looks like I wanted it to look like:  
 {{< figure src="/img/codeberg_overview_linked.png" caption="the commits are linked to the Codeberg author"  >}}
+
+The original script I have migrated:
+- GitHub -> https://github.com/joergi/rss-corners
+- Codeberg -> https://codeberg.org/joergi/rss-corners
 
 ## ToDo:
 - change the script to use more than one URL
