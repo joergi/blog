@@ -55,7 +55,7 @@ or with:
 ```
 
 Here you can see how the history was rewritten:
-{{< figure src="/img/codeberg_rewrite_history.png" caption="the history is rewritten"  >}}
+{{< figure src="/img/codeberg_rewriting_history.png" caption="the history is rewritten"  >}}
 
 
 So now it looks like I wanted it to look like:  
