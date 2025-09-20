@@ -71,3 +71,7 @@ h6 {
 blockquote {
     border-left: 4px solid #FF1493;
 }
+
+.toc__menu a {
+    color: #FF1493;
+}

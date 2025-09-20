@@ -11,7 +11,7 @@
   <meta itemprop="description" content="Using if you use the official Codeberg migration tool the authors are not linked. so this script does a git history rewrite to link the authors to their Codeberg profiles.">
   <meta itemprop="datePublished" content="2025-09-20T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-20T00:00:00+00:00">
-  <meta itemprop="wordCount" content="566">
+  <meta itemprop="wordCount" content="577">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -96,7 +96,7 @@ Preference to reduce single vendor dependency and potential policy shifts tied t
 So I wanted to migrate some of my repos too and I had a look how this could be done.</p>
 <h2 id="official-migration-tool-from-codeberg">Official migration tool from Codeberg</h2>
 <p>If you go to Codeberg, there is an official migration tool:
-<figure><img src="img/codeberg_migration_button.png"
+<figure><img src="/img/codeberg_migration_button.png"
     alt="Button for doing the migration"><figcaption>
       <p>Button for doing the migration</p>
     </figcaption>
@@ -104,14 +104,14 @@ So I wanted to migrate some of my repos too and I had a look how this could be d
 
 You will need a GitHub PAT (Personal Access Token) from Codeberg for this.<br>
 If you run the migration, the repository will be on Codeberg, but the authors are not linked.<br>
-<figure><img src="img/codeberg_overview_not_linked.png"
+<figure><img src="/img/codeberg_overview_not_linked.png"
     alt="The author is not linked"><figcaption>
       <p>The author is not linked</p>
     </figcaption>
 </figure>
 
 Also, if you have submitted your code originally with a GPG signature, you will see: &ldquo;No known key found for this signature in database&rdquo;.<br>
-<figure><img src="img/codeberg_not_linked_no_gpg.png"
+<figure><img src="/img/codeberg_not_linked_no_gpg.png"
     alt="No known key found for this signature in database"><figcaption>
       <p>No known key found for this signature in database</p>
     </figcaption>
@@ -119,18 +119,19 @@ Also, if you have submitted your code originally with a GPG signature, you will 
 
 This will (in theory) work for most of the users as expected and maybe the commit is linked to the author correctly, but only if you have the same email address on GitHub and Codeberg.
 As I try to <a href="https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github">save the privacy of my real email address on GitHub</a>, I have a GitHub owned email address (e.g. <code>12345678+MYGITHUBUSERNAME@users.noreply.github.com</code>) , which I can&rsquo;t add to Codeberg, as I can never confirm the email address.
-As I really wanted to see MY commits from the past, linked to my new Codeberg user, I had to run the extra mile here.
-<figure><img src="img/codeberg_overview_linked.png"
+As I really wanted to see MY commits from the past, linked to my new Codeberg user, I had to run the extra mile here.</p>
+<h2 id="using-my-own-script">Using my own script</h2>
+<p>So I used Microsoft Copilot to create a script to escape from it&rsquo;s own Microsoft / GitHub product:<br>
+The end script is available on <a href="https://codeberg.org/joergi/migrate_github_repo_to_codeberg">Codeberg</a><br>
+This script does a git history rewrite to link the authors to their Codeberg profiles.<br>
+Normally, it&rsquo;s not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository. <br>
+So now it looks like I wanted it to look like:<br>
+<figure><img src="/img/codeberg_overview_linked.png"
     alt="the commits are linked to the Codeberg author"><figcaption>
       <p>the commits are linked to the Codeberg author</p>
     </figcaption>
 </figure>
 </p>
-<h2 id="using-my-own-script">Using my own script</h2>
-<p>So I used Microsoft Copilot to create a script to escape from it&rsquo;s own Microsoft / GitHub product:<br>
-The end script is available on <a href="https://codeberg.org/joergi/migrate_github_repo_to_codeberg">Codeberg</a>
-This script does a git history rewrite to link the authors to their Codeberg profiles.
-Normally, it&rsquo;s not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository.</p>
 <h2 id="todo">ToDo:</h2>
 <ul>
 <li>change the script to use more than one URL</li>
