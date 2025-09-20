@@ -79,3 +79,7 @@ blockquote {
 .list__title {
     font-size: 1.8rem;
 }
+
+.logo__title {
+    color: #FF1493;
+}
