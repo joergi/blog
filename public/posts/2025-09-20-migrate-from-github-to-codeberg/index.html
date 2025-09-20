@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Migrating from GitHub to Codeberg - My digital brain</title>
+<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name="description" content="Using if you use the official Codeberg migration tool the authors are not linked. so this script does a git history rewrite to link the authors to their Codeberg profiles.">
+    
+  <meta itemprop="name" content="Migrating from GitHub to Codeberg">
+  <meta itemprop="description" content="Using if you use the official Codeberg migration tool the authors are not linked. so this script does a git history rewrite to link the authors to their Codeberg profiles.">
+  <meta itemprop="datePublished" content="2025-09-20T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-09-20T00:00:00+00:00">
+  <meta itemprop="wordCount" content="566">
+
+<link rel="shortcut icon" href="/blog/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel="stylesheet" href="/blog/css/style.css">
+<link rel="stylesheet" href="/blog/css/v2-styles.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
+
+    
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		<a href="https://github.com/joergi/blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#FF1493; color:#e7e7e7; position: fixed; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+<a href="https://blog.joergi.io/index.xml" aria-label="RSS Feed">
+	<svg
+			width="80px"
+			height="80px"
+			viewBox="0 0 256 256"
+			style="position: fixed; top: 0; border: 0; right: 0;">
+		<path
+				style="fill:#FF1493;"
+				d="M -0.3515625,-0.19335938 19.492188,19.595703 c 3.878081,-3.279638 8.896647,-5.255859 14.396484,-5.255859 h 59.140625 c 12.342703,0 22.279293,9.936598 22.279293,22.279297 v 59.140625 c 0,5.436924 -1.92814,10.406114 -5.14062,14.265624 L 128.54492,128.35156 127.83984,0.16015625 Z M 110.16797,110.02539 l -9.86328,-9.83594 a 70.88849,70.88849 0 0 1 0.0156,0.43164 H 86.142578 A 56.710795,56.710795 0 0 0 83.423828,83.353516 L 46.615234,46.644531 A 56.710795,56.710795 0 0 0 29.431641,43.910156 V 29.732422 a 70.88849,70.88849 0 0 1 0.236328,0.01172 L 19.492188,19.595703 c -4.825086,4.080505 -7.882813,10.180576 -7.882813,17.023438 v 59.140625 c 0,12.342694 9.936598,22.279294 22.279297,22.279294 h 59.140625 c 6.905774,0 13.058293,-3.11147 17.138673,-8.01367 z M 29.667969,29.744141 46.615234,46.644531 A 56.710795,56.710795 0 0 1 83.423828,83.353516 L 100.30469,100.18945 A 70.88849,70.88849 0 0 0 29.667969,29.744141 Z M 29.431641,53.630859 A 46.988943,46.988943 0 0 1 76.421875,100.62109 H 62.648438 A 33.216322,33.216322 0 0 0 29.431641,67.404297 Z m 9.722656,27.546875 a 9.7218515,9.7218515 0 0 1 9.722656,9.720704 9.7218515,9.7218515 0 0 1 -9.722656,9.722652 9.7218515,9.7218515 0 0 1 -9.722656,-9.722652 9.7218515,9.7218515 0 0 1 9.722656,-9.720704 z"
+				transform="scale(2)"/>
+	</svg></a>
+	<div class="logo">
+		<a class="logo__link" href="/blog/" title="My digital brain" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">My digital brain</div>
+					
+				</div>
+		</a>
+	</div>
+		
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Migrating from GitHub to Codeberg</h1>
+			
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#reasons-for-migration">Reasons for migration</a></li>
+    <li><a href="#official-migration-tool-from-codeberg">Official migration tool from Codeberg</a></li>
+    <li><a href="#using-my-own-script">Using my own script</a></li>
+    <li><a href="#todo">ToDo:</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="reasons-for-migration">Reasons for migration</h2>
+<p>There are many reasons, why many of the open source projects are migrating from GitHub to Codeberg.<br>
+<a href="https://github.com/copilot/">GitHub Copilot, the AI from GitHub</a> which is owned by Microsoft, gives us the following reasons:</p>
+<blockquote>
+<p>Main reason:<br>
+many projects prefer a community‑run, non‑profit, open infrastructure (Codeberg e.V. running Forgejo/Gitea) over GitHub’s proprietary, Microsoft‑controlled platform with increasing commercialization (e.g. AI features, data usage, lock‑in concerns). Privacy, transparency, open governance, and avoiding dependence on a single corporate vendor are the core motivators.</p></blockquote>
+<p>When then asking GitHub Copilot for political reasons, it gave me the following list:</p>
+<blockquote>
+<p>U.S. jurisdiction and exposure to sanctions or export controls (accounts in sanctioned regions restricted).<br>
+Past controversy over Microsoft (GitHub owner) contracts with U.S. government agencies (e.g. immigration enforcement) raising ethical concerns for some contributors.<br>
+DMCA takedown handling and perceived overreach (e.g. high‑profile repository removals) creating fears of centralized control.<br>
+Risk of sudden access loss for developers in geopolitically sensitive regions.<br>
+Concern over corporate influence on open tooling versus community governance (Codeberg is a German non profit).<br>
+Desire for stronger EU privacy and data protection alignment (GDPR emphasis).<br>
+Objections to use of public code for large scale AI training without explicit opt in.<br>
+Preference to reduce single vendor dependency and potential policy shifts tied to U.S. politics.</p></blockquote>
+<p>And what GitHub Copilot has not directly mentioned:<br>
+<a href="https://www.cnbc.com/2025/01/09/microsoft-contributes-1-million-to-trumps-inauguration-fund.html">&ldquo;Microsoft contributes $1 million to Trump’s inauguration fund in 2025&rdquo; (CNBC)</a></p>
+<p>So, yeah, there are a lot of reasons to migrate. <br>
+So I wanted to migrate some of my repos too and I had a look how this could be done.</p>
+<h2 id="official-migration-tool-from-codeberg">Official migration tool from Codeberg</h2>
+<p>If you go to Codeberg, there is an official migration tool:
+<figure><img src="img/codeberg_migration_button.png"
+    alt="Button for doing the migration"><figcaption>
+      <p>Button for doing the migration</p>
+    </figcaption>
+</figure>
+
+You will need a GitHub PAT (Personal Access Token) from Codeberg for this.<br>
+If you run the migration, the repository will be on Codeberg, but the authors are not linked.<br>
+<figure><img src="img/codeberg_overview_not_linked.png"
+    alt="The author is not linked"><figcaption>
+      <p>The author is not linked</p>
+    </figcaption>
+</figure>
+
+Also, if you have submitted your code originally with a GPG signature, you will see: &ldquo;No known key found for this signature in database&rdquo;.<br>
+<figure><img src="img/codeberg_not_linked_no_gpg.png"
+    alt="No known key found for this signature in database"><figcaption>
+      <p>No known key found for this signature in database</p>
+    </figcaption>
+</figure>
+
+This will (in theory) work for most of the users as expected and maybe the commit is linked to the author correctly, but only if you have the same email address on GitHub and Codeberg.
+As I try to <a href="https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github">save the privacy of my real email address on GitHub</a>, I have a GitHub owned email address (e.g. <code>12345678+MYGITHUBUSERNAME@users.noreply.github.com</code>) , which I can&rsquo;t add to Codeberg, as I can never confirm the email address.
+As I really wanted to see MY commits from the past, linked to my new Codeberg user, I had to run the extra mile here.
+<figure><img src="img/codeberg_overview_linked.png"
+    alt="the commits are linked to the Codeberg author"><figcaption>
+      <p>the commits are linked to the Codeberg author</p>
+    </figcaption>
+</figure>
+</p>
+<h2 id="using-my-own-script">Using my own script</h2>
+<p>So I used Microsoft Copilot to create a script to escape from it&rsquo;s own Microsoft / GitHub product:<br>
+The end script is available on <a href="https://codeberg.org/joergi/migrate_github_repo_to_codeberg">Codeberg</a>
+This script does a git history rewrite to link the authors to their Codeberg profiles.
+Normally, it&rsquo;s not recommended to change the git history, especially if others are also committing to this repository or have checked out the repository.</p>
+<h2 id="todo">ToDo:</h2>
+<ul>
+<li>change the script to use more than one URL</li>
+<li>if a repo has more than one committer, make it possible to link them all to their Codeberg profiles</li>
+<li>check if there is a possibility to migrate the GitHub actions to <a href="https://docs.codeberg.org/ci/actions/">Codeberg/Forgejo actions</a></li>
+</ul>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 My digital brain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/mansoorbarri/roadster/" rel="nofollow noopener" target="_blank">Roadster</a> theme.</span>
+
+		</div>
+		<div><a href="https://github.com/joergi">GitHub</a> | <a rel="me" href="https://chaos.social/@joergi">Mastodon</a> | <a href="https://bsky.app/profile/joergi.bsky.social">Bluesky</a> | <a href="https://stackoverflow.com/users/863403/joergi">StackOverflow</a></div>
+	</div>
+	<div><span style="color:#222222; font-size:0.8em">the nice github logo on top left is build by <a href="https://github.com/tholman/github-corners">@tholman</a> |
+		the nice RSS logo on top is build by <a href="https://code.joergi.io/rss-corners/">@joergi</a> | got some input from the github page from <a href="https://github.com/dzhavat/dzhavat.github.io">dzhavat</a></span></div>
+</footer>
+	</div>
+<script async defer src="/blog/js/menu.js"></script>
+</body>
+</html>

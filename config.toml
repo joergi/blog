@@ -1,8 +1,8 @@
 baseURL = "http://localhost:1313/blog/"
 languageCode = "en-us"
 title = "My digital brain"
-#theme = "roadster" # fork from mainroad
-theme = "mainroad" # fork from mainroad
+theme = "roadster" # fork from mainroad
+#theme = "mainroad" # original theme
 themesDir = "themes"
 publishDir = "public"
 
