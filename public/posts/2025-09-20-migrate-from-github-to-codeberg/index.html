@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Migrating from GitHub to Codeberg - My digital brain</title>
-	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="Using if you use the official Codeberg migration tool the authors are not linked. so this script does a git history rewrite to link the authors to their Codeberg profiles.">
-		
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=article:author content="Joergi">
+<meta name=fediverse:creator content="joergi@chaos.social">
+
+<title>Migrating from GitHub to Codeberg - My digital brain</title>
+<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name="description" content="Using if you use the official Codeberg migration tool the authors are not linked. so this script does a git history rewrite to link the authors to their Codeberg profiles.">
+    
   <meta itemprop="name" content="Migrating from GitHub to Codeberg">
   <meta itemprop="description" content="Using if you use the official Codeberg migration tool the authors are not linked. so this script does a git history rewrite to link the authors to their Codeberg profiles.">
   <meta itemprop="datePublished" content="2025-09-20T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-20T00:00:00+00:00">
   <meta itemprop="wordCount" content="633">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 
-	<link rel="stylesheet" href="/blog/css/style.css">
-	<link rel="stylesheet" href="/blog/css/custom.css">
+<link rel="shortcut icon" href="/blog/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel="stylesheet" href="/blog/css/style.css">
+<link rel="stylesheet" href="/blog/css/v2-styles.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
 
-	<link rel="shortcut icon" href="/blog/favicon.ico">
-		
+    
+
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -48,7 +50,7 @@
 				</div>
 		</a>
 	</div>
-		<div class="divider"></div>
+		
 	</div>
 </header>
 		<div class="wrapper flex">
@@ -58,7 +60,9 @@
 	<article class="post">
 		<header class="post__header">
 			<h1 class="post__title">Migrating from GitHub to Codeberg</h1>
-			
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-09-20T00:00:00Z">September 20, 2025</time></div></div>
 		</header>
 		
 <div class="post__toc toc">
@@ -79,7 +83,8 @@
 <a href="https://github.com/copilot/">GitHub Copilot, the AI from GitHub</a> which is owned by Microsoft, gives us the following reasons:</p>
 <blockquote>
 <p>Main reason:<br>
-many projects prefer a community‑run, non‑profit, open infrastructure (Codeberg e.V. running Forgejo/Gitea) over GitHub’s proprietary, Microsoft‑controlled platform with increasing commercialization (e.g. AI features, data usage, lock‑in concerns). Privacy, transparency, open governance, and avoiding dependence on a single corporate vendor are the core motivators.</p></blockquote>
+many projects prefer a community‑run, non‑profit, open infrastructure (Codeberg e.V. running Forgejo/Gitea) over GitHub’s proprietary, Microsoft‑controlled platform with increasing commercialization (e.g. AI features, data usage, lock‑in concerns). Privacy, transparency, open governance, and avoiding dependence on a single corporate vendor are the core motivators.</p>
+</blockquote>
 <p>When then asking GitHub Copilot for political reasons, it gave me the following list:</p>
 <blockquote>
 <p>U.S. jurisdiction and exposure to sanctions or export controls (accounts in sanctioned regions restricted).<br>
@@ -89,7 +94,8 @@ Risk of sudden access loss for developers in geopolitically sensitive regions.<b
 Concern over corporate influence on open tooling versus community governance (Codeberg is a German non profit).<br>
 Desire for stronger EU privacy and data protection alignment (GDPR emphasis).<br>
 Objections to use of public code for large scale AI training without explicit opt in.<br>
-Preference to reduce single vendor dependency and potential policy shifts tied to U.S. politics.</p></blockquote>
+Preference to reduce single vendor dependency and potential policy shifts tied to U.S. politics.</p>
+</blockquote>
 <p>And what GitHub Copilot has not directly mentioned:<br>
 <a href="https://www.cnbc.com/2025/01/09/microsoft-contributes-1-million-to-trumps-inauguration-fund.html">&ldquo;Microsoft contributes $1 million to Trump’s inauguration fund in 2025&rdquo; (CNBC)</a></p>
 <p>So, yeah, there are a lot of reasons to migrate. <br>
@@ -172,7 +178,7 @@ But as this is just my own repository, it&rsquo;s fine.</p>
 		
 		<div class="footer__copyright">
 			&copy; 2025 My digital brain.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/mansoorbarri/roadster/" rel="nofollow noopener" target="_blank">Roadster</a> theme.</span>
 
 		</div>
 		<div><a href="https://github.com/joergi">GitHub</a> | <a rel="me" href="https://chaos.social/@joergi">Mastodon</a> | <a href="https://bsky.app/profile/joergi.bsky.social">Bluesky</a> | <a href="https://stackoverflow.com/users/863403/joergi">StackOverflow</a></div>

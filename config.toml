@@ -1,8 +1,8 @@
 baseURL = "http://localhost:1313/blog/"
 languageCode = "en-us"
 title = "My digital brain"
-#theme = "roadster" # fork from mainroad
-theme = "mainroad" # original theme
+theme = "roadster" # fork from mainroad
+#theme = "mainroad" # original theme
 themesDir = "themes"
 publishDir = "public"
 
@@ -12,19 +12,5 @@ readmore = true # Show "Read more" button in list if true
 authorbox = false # Show authorbox at bottom of pages if true
 toc = true # Enable Table of Contents
 customCSS = ["css/custom.css"] # Include custom CSS files
+post_meta = ["author", "date", "categories", "translations"]
 
-[Params.widgets]
-recent_num = 5 # Set the number of articles in the "Recent articles" widget
-categories_counter = false # Enable counter for each category in "Categories" widget
-tags_counter = false # Enable counter for each tag in "Tags" widget
-
-
-
-[Site.Params.Author]
-name = "Joergi"
-image = "https://avatars.githubusercontent.com/u/1439809?v=4"
-links = [
-    { github = "https://github.com/joergi" },
-    { mastodon = "https://chaos.social/@joergi" },
-    { bluesky = "https://bsky.app/profile/joergi.bsky.social" }
-]
