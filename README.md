@@ -5,6 +5,11 @@ Start server:
 hugo server -D
 ```
 
+For full rebuilds on change: 
+```bash
+hugo server --disableFastRender
+```
+
 start with local config
 ```bash
 hugo server -D --config config.local.toml
