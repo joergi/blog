@@ -9,8 +9,8 @@
 	<meta name="description" content="">
 		
   <meta itemprop="name" content="Posts">
-  <meta itemprop="datePublished" content="2025-09-20T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-09-20T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2025-12-12T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-12T00:00:00+00:00">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -58,6 +58,29 @@
 	<header class="main__header">
 		<h1 class="main__title">Posts</h1>
 	</header><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog/posts/2017-10-17-using-docker-as-non-root/" rel="bookmark">
+			Using Docker as non-root
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2017-10-17T00:00:00Z">October 17, 2017</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>[UPDATE 2020-04-21] as mentioned in this <a href="https://askubuntu.com/a/477554/80388">post</a> it&rsquo;s not needed anymore:</p>
+<pre tabindex="0"><code>Good news: the new docker (version 19.03 (currently experimental)) will be able to run rootless negating the problems that can occur using a root user. No more messing with elevated permissions, root and anything that might open up your machine when you did not want to.
+</code></pre><p>Normally you need to run docker as root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker run hello-world
+</span></span></code></pre></div><p>If this is going on your nerves, you can add your normal user to the docker-usergroup. <br>
+But before you do this, read the warning in this <a href="https://askubuntu.com/a/477554/80388">post</a> (where i also got the code from)</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/posts/2017-10-17-using-docker-as-non-root/">Read more…</a>
+	</div>
+</article><article class="list__item post">
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
@@ -293,34 +316,6 @@ P.S. Badalona has a perfect beach - so go there during the day, swim drink some 
 </span></span><span style="display:flex;"><span>Release: 14.04
 </span></span><span style="display:flex;"><span>Codename: trusty
 </span></span></code></pre></div>
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/" rel="bookmark">
-			No HDD space left for ubuntu update, make some space at /boot 
-			</a>
-		</h2>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2015-05-21T00:00:00Z">May 21, 2015</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/linux/" rel="category">Linux</a>, <a class="meta__link" href="/blog/categories/ubuntu/" rel="category">Ubuntu</a>, <a class="meta__link" href="/blog/categories/problems/" rel="category">Problems</a>, <a class="meta__link" href="/blog/categories/how-to/" rel="category">How-To</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p><img src="/img/no_hdd_space_left_full.png" alt="Alt text" title="your hd is full, make space in /boot"> <br>
-your hd is full, make space in /boot
-aaaa
-make a</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /boot ls -la
-</span></span><span style="display:flex;"><span>so you see the <span style="color:#e6db74">`</span>/boot<span style="color:#e6db74">`</span> folder
-</span></span></code></pre></div><p><img src="/img/no_hdd_space_left_full_lsla.png" alt="Alt text" title="screenshot of the boot folder"></p>
-<p>now delete the stuff you don&rsquo;t need anymore:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo aptitude remove linux-image-3.13.0-49-generic
-</span></span><span style="display:flex;"><span>sudo apt-get remove ...
-</span></span></code></pre></div><p><img src="/imgafter_deleting_linux_image.png" alt="Alt text" title="ls -la after deleting the linux kernel image">  <br>
-(ls -la after deleting the linux kernel image)</p>
 	</div>
 </article>
 </main>

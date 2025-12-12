@@ -6,8 +6,15 @@
     <description>Recent content on My digital brain</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting a server for mobile HTML testing</title>
+      <link>http://localhost:1313/blog/posts/2025-12-12-starting-a-server-for-mobile-html-testing/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2025-12-12-starting-a-server-for-mobile-html-testing/</guid>
+      <description>&lt;h1 id=&#34;problem-how-to-test-on-your-mobile-phone&#34;&gt;Problem: how to test on your mobile phone&lt;/h1&gt;&#xA;&lt;p&gt;When I&amp;rsquo;m building a HTML website with responsive design, I want to test the website on my mobile phone.&#xA;So I need to start an easy webserver.&lt;/p&gt;&#xA;&lt;h1 id=&#34;starting-the-server&#34;&gt;Starting the server&lt;/h1&gt;&#xA;&lt;p&gt;As python is installed on my machine, I can start it easily with python:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ python3 -m http.server &lt;span style=&#34;color:#ae81ff&#34;&gt;8000&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The website is now available via http://0.0.0.0:8000/&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Migrating from GitHub to Codeberg</title>
       <link>http://localhost:1313/blog/posts/2025-09-20-migrate-from-github-to-codeberg/</link>

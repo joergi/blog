@@ -9,8 +9,8 @@
 	<meta name="description" content="">
 		
   <meta itemprop="name" content="Posts">
-  <meta itemprop="datePublished" content="2025-09-20T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-09-20T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2025-12-12T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-12T00:00:00+00:00">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -58,6 +58,28 @@
 	<header class="main__header">
 		<h1 class="main__title">Posts</h1>
 	</header><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/blog/posts/2025-12-12-starting-a-server-for-mobile-html-testing/" rel="bookmark">
+			Starting a server for mobile HTML testing
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-12-12T00:00:00Z">December 12, 2025</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<h1 id="problem-how-to-test-on-your-mobile-phone">Problem: how to test on your mobile phone</h1>
+<p>When I&rsquo;m building a HTML website with responsive design, I want to test the website on my mobile phone.
+So I need to start an easy webserver.</p>
+<h1 id="starting-the-server">Starting the server</h1>
+<p>As python is installed on my machine, I can start it easily with python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ python3 -m http.server <span style="color:#ae81ff">8000</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...</span>
+</span></span></code></pre></div><p>The website is now available via http://0.0.0.0:8000/</p>
+	</div>
+</article><article class="list__item post">
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
@@ -311,30 +333,6 @@ And the best is:</p>
 <li>remove all images you need to download everything again) - <code>docker rmi -f $(docker images -q)</code></li>
 <li>delete all docker network bridges - <code>docker network prune</code></li>
 </ul>
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2022-10-14-install-patch-for-thinkpad-trackpoint-keyboard-ii/" rel="bookmark">
-			Install patch for Thinkpad Trackpoint Keyboard II
-			</a>
-		</h2>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-10-14T00:00:00Z">October 14, 2022</time></div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<h2 id="new-thinkpad-trackpoint-keyboard-ii">New Thinkpad Trackpoint Keyboard II</h2>
-<p><img src="/img/trackpoint-keyboard.jpg" alt="Alt text" title="trackpoint of thinkpad keypad"> <br>
-(i maybe should have cleaned it, before the picture&hellip;)</p>
-<p>I got my first Thinkpad Trackpoint keyboard as a farwell gift from a company I worked for (thanks &lt;3 ).<br>
-I don&rsquo;t use any mouse, I just use the red &ldquo;joystick&rdquo; (called trackpoint) to navigate. For users which aren&rsquo;t used to it, it&rsquo;s a horror if they have to use my keyboard. But if you are used to it, you don&rsquo;t wanna work without it anymore.<br>
-As you can see, the old one is not in a good shape anymore. And as working-from-home is the new normal, the company I work for, offers us the equipment we need, so I ordered a new one.<br>
-This is a newer version, which is running without a cable but wirelesse with an USB dongle. So far so good.</p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/posts/2022-10-14-install-patch-for-thinkpad-trackpoint-keyboard-ii/">Read more…</a>
 	</div>
 </article>
 </main>
