@@ -4,16 +4,30 @@
     <title>Boot on My digital brain</title>
     <link>http://localhost:1313/blog/tags/boot/</link>
     <description>Recent content in Boot on My digital brain</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/boot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/boot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>No HDD space left for ubuntu update, make some space at /boot </title>
       <link>http://localhost:1313/blog/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/posts/2015-05-20-no-hdd-space-left-for-ubuntu-update-make-some-space-at-boot/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/img/no_hdd_space_left_full.png&#34; alt=&#34;Alt text&#34; title=&#34;your hd is full, make space in /boot&#34;&gt; &lt;br&gt;&#xA;your hd is full, make space in /boot&#xA;aaaa&#xA;make a&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd /boot ls -la&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;so you see the &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;/boot&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; folder&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/img/no_hdd_space_left_full_lsla.png&#34; alt=&#34;Alt text&#34; title=&#34;screenshot of the boot folder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;now delete the stuff you don&amp;rsquo;t need anymore:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo aptitude remove linux-image-3.13.0-49-generic&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get remove ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/imgafter_deleting_linux_image.png&#34; alt=&#34;Alt text&#34; title=&#34;ls -la after deleting the linux kernel image&#34;&gt;  &lt;br&gt;&#xA;(ls -la after deleting the linux kernel image)&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/img/no_hdd_space_left_full.png&#34; alt=&#34;Alt text&#34; title=&#34;your hd is full, make space in /boot&#34;&gt; &lt;br&gt;
+your hd is full, make space in /boot
+aaaa
+make a&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd /boot ls -la
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;so you see the &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;/boot&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; folder
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/img/no_hdd_space_left_full_lsla.png&#34; alt=&#34;Alt text&#34; title=&#34;screenshot of the boot folder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;now delete the stuff you don&amp;rsquo;t need anymore:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo aptitude remove linux-image-3.13.0-49-generic
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get remove ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/imgafter_deleting_linux_image.png&#34; alt=&#34;Alt text&#34; title=&#34;ls -la after deleting the linux kernel image&#34;&gt;  &lt;br&gt;
+(ls -la after deleting the linux kernel image)&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>
+

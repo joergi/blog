@@ -4,163 +4,229 @@
     <title>Categories on My digital brain</title>
     <link>http://localhost:1313/blog/categories/</link>
     <description>Recent content in Categories on My digital brain</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
       <link>http://localhost:1313/blog/categories/blog/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/blog/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Giscus</title>
       <link>http://localhost:1313/blog/categories/giscus/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/giscus/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Github</title>
       <link>http://localhost:1313/blog/categories/github/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/github/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Howto</title>
       <link>http://localhost:1313/blog/categories/howto/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/howto/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Cheatsheet</title>
       <link>http://localhost:1313/blog/categories/cheatsheet/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/cheatsheet/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Docker</title>
       <link>http://localhost:1313/blog/categories/docker/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/docker/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Raspberrypi</title>
       <link>http://localhost:1313/blog/categories/raspberrypi/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/raspberrypi/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Registry</title>
       <link>http://localhost:1313/blog/categories/registry/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/registry/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Java</title>
       <link>http://localhost:1313/blog/categories/java/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/java/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Lombok</title>
       <link>http://localhost:1313/blog/categories/lombok/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/lombok/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Gaming</title>
       <link>http://localhost:1313/blog/categories/gaming/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/gaming/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>How-To</title>
       <link>http://localhost:1313/blog/categories/how-to/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/how-to/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Linux</title>
       <link>http://localhost:1313/blog/categories/linux/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/linux/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Retrogaming</title>
       <link>http://localhost:1313/blog/categories/retrogaming/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/retrogaming/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Developer</title>
       <link>http://localhost:1313/blog/categories/developer/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/developer/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Database</title>
       <link>http://localhost:1313/blog/categories/database/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/database/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Mongo</title>
       <link>http://localhost:1313/blog/categories/mongo/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/mongo/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Spring Boot</title>
       <link>http://localhost:1313/blog/categories/spring-boot/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/spring-boot/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Basics</title>
       <link>http://localhost:1313/blog/categories/basics/</link>
       <pubDate>Mon, 24 Aug 2015 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/basics/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Problems</title>
       <link>http://localhost:1313/blog/categories/problems/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/problems/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Ubuntu</title>
       <link>http://localhost:1313/blog/categories/ubuntu/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/ubuntu/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Node</title>
       <link>http://localhost:1313/blog/categories/node/</link>
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/categories/node/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>
+

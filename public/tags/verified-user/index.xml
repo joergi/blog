@@ -4,16 +4,27 @@
     <title>Verified User on My digital brain</title>
     <link>http://localhost:1313/blog/tags/verified-user/</link>
     <description>Recent content in Verified User on My digital brain</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/verified-user/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/verified-user/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting a verified user on Github</title>
       <link>http://localhost:1313/blog/posts/2020-03-27-getting-a-verified-user-on-github/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/posts/2020-03-27-getting-a-verified-user-on-github/</guid>
-      <description>&lt;p&gt;When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.&#xA;&lt;img src=&#34;http://localhost:1313/blog/img/github1-2.png&#34; alt=&#34;Alt text&#34; title=&#34;Github showing verified user&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you push it from your command line, it normally looks like this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/img/github2.png&#34; alt=&#34;Alt text&#34; title=&#34;github 2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. if you followed the tutorial, and something went wrong, it will look like this:&lt;br&gt;&#xA;&lt;img src=&#34;http://localhost:1313/blog/img/github3_fail.png&#34; alt=&#34;Alt text&#34; title=&#34;github showing unverified commit&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;But let&amp;rsquo;s start from the beginning! &lt;br&gt;&#xA;First of all:&#xA;Github gives you a great Readme for this, that&amp;rsquo;s why I link it here were needed.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When you create a new file directly on Github and push it to your branch, you will see in the commit, that this was done by an verified user.
+&lt;img src=&#34;http://localhost:1313/blog/img/github1-2.png&#34; alt=&#34;Alt text&#34; title=&#34;Github showing verified user&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you push it from your command line, it normally looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/img/github2.png&#34; alt=&#34;Alt text&#34; title=&#34;github 2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;P.S. if you followed the tutorial, and something went wrong, it will look like this:&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/blog/img/github3_fail.png&#34; alt=&#34;Alt text&#34; title=&#34;github showing unverified commit&#34;&gt;&lt;/p&gt;
+&lt;p&gt;But let&amp;rsquo;s start from the beginning! &lt;br&gt;
+First of all:
+Github gives you a great Readme for this, that&amp;rsquo;s why I link it here were needed.&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>
+

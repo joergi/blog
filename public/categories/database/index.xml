@@ -4,16 +4,27 @@
     <title>Database on My digital brain</title>
     <link>http://localhost:1313/blog/categories/database/</link>
     <description>Recent content in Database on My digital brain</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/database/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using MongoRepository with more than one sorting with Spring Boot</title>
       <link>http://localhost:1313/blog/posts/2019-09-09-using-mongorepository-with-more-than-one-sorting-with-spring/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/posts/2019-09-09-using-mongorepository-with-more-than-one-sorting-with-spring/</guid>
-      <description>&lt;p&gt;Sometimes you need a List of the Database to be sorted by more than one column.&lt;/p&gt;&#xA;&lt;p&gt;If you connect to your database with the &lt;code&gt;org.springframework.data.mongodb.repository.MongoRepository&lt;/code&gt; you can only give &lt;code&gt;org.springframework.data.domain.Sort&lt;/code&gt; to a search method.&lt;/p&gt;&#xA;&lt;p&gt;This is how the Repository class looks like:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@Repository&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TestRepository&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; MongoRepository&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Test, Long&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Score&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;findAllByTestName&lt;/span&gt;(String testName, Sort sort);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;test has some column &amp;ldquo;abc&amp;rdquo; and some column &amp;ldquo;def&amp;rdquo; and some &amp;ldquo;ghi&amp;rdquo; &amp;hellip;.&#xA;so to add the order do in th calling class something like:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Sometimes you need a List of the Database to be sorted by more than one column.&lt;/p&gt;
+&lt;p&gt;If you connect to your database with the &lt;code&gt;org.springframework.data.mongodb.repository.MongoRepository&lt;/code&gt; you can only give &lt;code&gt;org.springframework.data.domain.Sort&lt;/code&gt; to a search method.&lt;/p&gt;
+&lt;p&gt;This is how the Repository class looks like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@Repository&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TestRepository&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; MongoRepository&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Test, Long&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Score&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;findAllByTestName&lt;/span&gt;(String testName, Sort sort);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;test has some column &amp;ldquo;abc&amp;rdquo; and some column &amp;ldquo;def&amp;rdquo; and some &amp;ldquo;ghi&amp;rdquo; &amp;hellip;.
+so to add the order do in th calling class something like:&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>
+

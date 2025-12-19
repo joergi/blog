@@ -1,8 +1,8 @@
 ---
+lastmod: 2025-12-19
 title: "Starting a server for mobile HTML testing"
 description: "if you want to test a website on your mobile, you must start a python server"
 date: 2025-12-12
-lastmod: 2025-12-19
 ---
 
 # Problem: how to test on your mobile phone

@@ -4,23 +4,44 @@
     <title>Docker on My digital brain</title>
     <link>http://localhost:1313/blog/categories/docker/</link>
     <description>Recent content in Docker on My digital brain</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker cheat sheet</title>
       <link>http://localhost:1313/blog/posts/2023-01-26-docker-cheat-sheet/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/posts/2023-01-26-docker-cheat-sheet/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Stop all containers - &lt;code&gt;docker stop $(docker ps -a -q)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Debug into running container - &lt;code&gt;docker exec -it container_name /bin/bash&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Debug into docker image - &lt;code&gt;docker run --rm -it image_name /bin/bash&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Remove all docker dontainers - &lt;code&gt;docker rm -f $(docker ps -a -q)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;remove all images you need to download everything again) - &lt;code&gt;docker rmi -f $(docker images -q)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;delete all docker network bridges - &lt;code&gt;docker network prune&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Stop all containers - &lt;code&gt;docker stop $(docker ps -a -q)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Debug into running container - &lt;code&gt;docker exec -it container_name /bin/bash&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Debug into docker image - &lt;code&gt;docker run --rm -it image_name /bin/bash&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove all docker dontainers - &lt;code&gt;docker rm -f $(docker ps -a -q)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;remove all images you need to download everything again) - &lt;code&gt;docker rmi -f $(docker images -q)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;delete all docker network bridges - &lt;code&gt;docker network prune&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
+    
     <item>
       <title>Pushing container to Docker hub</title>
       <link>http://localhost:1313/blog/posts/2020-10-04-pushing-container-to-dockerhub/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+      
+      
       <guid>http://localhost:1313/blog/posts/2020-10-04-pushing-container-to-dockerhub/</guid>
-      <description>&lt;p&gt;First build an docker container and run it afterwards so you see it with &lt;code&gt;docker ps -a&lt;/code&gt;&#xA;As an example, I use the container for the &lt;a href=&#34;https://github.com/joergi/MagPiDownloader&#34;&gt;MagpiDownloader&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker build -f Dockerfile . -t mag-pi-downloader&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -v &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;pwd&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;/issues:/app/issues/ mag-pi-downloader -f &lt;span style=&#34;color:#ae81ff&#34;&gt;131&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After that is done, have a look, for all the docker container:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ docker ps -a&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS                          PORTS     NAMES&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ea901f38e328   mag-pi-downloader   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/bin/sh /app/entryp…&amp;#34;&lt;/span&gt;   About a minute ago   Exited &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; About a minute ago             exciting_feistel&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see the newest has the container id &lt;code&gt;ea901f38e328&lt;/code&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;First build an docker container and run it afterwards so you see it with &lt;code&gt;docker ps -a&lt;/code&gt;
+As an example, I use the container for the &lt;a href=&#34;https://github.com/joergi/MagPiDownloader&#34;&gt;MagpiDownloader&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker build -f Dockerfile . -t mag-pi-downloader
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -v &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;pwd&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;/issues:/app/issues/ mag-pi-downloader -f &lt;span style=&#34;color:#ae81ff&#34;&gt;131&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After that is done, have a look, for all the docker container:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ docker ps -a
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS                          PORTS     NAMES
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ea901f38e328   mag-pi-downloader   &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/bin/sh /app/entryp…&amp;#34;&lt;/span&gt;   About a minute ago   Exited &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; About a minute ago             exciting_feistel
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see the newest has the container id &lt;code&gt;ea901f38e328&lt;/code&gt;&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>
+
