@@ -60,6 +60,30 @@
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/blog/posts/2023-01-26-docker-cheat-sheet/" rel="bookmark">
+			Docker cheat sheet
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2023-01-25T00:00:00Z">January 25, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/docker/" rel="category">Docker</a>, <a class="meta__link" href="/blog/categories/cheatsheet/" rel="category">Cheatsheet</a>, <a class="meta__link" href="/blog/categories/howto/" rel="category">Howto</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<ul>
+<li>Stop all containers - <code>docker stop $(docker ps -a -q)</code></li>
+<li>Debug into running container - <code>docker exec -it container_name /bin/bash</code></li>
+<li>Debug into docker image - <code>docker run --rm -it image_name /bin/bash</code></li>
+<li>Remove all docker dontainers - <code>docker rm -f $(docker ps -a -q)</code></li>
+<li>remove all images you need to download everything again) - <code>docker rmi -f $(docker images -q)</code></li>
+<li>delete all docker network bridges - <code>docker network prune</code></li>
+</ul>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/blog/posts/2022-10-14-install-patch-for-thinkpad-trackpoint-keyboard-ii/" rel="bookmark">
 			Install patch for Thinkpad Trackpoint Keyboard II
 			</a>
@@ -317,27 +341,6 @@ so to add the order do in th calling class something like:</p>
 	</div>
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/blog/posts/2019-09-09-using-mongorepository-with-more-than-one-sorting-with-spring/">Read more…</a>
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2019-09-06-deutsche-bahn-docker-and-wifi-in-a-ice-and-vpn-problems/" rel="bookmark">
-			Deutsche Bahn,Docker and Wifi in an ICE and VPN problems
-			</a>
-		</h2>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2019-09-06T00:00:00Z">September 06, 2019</time></div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>The Deutsche Bahn is providing free wifi for some years now.
-It works for most of the people pretty well, but if you are a developer you could have some issues. I was suffering a lot with this, this is why I&rsquo;m posting it, to help some of you</p>
-<p>As you can see, the WiFi is running on the <code>IP 172.18.xxx</code>
-<img src="/img/wp_wifi_on_ice.png" alt="Alt text" title="screenshot of networkmanager, where it's connected to Wifi on ICE"></p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/posts/2019-09-06-deutsche-bahn-docker-and-wifi-in-a-ice-and-vpn-problems/">Read more…</a>
 	</div>
 </article>
 </main>

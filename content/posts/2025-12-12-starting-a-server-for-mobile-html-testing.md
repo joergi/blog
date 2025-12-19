@@ -24,4 +24,4 @@ ifconfig
 # inet 192.168.178.162  netmask 255.255.255.0  broadcast 192.168.178.255
 ```
 So you can see the IP is on 192.168.178.162
-So inside the same network (wAifi) the website is now available via http://192.168.178.162:8000
+So inside the same network (wifi) the website is now available via http://192.168.178.162:8000

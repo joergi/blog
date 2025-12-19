@@ -27,6 +27,16 @@ So I need to start an easy webserver.&lt;/p&gt;
     </item>
     
     <item>
+      <title>this is just a stupid test for rss</title>
+      <link>http://localhost:1313/blog/posts/2025-12-19-stimple-test/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      
+      
+      <guid>http://localhost:1313/blog/posts/2025-12-19-stimple-test/</guid>
+      <description>&lt;p&gt;this page will be deleted later. just for testing RSS&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Migrating from GitHub to Codeberg</title>
       <link>http://localhost:1313/blog/posts/2025-09-20-migrate-from-github-to-codeberg/</link>
       <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
