@@ -6,7 +6,22 @@
     <description>Recent content on My digital brain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change GRUB so you start in the terminal</title>
+      <link>http://localhost:1313/blog/posts/2026-01-05-change-grub-so-you-start-in-the-termial/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      
+      
+      <guid>http://localhost:1313/blog/posts/2026-01-05-change-grub-so-you-start-in-the-termial/</guid>
+      <description>&lt;h1 id=&#34;problem-copmuter-is-not-starting-at-all-anymore&#34;&gt;Problem: Copmuter is not starting at all anymore&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m using on one of the computer Manjaro Linux.&lt;br&gt;
+Unfortunately it seems I deleted something really important on the last upgrade.&lt;br&gt;
+The computer starts, I can decrypt my SSD, and I see the login screen. So far so good.
+But if I log in, I then see only a black screen with the mouse. But I can&amp;rsquo;t move the mouse and also no keyboard is working.&lt;br&gt;
+Also the shortcut for going into termimal mode (CTRL + ALT F3 / F4&amp;hellip;) is not reacting:&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Starting a server for mobile HTML testing</title>
       <link>http://localhost:1313/blog/posts/2025-12-12-starting-a-server-for-mobile-html-testing/</link>

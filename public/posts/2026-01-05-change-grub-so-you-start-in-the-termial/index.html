@@ -3,14 +3,16 @@
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Blog - My digital brain</title>
+	<title>Change GRUB so you start in the terminal - My digital brain</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="fediverse:creator" content="@joergi@chaos.social">
-	<meta name="description" content="">
+	<meta name="description" content="when your computer is not starting anymore, you need to start in the terminal mode">
 		
-  <meta itemprop="name" content="Blog">
-  <meta itemprop="datePublished" content="2023-03-21T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2023-03-21T00:00:00+00:00">
+  <meta itemprop="name" content="Change GRUB so you start in the terminal">
+  <meta itemprop="description" content="when your computer is not starting anymore, you need to start in the terminal mode">
+  <meta itemprop="datePublished" content="2026-01-05T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-01-05T00:00:00+00:00">
+  <meta itemprop="wordCount" content="144">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -18,7 +20,6 @@
 
 	<link rel="stylesheet" href="/blog/css/style.css">
 	<link rel="stylesheet" href="/blog/css/custom.css">
-	<link rel="alternate" type="application/rss+xml" href="/blog/tags/blog/index.xml" title="My digital brain">
 
 	<link rel="shortcut icon" href="/blog/favicon.ico">
 		
@@ -54,41 +55,40 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<header class="main__header">
-		<h1 class="main__title">Blog</h1>
-	</header><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/" rel="bookmark">
-			GISCUS - You can now add comments to my blog
-			</a>
-		</h2>
-		<div class="list__meta meta">
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Change GRUB so you start in the terminal</h1>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2023-03-21T00:00:00Z">March 21, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/blog/" rel="category">Blog</a>, <a class="meta__link" href="/blog/categories/giscus/" rel="category">Giscus</a>, <a class="meta__link" href="/blog/categories/github/" rel="category">Github</a>, <a class="meta__link" href="/blog/categories/howto/" rel="category">Howto</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>When I was researching some stuff for a blog post about Github Actions, I <a href="https://github.com/nicolasiensen/nicolasiensen.github.io/blob/master/_config.yml">stumbled over the blog </a> from Github user <a href="https://github.com/nicolasiensen">@nicolasiensen</a>.<br>
-When I read the post, I saw that people were able to add comments with being logged into Github.<br>
-Something like this I have seen a long time ago, but this was so complicated, I just ignored it.</p>
-<p>But now as I saw in his blog , it&rsquo;s super ways, thanks to <a href="https://giscus.app">Giscus</a><br>
-The setup was super easy, the repo must be public, you need to add the all to your repo and enable discussions.<br>
-And the best is:</p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/posts/2023-03-21-giscus-you-can-comment-now-in-the-blog/">Read more…</a>
-	</div>
-</article>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-01-05T00:00:00Z">January 05, 2026</time></div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<h1 id="problem-copmuter-is-not-starting-at-all-anymore">Problem: Copmuter is not starting at all anymore</h1>
+<p>I&rsquo;m using on one of the computer Manjaro Linux.<br>
+Unfortunately it seems I deleted something really important on the last upgrade.<br>
+The computer starts, I can decrypt my SSD, and I see the login screen. So far so good.<br>
+But if I log in, I then see only a black screen with the mouse. But I can&rsquo;t move the mouse and also no keyboard is working. <br>
+Also the shortcut for going into termimal mode (CTRL + ALT F3 / F4&hellip;) is not reacting.</p>
+<h1 id="solution-change-the-grub">Solution: Change the Grub</h1>
+<p>Go into the GRUB menu, and change the code in there:
+Add:</p>
+<pre tabindex="0"><code>$ systemd.unit=multi-user.target
+</code></pre><p>it should look like, this, add it at the end of the linux line:</p>
+<pre tabindex="0"><code>linux /boot/vmlinuz-........ systemd.unit=multi-user.target
+</code></pre><p>Save and reboot by pressing: <code>CTRL x</code></p>
+<h1 id="go-back-to-gnome-gui-after-fixing">Go back to Gnome GUI after fixing</h1>
+<pre tabindex="0"><code>sudo systemctl enable gdm
+</code></pre>
+		</div>
+	</article>
 </main>
+
+
 
 
 			</div>
 			
-
 		</div>
 		<footer class="footer">
 	<div class="container footer__container flex">
