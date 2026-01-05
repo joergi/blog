@@ -14,18 +14,18 @@ Also the shortcut for going into termimal mode (CTRL + ALT F3 / F4...) is not re
 # Solution: Change the Grub
 Go into the GRUB menu, and change the code in there:
 Add:
-```
+```bash
 $ systemd.unit=multi-user.target
 ```
 
 it should look like, this, add it at the end of the linux line:
-```
+```bash
 linux /boot/vmlinuz-........ systemd.unit=multi-user.target
 ```
 
 Save and reboot by pressing: `CTRL x` 
 
 # Go back to Gnome GUI after fixing 
-```
+```bash
 sudo systemctl enable gdm
 ```

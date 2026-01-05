@@ -73,13 +73,13 @@ Also the shortcut for going into termimal mode (CTRL + ALT F3 / F4&hellip;) is n
 <h1 id="solution-change-the-grub">Solution: Change the Grub</h1>
 <p>Go into the GRUB menu, and change the code in there:
 Add:</p>
-<pre tabindex="0"><code>$ systemd.unit=multi-user.target
-</code></pre><p>it should look like, this, add it at the end of the linux line:</p>
-<pre tabindex="0"><code>linux /boot/vmlinuz-........ systemd.unit=multi-user.target
-</code></pre><p>Save and reboot by pressing: <code>CTRL x</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ systemd.unit<span style="color:#f92672">=</span>multi-user.target
+</span></span></code></pre></div><p>it should look like, this, add it at the end of the linux line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>linux /boot/vmlinuz-........ systemd.unit<span style="color:#f92672">=</span>multi-user.target
+</span></span></code></pre></div><p>Save and reboot by pressing: <code>CTRL x</code></p>
 <h1 id="go-back-to-gnome-gui-after-fixing">Go back to Gnome GUI after fixing</h1>
-<pre tabindex="0"><code>sudo systemctl enable gdm
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl enable gdm
+</span></span></code></pre></div>
 		</div>
 	</article>
 </main>
