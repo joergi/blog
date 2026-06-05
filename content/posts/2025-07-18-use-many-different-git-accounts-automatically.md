@@ -1,7 +1,9 @@
 ---
 title: "Use many different Git accounts automatically"
 description: "As I have developer accounts for GitHub, Gitlab and Codeberg, I want to choose them automatically, when I commit"
-date: 2025-07-18
+date: 2026-06-05
+publishDate: 2025-07-18 
+lastmod: 2026-06-05
 ---
 
 ## Preparing the folder structure for using new setup   
@@ -68,12 +70,15 @@ path = /home/joergi/.gitconfig-github
 [includeIf "gitdir:~/dev/projects/private/gitlab/"]
 path = /home/joergi/.gitconfig-gitlab
 
-[includeIf "gitdir:~/dev/projects/private/codeberg/private"]
+[includeIf "gitdir:~/dev/projects/private/codeberg/private/"]
 path = /home/joergi/.gitconfig-codeberg-private
 
 [includeIf "gitdir:~/dev/projects/private/codeberg/super-private/"]
 path = /home/joergi/.gitconfig-codeberg-super-private
 ```
+> **Edit:** it's super important that the `includeIf` ends with a `/`   
+> Else it will not work. With `/**` it will match all repos underneath. That's exactly what I want!  
+
 As you can already see, we have to define a gitconfig file for each git account.  
 At the moment I still use the same GitHub config for work and private, I will change that later.  
 
@@ -86,6 +91,7 @@ The custom gitconfig files are at the same place as the main `.gitconfig` file:
 ├─ .gitconfig-codeberg-private
 ├─ .gitconfig-codeberg-super-private
 ```
+
 This is for example the `/home/joergi/.gitconfig-codeberg-private`
 ```shell
 [user]
@@ -119,7 +125,25 @@ and `/home/joergi/.gitconfig-github` still looks the same as when I had only one
 	autocrlf = input
 ```
 
+> **Edit** In the beginning I had the code written like this for each codeberg one (only showing one for simplicity)
+```shell
+Host codeberg.org
+    HostName codeberg.org
+    User git
+    IdentityFile ~/.ssh/id_codeberg_private
+    IdentitiesOnly yes
+```
+> But that was the error.
+> The only thing needed is:
+```shell
+Host codeberg.org
+    HostName codeberg.org
+    User git
+```
+> no identity file, nothing!
+
 Something I really found out at the end of the configuration journey, that you need to configure everything in the `.ssh/config`
+> **Edit** so this is the update one `.ssh/config` file:
 ```shell
 Host github.com
     HostName github.com
@@ -135,19 +159,8 @@ Host gitlab.com
     
 Host codeberg.org
     HostName codeberg.org
-    User git
-    IdentityFile ~/.ssh/id_codeberg_private
-    IdentitiesOnly yes
-    
-Host codeberg.org
-    HostName codeberg.org
-    User git
-    IdentityFile ~/.ssh/id_codeberg_more_private
-    IdentitiesOnly yes
-
+    User git   
 ```
-## ToDo: signed commits for all git accounts
-As you can see, only the Github account has so far signed commits. This is something I also have to do for my other Git accounts.
 
 ## Solved problems
 If you are on a corporate computer, it can happen that some outgoing ssh connections are blocked. I had to ask our admins to unblock the specific codeberg.org server.   
@@ -155,61 +168,7 @@ This costed my hours, because github and gitlab were perfectly working and I ass
 But at the end it was AGAIN the corporate firewall/security setting.  
 This was really frustrating. So if you have problems, first check if it's the corporate setting!
 
-## Still an unsolved problem
-when I create a new repository and I want to commit something, I get the following error message:
-```shell
-Author identity unknown
+> **Edit** The problem with the not knowing which git user it should use for codeberg is with the new edit above solved, hurray.
 
-*** Please tell me who you are.
-
-Run
-
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: unable to auto-detect email address (got 'joergi@COMPUTERNAME.(none)')
-```
-
-So it seems that the git doesn't know the username yet. Before setting the specific repository `.git/config`, it looks like this:
-```shell
-[core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = false
-	logallrefupdates = true
-[remote "origin"]
-	url = ssh://git@codeberg.org/private-username/test.git
-	fetch = +refs/heads/*:refs/remotes/origin/*
-[branch "main"]
-	remote = origin
-	merge = refs/heads/main
-```
-So I set the `user.email` and `user.name` but without the `--global flag`
-```shell
-$ git config user.email "my-private-codeberg-username@mydomain.de"
-
-$ git config user.name "private-username"
-
-```
-
-the `~/dev/projects/joergi/codeberg/private/test/.git/config` looks now like this:
-```shell
-[core]
-    repositoryformatversion = 0
-    filemode = true
-    bare = false
-    logallrefupdates = true
-[remote "origin"]
-    url = ssh://git@codeberg.org/private-username/test.git
-    fetch = +refs/heads/*:refs/remotes/origin/*
-[branch "main"]
-    remote = origin
-    merge = refs/heads/main
-[user]
-    email = my-private-codeberg-username@mydomain.de
-    name = private-username
-```
-This solves the problem, but it's a bit annoying, that I have to do this for every new repository. Still looking for a solution.
+## ToDo: signed commits for all git accounts
+As you can see, only the Github account has so far signed commits. This is something I also have to do for my other Git accounts.
