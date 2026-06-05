@@ -5,9 +5,9 @@ date: 2026-06-05
 publishDate: 2025-07-18 
 lastmod: 2026-06-05
 ---
-> **Edit** This Article was published in July 2025
-> **Edit** But I had the problem that it was not 100% working to use 2 codeberg accounts, there was always some manual work, when using it.
-> **Edit** This is now completely fixed. Happy me!   I'm happy if you can give me feedback via [Mastodon](@joergi@chaos.social)
+> **Edit** This Article was published in July 2025  
+> But I had the problem that it was not 100% working to use 2 codeberg accounts, there was always some manual work, when using it.  
+> This is now completely fixed. Happy me!   I'm happy if you can give me feedback via [Mastodon](@joergi@chaos.social)  
 
 ## Preparing the folder structure for using new setup   
 At the moment I have different git accounts.  
@@ -79,8 +79,7 @@ path = /home/joergi/.gitconfig-codeberg-private
 [includeIf "gitdir:~/dev/projects/private/codeberg/super-private/"]
 path = /home/joergi/.gitconfig-codeberg-super-private
 ```
-> **Edit:** it's super important that the `includeIf` ends with a `/`   
-> **Edit** Else it will not work. With `/**` it will match all repos underneath. That's exactly what I want!  
+> **Edit:** it's super important that the `includeIf` ends with a `/`. Else it will not work. With `/**` it will match all repos underneath. That's exactly what I want!  
 
 As you can already see, we have to define a gitconfig file for each git account.  
 At the moment I still use the same GitHub config for work and private, I will change that later.  
@@ -136,8 +135,7 @@ Host codeberg.org
     IdentityFile ~/.ssh/id_codeberg_private
     IdentitiesOnly yes
 ```
-> **Edit** But that was the error.
-> **Edit** The only thing needed is:
+> Edit** But that was the error. The only thing needed is:
 ```shell
 Host codeberg.org
     HostName codeberg.org
